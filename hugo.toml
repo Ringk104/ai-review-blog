@@ -115,3 +115,4 @@ paginate = 10
     name = "검색"
     url = "/search/"
     weight = 6
+
