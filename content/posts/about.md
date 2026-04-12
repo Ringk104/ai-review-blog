@@ -1,8 +1,9 @@
 ---
 title: "뷰잇(ViewIt) 소개"
-slug: "about"
+url: "/posts/about/"
 date: 2026-04-13
 draft: false
+hidemeta: true
 ---
 
 ## 뷰잇(ViewIt)은?

@@ -1,8 +1,9 @@
 ---
 title: "제휴 공시"
-slug: "disclosure"
+url: "/posts/disclosure/"
 date: 2026-04-13
 draft: false
+hidemeta: true
 ---
 
 ## 제휴 공시 안내
