@@ -1,6 +1,6 @@
 ---
 title: "제휴 공시"
-
+slug: "disclosure"
 date: 2026-04-13
 draft: false
 ---
