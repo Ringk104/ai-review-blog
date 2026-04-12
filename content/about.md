@@ -1,14 +1,7 @@
 ---
 title: "뷰잇(ViewIt) 소개"
-layout: "single"
-url: "/about/"
-summary: "뷰잇은 실구매자 리뷰 수백 개를 AI로 분석하여 제품의 진짜 장단점을 정리하는 블로그입니다."
-ShowToc: false
-ShowBreadCrumbs: false
-ShowShareButtons: false
-ShowPostNavLinks: false
-disableShare: true
-comments: false
+date: 2026-04-13
+draft: false
 ---
 
 ## 뷰잇(ViewIt)은?

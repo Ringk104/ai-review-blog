@@ -1,14 +1,7 @@
 ---
 title: "제휴 공시"
-layout: "single"
-url: "/disclosure/"
-summary: "뷰잇의 어필리에이트 제휴 프로그램 참여 안내"
-ShowToc: false
-ShowBreadCrumbs: false
-ShowShareButtons: false
-ShowPostNavLinks: false
-disableShare: true
-comments: false
+date: 2026-04-13
+draft: false
 ---
 
 ## 제휴 공시 안내
