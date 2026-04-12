@@ -3,6 +3,7 @@ languageCode = "ko"
 title = "ViewIt - AI 리뷰 분석"
 theme = "PaperMod"
 defaultContentLanguage = "ko"
+paginate = 10
 
 [params]
   env = "production"
@@ -13,11 +14,53 @@ defaultContentLanguage = "ko"
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowToc = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
   images = ["cover.png"]
 
-  [params.homeInfoParams]
-    Title = "AI가 대신 읽어주는 실구매 리뷰"
-    Content = "수백 개의 실구매 리뷰를 AI로 분석하여, 제품의 진짜 장단점을 알려드립니다."
+  # 홈 화면을 프로필 모드로 (로고 + 소개 + 버튼)
+  [params.profileMode]
+    enabled = true
+    title = "ViewIt"
+    subtitle = "수백 개의 실구매 리뷰를 AI로 분석합니다\n제품의 진짜 장단점, 데이터로 확인하세요"
+    imageUrl = "/images/logo.svg"
+    imageWidth = 140
+    imageHeight = 140
+
+    [[params.profileMode.buttons]]
+      name = "최신 리뷰 분석"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "구매 가이드"
+      url = "/tags/구매가이드/"
+
+    [[params.profileMode.buttons]]
+      name = "로봇청소기"
+      url = "/categories/로봇청소기/"
+
+  # 소셜 아이콘
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  # 검색 기능
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+  # 글 목록에 설명 표시
+  [params.cover]
+    hiddenInList = false
+    hiddenInSingle = false
+
+  # 글 하단 "이전/다음" 네비게이션 활성화
+  ShowPostNavLinks = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -26,21 +69,43 @@ defaultContentLanguage = "ko"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
 
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
 
+# 상단 메뉴
 [menu]
   [[menu.main]]
+    identifier = "home"
     name = "홈"
     url = "/"
     weight = 1
+
   [[menu.main]]
+    identifier = "posts"
+    name = "전체 글"
+    url = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "robot-vacuum"
     name = "로봇청소기"
     url = "/categories/로봇청소기/"
-    weight = 2
+    weight = 3
+
   [[menu.main]]
+    identifier = "guide"
     name = "구매가이드"
     url = "/tags/구매가이드/"
-    weight = 3
+    weight = 4
+
+  [[menu.main]]
+    identifier = "search"
+    name = "검색"
+    url = "/search/"
+    weight = 5
