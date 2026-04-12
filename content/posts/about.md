@@ -1,6 +1,6 @@
 ---
 title: "뷰잇(ViewIt) 소개"
-url: "/about/"
+
 date: 2026-04-13
 draft: false
 ---
