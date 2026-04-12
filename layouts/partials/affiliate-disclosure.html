@@ -1,0 +1,27 @@
+<!-- 
+  제휴 공시 자동 삽입 partial
+  
+  적용 방법:
+  layouts/_default/single.html 을 오버라이드하여
+  글 본문(.Content) 아래에 아래 코드를 추가하세요:
+  
+  {{ partial "affiliate-disclosure.html" . }}
+-->
+
+<div class="affiliate-disclosure" style="
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--code-bg, #f3f4f6);
+  border-radius: 8px;
+  border-left: 3px solid #2563EB;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--secondary, #6b7280);
+">
+  <p style="margin: 0;">
+    ※ 이 글에는 
+    <a href="/disclosure/" style="color: #2563EB; text-decoration: underline;">쿠팡파트너스</a> 
+    등 제휴 링크가 포함되어 있으며, 이를 통해 일정액의 수수료를 제공받을 수 있습니다. 
+    이용자에게 추가 비용은 발생하지 않습니다.
+  </p>
+</div>
