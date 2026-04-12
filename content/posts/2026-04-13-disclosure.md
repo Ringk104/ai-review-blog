@@ -1,8 +1,11 @@
 ---
 title: "제휴 공시"
-url: "/posts/disclosure/"
-date: 2026-04-13
+description: "뷰잇의 어필리에이트 제휴 프로그램 참여 안내"
+date: 2026-04-13T00:00:01+09:00
 draft: false
+slug: "disclosure"
+categories: ["안내"]
+tags: ["제휴공시", "쿠팡파트너스"]
 hidemeta: true
 ---
 
