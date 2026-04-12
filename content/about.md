@@ -52,4 +52,4 @@ comments: false
 
 콘텐츠 관련 문의, 제안, 정정 요청은 아래로 보내주세요.
 
-📧 이메일: **your-email@example.com**
+📧 이메일: **contact@viewit.co.kr**

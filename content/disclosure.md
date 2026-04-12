@@ -47,7 +47,7 @@ comments: false
 
 제휴 공시 관련 문의사항은 아래로 연락해 주세요.
 
-📧 이메일: **your-email@example.com**
+📧 이메일: **contact@viewit.co.kr**
 
 ---
 
