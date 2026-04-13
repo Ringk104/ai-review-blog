@@ -105,15 +105,27 @@ paginate = 10
     weight = 4
 
   [[menu.main]]
+    identifier = "comparison"
+    name = "비교분석"
+    url = "/tags/비교분석/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "roundup"
+    name = "추천TOP"
+    url = "/tags/라운드업/"
+    weight = 6
+
+  [[menu.main]]
     identifier = "about"
     name = "소개"
     url = "/posts/about/"
-    weight = 5
+    weight = 7
 
   [[menu.main]]
     identifier = "search"
     name = "검색"
     url = "/search/"
-    weight = 6
+    weight = 8
 
 
