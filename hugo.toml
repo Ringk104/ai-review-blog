@@ -4,6 +4,7 @@ title = "ViewIt - AI 리뷰 분석"
 theme = "PaperMod"
 defaultContentLanguage = "ko"
 paginate = 10
+googleAnalytics = "G-3B1TS6JL55"
 
 [params]
   env = "production"
