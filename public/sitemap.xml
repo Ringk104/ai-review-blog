@@ -3,41 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://viewit.co.kr/categories/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/posts/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EA%B2%80%EC%A6%9D/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/categories/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</loc>
-    <lastmod>2026-04-16T01:00:40+09:00</lastmod>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</loc>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EB%A7%9E%EC%B6%A4/</loc>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%9B%90%EB%A3%B8/</loc>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/posts/%EC%9B%90%EB%A3%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B6%94%EC%B2%9C-top-5---1%EC%9D%B8%EA%B0%80%EA%B5%AC-%EB%A7%9E%EC%B6%A4-%EC%84%A0%ED%83%9D-%EA%B0%80%EC%9D%B4%EB%93%9C-2026/</loc>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%9D%B8%EA%B0%80%EA%B5%AC/</loc>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</loc>
+    <lastmod>2026-04-16T01:00:50+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EA%B2%80%EC%A6%9D/</loc>
     <lastmod>2026-04-16T01:00:40+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -137,17 +162,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%9B%90%EB%A3%B8/</loc>
-    <lastmod>2026-04-13T15:48:51+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://viewit.co.kr/posts/%EC%9B%90%EB%A3%B8-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B6%94%EC%B2%9C-top-5---1%EC%9D%B8%EA%B0%80%EA%B5%AC-%EB%A7%9E%EC%B6%A4-%EC%84%A0%ED%83%9D-%EA%B0%80%EC%9D%B4%EB%93%9C-2026/</loc>
-    <lastmod>2026-04-13T15:48:51+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</loc>
     <lastmod>2026-04-13T15:48:51+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
