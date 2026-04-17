@@ -14,20 +14,6 @@
     <lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://viewit.co.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>강아지털</title>
-      <link>https://viewit.co.kr/tags/%EA%B0%95%EC%95%84%EC%A7%80%ED%84%B8/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EA%B0%95%EC%95%84%EC%A7%80%ED%84%B8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>검증</title>
-      <link>https://viewit.co.kr/tags/%EA%B2%80%EC%A6%9D/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EA%B2%80%EC%A6%9D/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>구매가이드</title>
       <link>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
@@ -56,27 +42,6 @@
       <description></description>
     </item>
     <item>
-      <title>맞춤</title>
-      <link>https://viewit.co.kr/tags/%EB%A7%9E%EC%B6%A4/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%A7%9E%EC%B6%A4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>물걸레</title>
-      <link>https://viewit.co.kr/tags/%EB%AC%BC%EA%B1%B8%EB%A0%88/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%AC%BC%EA%B1%B8%EB%A0%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>반려동물</title>
-      <link>https://viewit.co.kr/tags/%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>분석</title>
       <link>https://viewit.co.kr/tags/%EB%B6%84%EC%84%9D/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
@@ -91,38 +56,10 @@
       <description></description>
     </item>
     <item>
-      <title>비교분석</title>
-      <link>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>선택가이드</title>
-      <link>https://viewit.co.kr/tags/%EC%84%A0%ED%83%9D%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%84%A0%ED%83%9D%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>소음</title>
-      <link>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>수치</title>
       <link>https://viewit.co.kr/tags/%EC%88%98%EC%B9%98/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%88%98%EC%B9%98/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>실제</title>
-      <link>https://viewit.co.kr/tags/%EC%8B%A4%EC%A0%9C/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%8B%A4%EC%A0%9C/</guid>
       <description></description>
     </item>
     <item>
@@ -133,66 +70,59 @@
       <description></description>
     </item>
     <item>
-      <title>원룸</title>
-      <link>https://viewit.co.kr/tags/%EC%9B%90%EB%A3%B8/</link>
+      <title>흡입력</title>
+      <link>https://viewit.co.kr/tags/%ED%9D%A1%EC%9E%85%EB%A0%A5/</link>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%9B%90%EB%A3%B8/</guid>
+      <guid>https://viewit.co.kr/tags/%ED%9D%A1%EC%9E%85%EB%A0%A5/</guid>
       <description></description>
     </item>
     <item>
-      <title>인가구</title>
-      <link>https://viewit.co.kr/tags/%EC%9D%B8%EA%B0%80%EA%B5%AC/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%9D%B8%EA%B0%80%EA%B5%AC/</guid>
+      <title>강아지털</title>
+      <link>https://viewit.co.kr/tags/%EA%B0%95%EC%95%84%EC%A7%80%ED%84%B8/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EA%B0%95%EC%95%84%EC%A7%80%ED%84%B8/</guid>
       <description></description>
     </item>
     <item>
-      <title>정리</title>
-      <link>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</guid>
+      <title>반려동물</title>
+      <link>https://viewit.co.kr/tags/%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>비교분석</title>
+      <link>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>선택가이드</title>
+      <link>https://viewit.co.kr/tags/%EC%84%A0%ED%83%9D%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%84%A0%ED%83%9D%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>소음</title>
+      <link>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</guid>
       <description></description>
     </item>
     <item>
       <title>조용한</title>
       <link>https://viewit.co.kr/tags/%EC%A1%B0%EC%9A%A9%ED%95%9C/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%A1%B0%EC%9A%A9%ED%95%9C/</guid>
       <description></description>
     </item>
     <item>
       <title>집사</title>
       <link>https://viewit.co.kr/tags/%EC%A7%91%EC%82%AC/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%A7%91%EC%82%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>초보자</title>
-      <link>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>추천</title>
-      <link>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>효과</title>
-      <link>https://viewit.co.kr/tags/%ED%9A%A8%EA%B3%BC/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%ED%9A%A8%EA%B3%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>흡입력</title>
-      <link>https://viewit.co.kr/tags/%ED%9D%A1%EC%9E%85%EB%A0%A5/</link>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%ED%9D%A1%EC%9E%85%EB%A0%A5/</guid>
       <description></description>
     </item>
     <item>
@@ -210,6 +140,27 @@
       <description></description>
     </item>
     <item>
+      <title>검증</title>
+      <link>https://viewit.co.kr/tags/%EA%B2%80%EC%A6%9D/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EA%B2%80%EC%A6%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>맞춤</title>
+      <link>https://viewit.co.kr/tags/%EB%A7%9E%EC%B6%A4/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%A7%9E%EC%B6%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>물걸레</title>
+      <link>https://viewit.co.kr/tags/%EB%AC%BC%EA%B1%B8%EB%A0%88/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%AC%BC%EA%B1%B8%EB%A0%88/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>뷰잇</title>
       <link>https://viewit.co.kr/tags/%EB%B7%B0%EC%9E%87/</link>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
@@ -221,6 +172,55 @@
       <link>https://viewit.co.kr/tags/%EC%86%8C%EA%B0%9C/</link>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%86%8C%EA%B0%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>실제</title>
+      <link>https://viewit.co.kr/tags/%EC%8B%A4%EC%A0%9C/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%8B%A4%EC%A0%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>원룸</title>
+      <link>https://viewit.co.kr/tags/%EC%9B%90%EB%A3%B8/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%9B%90%EB%A3%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>인가구</title>
+      <link>https://viewit.co.kr/tags/%EC%9D%B8%EA%B0%80%EA%B5%AC/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%9D%B8%EA%B0%80%EA%B5%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>정리</title>
+      <link>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>초보자</title>
+      <link>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>추천</title>
+      <link>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>효과</title>
+      <link>https://viewit.co.kr/tags/%ED%9A%A8%EA%B3%BC/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%ED%9A%A8%EA%B3%BC/</guid>
       <description></description>
     </item>
   </channel>
