@@ -80,6 +80,25 @@ googleAnalytics = "G-3B1TS6JL55"
   changefreq = "weekly"
   priority = 0.5
 
+# 관련 글 자동 추출 설정 (본문 하단 "관련 글 더보기")
+# tags 일치가 가장 높은 가중치, categories, 최신순 보조
+[related]
+  includeNewer = true
+  threshold = 60        # 0~100. 낮을수록 관대하게 매칭
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
 # 상단 메뉴
 [menu]
   [[menu.main]]

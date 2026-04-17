@@ -1,0 +1,86 @@
+{{/*
+  latest-badge.html
+  ---
+  과거 글에 "더 최신 월별 업데이트판" 배지를 표시합니다.
+
+  동작 조건:
+  1. site.Data.latest_versions.categories 에 현재 글의 카테고리가 등록되어 있을 것
+  2. 현재 글의 발행일(.Date)이 최신판 발행일(latest_update_date)보다 이전일 것
+  3. 현재 글 자체가 월별 업데이트판이 아닐 것 (badge_skip 또는 content_type 체크)
+
+  데이터 구조 (data/latest_versions.json):
+  {
+    "categories": {
+      "robot-vacuum": {
+        "name": "로봇청소기",
+        "latest_update_url": "/posts/2026-05-robot-vacuum-update/",
+        "latest_update_date": "2026-05-01",
+        "latest_update_title": "2026년 5월 로봇청소기 시장 동향"
+      }
+    }
+  }
+*/}}
+
+{{- $data := site.Data.latest_versions -}}
+{{- if and $data $data.categories -}}
+
+  {{/* 현재 글이 월별 업데이트판 자체이면 배지 숨김 */}}
+  {{- $isUpdatePost := false -}}
+  {{- if .Params.badge_skip -}}
+    {{- $isUpdatePost = true -}}
+  {{- end -}}
+  {{- range .Params.tags -}}
+    {{- if eq . "월별업데이트" -}}
+      {{- $isUpdatePost = true -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if not $isUpdatePost -}}
+
+    {{/* 카테고리별로 매칭 확인 */}}
+    {{- $pageCats := .Params.categories | default slice -}}
+    {{- $matched := dict -}}
+
+    {{- range $slug, $info := $data.categories -}}
+      {{- $catName := $info.name -}}
+      {{- range $pageCats -}}
+        {{- if or (eq . $catName) (eq . $slug) -}}
+          {{- $matched = $info -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if $matched -}}
+      {{- $latestDate := time $matched.latest_update_date -}}
+      {{- if lt $.Date $latestDate -}}
+
+        <div class="latest-update-badge" style="
+          margin: 1.5rem 0;
+          padding: 1rem 1.25rem;
+          background: linear-gradient(135deg, #fef3c7 0%, #fef9c3 100%);
+          border-left: 4px solid #f59e0b;
+          border-radius: 8px;
+          font-size: 0.92rem;
+          line-height: 1.6;
+          color: #78350f;
+        ">
+          <p style="margin: 0 0 0.4rem 0; font-weight: 600;">
+            📌 이 글은 {{ $.Date.Format "2006-01-02" }} 기준 분석입니다.
+          </p>
+          <p style="margin: 0;">
+            👉 더 최신 시장 동향:
+            <a href="{{ $matched.latest_update_url }}" style="color: #b45309; font-weight: 600; text-decoration: underline;">
+              {{ $matched.latest_update_title }}
+            </a>
+            <span style="color: #92400e; font-size: 0.85rem;">
+              ({{ $matched.latest_update_date }})
+            </span>
+          </p>
+        </div>
+
+      {{- end -}}
+    {{- end -}}
+
+  {{- end -}}
+
+{{- end -}}
