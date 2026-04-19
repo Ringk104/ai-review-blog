@@ -1,20 +1,11 @@
-<!-- 
+<!--
   PaperMod 푸터 확장
-  
-  파일 위치: layouts/partials/extend_footer.html
-  PaperMod 테마는 이 파일을 자동으로 푸터에 포함합니다.
-  별도의 오버라이드 없이 이 파일만 만들면 푸터에 추가됩니다.
+  스타일은 custom.css의 .footer-links 에서 관리.
 -->
-
-<div class="footer-links" style="
-  text-align: center;
-  padding: 0.5rem 0;
-  font-size: 0.85rem;
-  color: var(--secondary, #6b7280);
-">
-  <a href="/posts/about/" style="color: var(--secondary, #6b7280); margin: 0 0.5rem;">소개</a>
+<nav class="footer-links" aria-label="푸터 링크">
+  <a href="/posts/about/">소개</a>
   ·
-  <a href="/posts/disclosure/" style="color: var(--secondary, #6b7280); margin: 0 0.5rem;">제휴 공시</a>
+  <a href="/posts/disclosure/">제휴 공시</a>
   ·
-  <a href="mailto:contact@viewit.co.kr" style="color: var(--secondary, #6b7280); margin: 0 0.5rem;">문의</a>
-</div>
+  <a href="mailto:contact@viewit.co.kr">문의</a>
+</nav>

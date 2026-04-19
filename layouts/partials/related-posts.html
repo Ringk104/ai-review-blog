@@ -1,22 +1,14 @@
 {{/*
-  related-posts.html
+  related-posts.html (v2: 클래스 기반)
   ---
-  현재 글과 관련된 글을 최대 5개까지 "📌 관련 글 더보기" 목록으로 표시합니다.
-
-  동작:
-  1. Hugo 내장 .Site.RegularPages.Related API 사용 (tags/categories 기반)
-  2. 현재 글 자체와 draft 글은 자동 제외
-  3. 매칭되는 글이 없으면 같은 카테고리의 최신 글로 폴백
-  4. 관련 글이 하나도 없으면 섹션 자체 숨김
-
-  가중치는 hugo.toml [related] 섹션에서 설정:
-    tags=100, categories=60, date=10
+  현재 글과 관련된 글을 최대 5개까지 "관련 글 더보기" 목록으로 표시합니다.
+  스타일은 custom.css의 .related-posts 에서 관리.
 */}}
 
 {{- $current := . -}}
 {{- $related := ($.Site.RegularPages.Related .) | first 5 -}}
 
-{{/* 폴백: 관련 글이 없으면 같은 카테고리의 최신 글 */}}
+{{/* 폴백: 관련 글이 3개 미만이면 같은 카테고리의 최신 글 */}}
 {{- if lt (len $related) 3 -}}
   {{- $cats := .Params.categories | default slice -}}
   {{- if $cats -}}
@@ -29,53 +21,16 @@
 {{- end -}}
 
 {{- if $related -}}
-<aside class="related-posts" style="
-  margin-top: 2.5rem;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
-  background: var(--entry, #ffffff);
-  border: 1px solid var(--border, #e5e7eb);
-  border-radius: 10px;
-">
-  <h3 style="
-    margin: 0 0 1rem 0;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--primary, #1f2937);
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-  ">
+<aside class="related-posts" aria-label="관련 글 더보기">
+  <h3>
     <span aria-hidden="true">📌</span> 관련 글 더보기
   </h3>
-
-  <ul style="
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  ">
+  <ul>
     {{- range $related }}
-    <li style="
-      padding: 0.6rem 0;
-      border-bottom: 1px solid var(--border, #f1f5f9);
-    ">
-      <a href="{{ .Permalink }}" style="
-        color: var(--primary, #111827);
-        text-decoration: none;
-        font-weight: 500;
-        line-height: 1.5;
-        display: block;
-      ">
-        {{ .Title }}
-      </a>
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{- with .Description }}
-      <p style="
-        margin: 0.3rem 0 0 0;
-        font-size: 0.88rem;
-        color: var(--secondary, #6b7280);
-        line-height: 1.5;
-      ">
-        {{ . | truncate 80 }}
-      </p>
+      <p>{{ . | truncate 80 }}</p>
       {{- end }}
     </li>
     {{- end }}

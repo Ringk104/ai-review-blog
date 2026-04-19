@@ -1,11 +1,64 @@
-/* ──────────────────────────────────────
+/* ──────────────────────────────────────────────────────
    ViewIt 커스텀 스타일
-   ────────────────────────────────────── */
+   v2 - 2026-04-20 디자인 통합 정비
+   ──────────────────────────────────────────────────────
+   - Pretendard 웹폰트 적용
+   - 인라인 스타일 → 클래스 기반으로 이관
+   - 다크모드 완전 지원 (latest-badge 포함)
+   - 커버 이미지 aspect-ratio 통일
+   - CSS 변수로 브랜드 컬러 관리
+   ────────────────────────────────────────────────────── */
 
-/* 프로필 모드 - 홈 화면 */
+:root {
+  --vi-primary: #2563EB;
+  --vi-primary-dark: #1D4ED8;
+  --vi-primary-darker: #1E40AF;
+  --vi-accent: #7C3AED;
+  --vi-warn-bg-start: #fef3c7;
+  --vi-warn-bg-end: #fef9c3;
+  --vi-warn-border: #f59e0b;
+  --vi-warn-text: #78350f;
+  --vi-warn-link: #b45309;
+  --vi-warn-meta: #92400e;
+}
+
+.dark {
+  /* 다크 모드용 경고/배지 톤 조정 (눈부심 방지) */
+  --vi-warn-bg-start: rgba(245, 158, 11, 0.12);
+  --vi-warn-bg-end: rgba(234, 179, 8, 0.08);
+  --vi-warn-border: #f59e0b;
+  --vi-warn-text: #fde68a;
+  --vi-warn-link: #fcd34d;
+  --vi-warn-meta: #fbbf24;
+}
+
+/* ──────────────────────────────────────────────
+   타이포그래피 — Pretendard
+   ────────────────────────────────────────────── */
+html,
+body,
+.post-content,
+input,
+select,
+textarea,
+button {
+  font-family:
+    "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+.post-content {
+  line-height: 1.75;
+  word-break: keep-all; /* 한글 단어 단위 줄바꿈 */
+}
+
+/* ──────────────────────────────────────────────
+   홈 - 프로필 모드
+   ────────────────────────────────────────────── */
 .profile .profile_inner h1 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #2563EB, #7C3AED);
+  background: linear-gradient(135deg, var(--vi-primary), var(--vi-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -17,7 +70,6 @@
   opacity: 0.85;
 }
 
-/* 버튼 스타일 */
 .profile .profile_inner .buttons a {
   padding: 10px 24px;
   border-radius: 25px;
@@ -27,9 +79,9 @@
 }
 
 .profile .profile_inner .buttons a:first-child {
-  background: #2563EB;
+  background: var(--vi-primary);
   color: white;
-  border-color: #2563EB;
+  border-color: var(--vi-primary);
 }
 
 .profile .profile_inner .buttons a:hover {
@@ -37,7 +89,9 @@
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
-/* 글 목록 카드 스타일 */
+/* ──────────────────────────────────────────────
+   글 목록 카드
+   ────────────────────────────────────────────── */
 .post-entry {
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -48,7 +102,7 @@
 .post-entry:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  border-color: #2563EB;
+  border-color: var(--vi-primary);
 }
 
 .post-entry .entry-header h2 {
@@ -56,30 +110,74 @@
   line-height: 1.5;
 }
 
-/* 글 본문 스타일 */
+/* 커버 이미지 비율 통일 (16:9) */
+.entry-cover,
+.post-cover {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.entry-cover img,
+.post-cover img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* ──────────────────────────────────────────────
+   글 본문 헤딩
+   ────────────────────────────────────────────── */
 .post-content h2 {
-  border-bottom: 2px solid #2563EB;
-  padding-bottom: 8px;
-  margin-top: 2rem;
+  border-left: 4px solid var(--vi-primary);
+  border-bottom: 1px solid var(--border);
+  padding: 4px 0 8px 14px;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .post-content h3 {
-  color: #2563EB;
+  color: var(--vi-primary);
+  margin-top: 1.8rem;
+  font-weight: 600;
 }
 
-/* 테이블 스타일 */
+.post-content h4 {
+  margin-top: 1.4rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.post-content p {
+  margin: 0.9em 0;
+}
+
+/* 본문 이미지 둥근 모서리 */
+.post-content img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ──────────────────────────────────────────────
+   테이블
+   ────────────────────────────────────────────── */
 .post-content table {
   border-collapse: collapse;
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
+  margin: 1.2rem 0;
 }
 
 .post-content table th {
-  background: #2563EB;
+  background: var(--vi-primary);
   color: white;
   padding: 12px 16px;
   text-align: left;
+  font-weight: 600;
 }
 
 .post-content table td {
@@ -91,22 +189,34 @@
   background: rgba(37, 99, 235, 0.05);
 }
 
-/* 인용문 (AI 분석 고지 등) */
+.dark .post-content table th {
+  background: var(--vi-primary-dark);
+}
+
+/* ──────────────────────────────────────────────
+   인용문 (AI 분석 고지 등)
+   ────────────────────────────────────────────── */
 .post-content blockquote {
-  border-left: 4px solid #2563EB;
+  border-left: 4px solid var(--vi-primary);
   background: rgba(37, 99, 235, 0.05);
   padding: 16px 20px;
   border-radius: 0 8px 8px 0;
   margin: 1.5rem 0;
 }
 
-/* 어필리에이트 링크 스타일 */
+.dark .post-content blockquote {
+  background: rgba(37, 99, 235, 0.1);
+}
+
+/* ──────────────────────────────────────────────
+   어필리에이트 링크 (쿠팡 자동 버튼화)
+   ────────────────────────────────────────────── */
 .affiliate-link,
 .post-content a[href*="coupang"],
 .post-content a[href*="link.coupang"] {
   display: inline-block;
   padding: 10px 24px;
-  background: linear-gradient(135deg, #2563EB, #1D4ED8);
+  background: linear-gradient(135deg, var(--vi-primary), var(--vi-primary-dark));
   color: white !important;
   border-radius: 8px;
   font-weight: 600;
@@ -115,24 +225,157 @@
 }
 
 .affiliate-link:hover,
-.post-content a[href*="coupang"]:hover {
-  background: linear-gradient(135deg, #1D4ED8, #1E40AF);
+.post-content a[href*="coupang"]:hover,
+.post-content a[href*="link.coupang"]:hover {
+  background: linear-gradient(
+    135deg,
+    var(--vi-primary-dark),
+    var(--vi-primary-darker)
+  );
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
 }
 
-/* 면책 문구 스타일 */
-.post-content > p:last-of-type em {
-  display: block;
-  text-align: center;
+/* ──────────────────────────────────────────────
+   어필리에이트 공시 (affiliate-disclosure partial)
+   ────────────────────────────────────────────── */
+.affiliate-disclosure {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  background-color: var(--code-bg);
+  border-radius: 8px;
+  border-left: 3px solid var(--vi-primary);
   font-size: 0.85rem;
-  opacity: 0.6;
-  padding: 16px;
-  border-top: 1px solid var(--border);
-  margin-top: 2rem;
+  line-height: 1.6;
+  color: var(--secondary);
 }
 
-/* TOC (목차) 스타일 */
+.affiliate-disclosure p {
+  margin: 0;
+}
+
+.affiliate-disclosure a {
+  color: var(--vi-primary);
+  text-decoration: underline;
+}
+
+/* ──────────────────────────────────────────────
+   관련 글 (related-posts partial)
+   ────────────────────────────────────────────── */
+.related-posts {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.related-posts h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.related-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.related-posts li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.related-posts li:last-child {
+  border-bottom: none;
+}
+
+.related-posts li a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  display: block;
+}
+
+.related-posts li a:hover {
+  color: var(--vi-primary);
+}
+
+.related-posts li p {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.88rem;
+  color: var(--secondary);
+  line-height: 1.5;
+}
+
+/* ──────────────────────────────────────────────
+   최신판 배지 (latest-badge partial)
+   ────────────────────────────────────────────── */
+.latest-update-badge {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(
+    135deg,
+    var(--vi-warn-bg-start),
+    var(--vi-warn-bg-end)
+  );
+  border-left: 4px solid var(--vi-warn-border);
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--vi-warn-text);
+}
+
+.latest-update-badge p {
+  margin: 0;
+}
+
+.latest-update-badge .badge-title {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.latest-update-badge a {
+  color: var(--vi-warn-link);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.latest-update-badge .badge-meta {
+  color: var(--vi-warn-meta);
+  font-size: 0.85rem;
+  margin-left: 0.25rem;
+}
+
+/* ──────────────────────────────────────────────
+   푸터 링크 (extend_footer partial)
+   ────────────────────────────────────────────── */
+.footer-links {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  color: var(--secondary);
+}
+
+.footer-links a {
+  color: var(--secondary);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--vi-primary);
+}
+
+/* ──────────────────────────────────────────────
+   TOC (목차)
+   ────────────────────────────────────────────── */
 .toc {
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -140,20 +383,25 @@
   background: var(--code-bg);
 }
 
-/* 태그 스타일 */
+/* ──────────────────────────────────────────────
+   태그
+   ────────────────────────────────────────────── */
 .post-tags a {
   border-radius: 20px;
   padding: 4px 14px;
   font-size: 0.85rem;
+  background: rgba(37, 99, 235, 0.08);
   transition: all 0.2s;
 }
 
 .post-tags a:hover {
-  background: #2563EB;
+  background: var(--vi-primary);
   color: white;
 }
 
-/* 반응형 - 모바일 */
+/* ──────────────────────────────────────────────
+   반응형 (모바일)
+   ────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .profile .profile_inner h1 {
     font-size: 2rem;
@@ -162,17 +410,27 @@
   .post-entry .entry-header h2 {
     font-size: 1.1rem;
   }
+
+  .post-content h2 {
+    font-size: 1.35rem;
+  }
+
+  .related-posts {
+    padding: 1.2rem 1rem 0.8rem 1rem;
+  }
+
+  .latest-update-badge {
+    font-size: 0.88rem;
+  }
 }
 
-/* 다크모드 보정 */
+/* ──────────────────────────────────────────────
+   다크모드 세부 보정
+   ────────────────────────────────────────────── */
 .dark .post-entry:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-.dark .post-content table th {
-  background: #1D4ED8;
-}
-
-.dark .post-content blockquote {
-  background: rgba(37, 99, 235, 0.1);
+.dark .post-tags a {
+  background: rgba(37, 99, 235, 0.18);
 }

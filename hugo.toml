@@ -23,7 +23,7 @@ googleAnalytics = "G-3B1TS6JL55"
   [params.profileMode]
     enabled = true
     title = "ViewIt"
-    subtitle = "수백 개의 실구매 리뷰를 AI로 분석합니다\n제품의 진짜 장단점, 데이터로 확인하세요"
+    subtitle = "광고 문구 말고, 실제 사용자 목소리 먼저 보세요.\n수백 개 실구매 리뷰를 AI가 분석해 진짜 장단점만 정리합니다."
     imageUrl = "/images/logo.svg"
     imageWidth = 140
     imageHeight = 140
