@@ -20,3 +20,66 @@
   crossorigin
   href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
 />
+
+<!-- Article 구조화 데이터 (Google Rich Result) -->
+{{- if and .IsPage (eq .Section "posts") -}}
+{{- $cover := "" -}}
+{{- with .Params.cover.image -}}
+  {{- $cover = . | absURL -}}
+{{- else -}}
+  {{- $cover = "/cover.png" | absURL -}}
+{{- end -}}
+{{- $desc := .Description | default .Summary | default site.Params.description -}}
+{{- $published := .Date.Format "2006-01-02T15:04:05Z07:00" -}}
+{{- $modified := .Lastmod.Format "2006-01-02T15:04:05Z07:00" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ $desc | jsonify }},
+  "image": [{{ $cover | jsonify }}],
+  "datePublished": {{ $published | jsonify }},
+  "dateModified": {{ $modified | jsonify }},
+  "author": {
+    "@type": "Organization",
+    "name": "ViewIt",
+    "url": {{ site.BaseURL | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ViewIt",
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ "/images/logo.svg" | absURL | jsonify }}
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  }{{- with .Params.tags }},
+  "keywords": {{ delimit . ", " | jsonify }}{{- end }}
+}
+</script>
+{{- end -}}
+
+{{/* 홈페이지 — WebSite + SearchAction */}}
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ViewIt",
+  "url": {{ site.BaseURL | jsonify }},
+  "description": {{ site.Params.description | jsonify }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ "/search/?query={search_term_string}" | absURL }}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{{- end -}}
