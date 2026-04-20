@@ -6,6 +6,9 @@ defaultContentLanguage = "ko"
 paginate = 10
 googleAnalytics = "G-3B1TS6JL55"
 
+# 미래 날짜 글도 빌드 포함 (주간 발행 큐 선공개용)
+buildFuture = true
+
 [params]
   env = "production"
   description = "AI가 분석한 실구매자 리뷰, 한눈에 보는 제품 비교"
