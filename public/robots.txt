@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# 빌드 산출물 및 검색/페이지네이션은 인덱싱 가치 낮음
+Disallow: /search/
+
+Sitemap: https://viewit.co.kr/sitemap.xml
