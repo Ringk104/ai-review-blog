@@ -62,6 +62,26 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/posts/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%ED%95%84%ED%84%B0-%EC%A2%85%EB%A5%98-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C-hepa-h13-vs-h11-%EC%B0%A8%EC%9D%B4%EC%A0%90-2026/</loc>
+    <lastmod>2026-04-20T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%99%84%EB%B2%BD/</loc>
+    <lastmod>2026-04-20T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%A2%85%EB%A5%98/</loc>
+    <lastmod>2026-04-20T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%ED%95%84%ED%84%B0/</loc>
+    <lastmod>2026-04-20T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EA%B8%B0%EC%88%A0/</loc>
     <lastmod>2026-04-17T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -93,11 +113,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%88%98%EC%B9%98/</loc>
-    <lastmod>2026-04-17T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%99%84%EB%B2%BD/</loc>
     <lastmod>2026-04-17T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
