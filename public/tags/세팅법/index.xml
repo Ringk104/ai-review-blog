@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>초보자 on ViewIt - AI 리뷰 분석</title>
-    <link>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</link>
-    <description>Recent content in 초보자 on ViewIt - AI 리뷰 분석</description>
+    <title>세팅법 on ViewIt - AI 리뷰 분석</title>
+    <link>https://viewit.co.kr/tags/%EC%84%B8%ED%8C%85%EB%B2%95/</link>
+    <description>Recent content in 세팅법 on ViewIt - AI 리뷰 분석</description>
     <image>
       <title>ViewIt - AI 리뷰 분석</title>
       <url>https://viewit.co.kr/cover.png</url>
@@ -12,20 +12,13 @@
     <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Sat, 02 May 2026 18:12:13 +0900</lastBuildDate>
-    <atom:link href="https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://viewit.co.kr/tags/%EC%84%B8%ED%8C%85%EB%B2%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>로봇청소기 첫 설치 가이드 | 초보자 5분 세팅법 (2026)</title>
       <link>https://viewit.co.kr/posts/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B2%AB-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90-5%EB%B6%84-%EC%84%B8%ED%8C%85%EB%B2%95-2026/</link>
       <pubDate>Sat, 02 May 2026 18:12:13 +0900</pubDate>
       <guid>https://viewit.co.kr/posts/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%B2%AB-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%B4%88%EB%B3%B4%EC%9E%90-5%EB%B6%84-%EC%84%B8%ED%8C%85%EB%B2%95-2026/</guid>
       <description>로봇청소기 처음 설치하시나요? 실구매자 리뷰 분석으로 검증된 5분 완성 세팅법을 알려드려요. 초보자도 쉽게 따라할 수 있어요.</description>
-    </item>
-    <item>
-      <title>2026 로봇청소기 구매가이드 완벽 정리 | 초보자 필수 체크 5가지</title>
-      <link>https://viewit.co.kr/posts/2026-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%B4%88%EB%B3%B4%EC%9E%90-%ED%95%84%EC%88%98-%EC%B2%B4%ED%81%AC-5%EA%B0%80%EC%A7%80/</link>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/posts/2026-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EC%B4%88%EB%B3%B4%EC%9E%90-%ED%95%84%EC%88%98-%EC%B2%B4%ED%81%AC-5%EA%B0%80%EC%A7%80/</guid>
-      <description>로봇청소기 첫 구매 고민되시나요? 2026년 최신 구매가이드로 흡입력, 배터리, 가격대별 추천까지 한번에 해결하세요. 초보자도 5분이면 이해!</description>
     </item>
   </channel>
 </rss>
