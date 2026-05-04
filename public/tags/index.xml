@@ -11,13 +11,48 @@
     </image>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 04 May 2026 17:53:27 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 17:53:35 +0900</lastBuildDate>
     <atom:link href="https://viewit.co.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>가이드</title>
       <link>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
-      <pubDate>Mon, 04 May 2026 17:53:27 +0900</pubDate>
+      <pubDate>Mon, 04 May 2026 17:53:35 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>로봇청소기</title>
+      <link>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</link>
+      <pubDate>Mon, 04 May 2026 17:53:35 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>사용팁</title>
+      <link>https://viewit.co.kr/tags/%EC%82%AC%EC%9A%A9%ED%8C%81/</link>
+      <pubDate>Mon, 04 May 2026 17:53:35 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%82%AC%EC%9A%A9%ED%8C%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>설치</title>
+      <link>https://viewit.co.kr/tags/%EC%84%A4%EC%B9%98/</link>
+      <pubDate>Mon, 04 May 2026 17:53:35 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%84%A4%EC%B9%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>세팅법</title>
+      <link>https://viewit.co.kr/tags/%EC%84%B8%ED%8C%85%EB%B2%95/</link>
+      <pubDate>Mon, 04 May 2026 17:53:35 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%84%B8%ED%8C%85%EB%B2%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>초보자</title>
+      <link>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</link>
+      <pubDate>Mon, 04 May 2026 17:53:35 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</guid>
       <description></description>
     </item>
     <item>
@@ -32,13 +67,6 @@
       <link>https://viewit.co.kr/tags/%EA%B8%B0%EC%A4%80/</link>
       <pubDate>Mon, 04 May 2026 17:53:27 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EA%B8%B0%EC%A4%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>로봇청소기</title>
-      <link>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</link>
-      <pubDate>Mon, 04 May 2026 17:53:27 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</guid>
       <description></description>
     </item>
     <item>
@@ -319,34 +347,6 @@
       <link>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</link>
       <pubDate>Mon, 04 May 2026 17:51:30 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>초보자</title>
-      <link>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</link>
-      <pubDate>Mon, 04 May 2026 17:51:30 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%B4%88%EB%B3%B4%EC%9E%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>사용팁</title>
-      <link>https://viewit.co.kr/tags/%EC%82%AC%EC%9A%A9%ED%8C%81/</link>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%82%AC%EC%9A%A9%ED%8C%81/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>설치</title>
-      <link>https://viewit.co.kr/tags/%EC%84%A4%EC%B9%98/</link>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%84%A4%EC%B9%98/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>세팅법</title>
-      <link>https://viewit.co.kr/tags/%EC%84%B8%ED%8C%85%EB%B2%95/</link>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%84%B8%ED%8C%85%EB%B2%95/</guid>
       <description></description>
     </item>
     <item>
