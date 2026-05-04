@@ -11,13 +11,48 @@
     </image>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 04 May 2026 17:52:56 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 17:53:02 +0900</lastBuildDate>
     <atom:link href="https://viewit.co.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>구매가이드</title>
+      <link>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
+      <pubDate>Mon, 04 May 2026 17:53:02 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
+      <description></description>
+    </item>
     <item>
       <title>로봇청소기</title>
       <link>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</link>
-      <pubDate>Mon, 04 May 2026 17:52:56 +0900</pubDate>
+      <pubDate>Mon, 04 May 2026 17:53:02 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>먼지비움</title>
+      <link>https://viewit.co.kr/tags/%EB%A8%BC%EC%A7%80%EB%B9%84%EC%9B%80/</link>
+      <pubDate>Mon, 04 May 2026 17:53:02 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%A8%BC%EC%A7%80%EB%B9%84%EC%9B%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>자동</title>
+      <link>https://viewit.co.kr/tags/%EC%9E%90%EB%8F%99/</link>
+      <pubDate>Mon, 04 May 2026 17:53:02 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%9E%90%EB%8F%99/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>클린베이스</title>
+      <link>https://viewit.co.kr/tags/%ED%81%B4%EB%A6%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/</link>
+      <pubDate>Mon, 04 May 2026 17:53:02 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%ED%81%B4%EB%A6%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>필요할까</title>
+      <link>https://viewit.co.kr/tags/%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C/</link>
+      <pubDate>Mon, 04 May 2026 17:53:02 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C/</guid>
       <description></description>
     </item>
     <item>
@@ -60,13 +95,6 @@
       <link>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
       <pubDate>Mon, 04 May 2026 17:52:49 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>구매가이드</title>
-      <link>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
-      <pubDate>Mon, 04 May 2026 17:52:49 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
       <description></description>
     </item>
     <item>
@@ -308,13 +336,6 @@
       <description></description>
     </item>
     <item>
-      <title>먼지비움</title>
-      <link>https://viewit.co.kr/tags/%EB%A8%BC%EC%A7%80%EB%B9%84%EC%9B%80/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%A8%BC%EC%A7%80%EB%B9%84%EC%9B%80/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>인식</title>
       <link>https://viewit.co.kr/tags/%EC%9D%B8%EC%8B%9D/</link>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
@@ -322,31 +343,10 @@
       <description></description>
     </item>
     <item>
-      <title>자동</title>
-      <link>https://viewit.co.kr/tags/%EC%9E%90%EB%8F%99/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%9E%90%EB%8F%99/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>장애물</title>
       <link>https://viewit.co.kr/tags/%EC%9E%A5%EC%95%A0%EB%AC%BC/</link>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%9E%A5%EC%95%A0%EB%AC%BC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>클린베이스</title>
-      <link>https://viewit.co.kr/tags/%ED%81%B4%EB%A6%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%ED%81%B4%EB%A6%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>필요할까</title>
-      <link>https://viewit.co.kr/tags/%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%ED%95%84%EC%9A%94%ED%95%A0%EA%B9%8C/</guid>
       <description></description>
     </item>
     <item>
