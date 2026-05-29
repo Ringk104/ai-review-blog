@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://viewit.co.kr/posts/2026-%EC%8B%A0%EC%83%81-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EC%B5%9C%EC%8B%A0-%EC%B6%9C%EC%8B%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90-2026/</loc>
+    <lastmod>2026-05-29T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/categories/</loc>
     <lastmod>2026-05-29T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,6 +57,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EB%AA%A8%EB%8D%B8/</loc>
+    <lastmod>2026-05-29T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EB%B0%98%EB%A0%A4%EB%8F%99%EB%AC%BC/</loc>
     <lastmod>2026-05-29T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,6 +83,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%86%94%EC%A7%81/</loc>
+    <lastmod>2026-05-29T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%8B%A0%EC%83%81/</loc>
     <lastmod>2026-05-29T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -102,7 +117,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%B5%9C%EC%8B%A0/</loc>
+    <lastmod>2026-05-29T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</loc>
+    <lastmod>2026-05-29T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%B6%9C%EC%8B%9C/</loc>
     <lastmod>2026-05-29T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
