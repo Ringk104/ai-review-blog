@@ -42,6 +42,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EB%8C%80%EC%9D%91/</loc>
+    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/categories/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</loc>
     <lastmod>2026-06-28T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,12 +57,22 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EB%A8%B8%EB%A6%AC%EC%B9%B4%EB%9D%BD/</loc>
+    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EB%AC%BC%EA%B1%B8%EB%A0%88/</loc>
     <lastmod>2026-06-28T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EB%AC%BC%EC%9E%90%EB%8F%99%EA%B3%B5%EA%B8%89/</loc>
+    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EB%B0%A9%EC%A7%80/</loc>
     <lastmod>2026-06-28T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -83,6 +98,16 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/posts/%EC%8A%A4%ED%8C%80-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EA%B3%A0%EC%98%A8-%EB%AC%BC%EA%B1%B8%EB%A0%88-%EB%B9%84%EA%B5%90-2026/</loc>
+    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%97%89%ED%82%B4/</loc>
+    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/posts/%EC%97%89%ED%82%B4-%EB%B0%A9%EC%A7%80-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EA%B8%B4-%EB%A8%B8%EB%A6%AC%EC%B9%B4%EB%9D%BD-%EB%8C%80%EC%9D%91-%EB%AA%A8%EB%8D%B8-2026/</loc>
     <lastmod>2026-06-28T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
