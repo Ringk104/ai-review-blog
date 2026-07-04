@@ -62,6 +62,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EA%B3%A0%EC%98%A8/</loc>
+    <lastmod>2026-07-05T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EA%B4%91%EC%97%AD/</loc>
     <lastmod>2026-07-05T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -168,6 +173,16 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%86%94%EC%A7%81/</loc>
+    <lastmod>2026-07-05T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%8A%A4%ED%8C%80/</loc>
+    <lastmod>2026-07-05T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/posts/%EC%8A%A4%ED%8C%80-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EA%B3%A0%EC%98%A8-%EB%AC%BC%EA%B1%B8%EB%A0%88-%EB%B9%84%EA%B5%90-2026/</loc>
     <lastmod>2026-07-05T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -352,11 +367,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://viewit.co.kr/tags/%EA%B3%A0%EC%98%A8/</loc>
-    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://viewit.co.kr/tags/%EB%84%98%EB%8A%94/</loc>
     <lastmod>2026-06-28T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -403,16 +413,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%84%A4%EC%B9%98%ED%98%95/</loc>
-    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%8A%A4%ED%8C%80/</loc>
-    <lastmod>2026-06-28T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/posts/%EC%8A%A4%ED%8C%80-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EA%B3%A0%EC%98%A8-%EB%AC%BC%EA%B1%B8%EB%A0%88-%EB%B9%84%EA%B5%90-2026/</loc>
     <lastmod>2026-06-28T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
