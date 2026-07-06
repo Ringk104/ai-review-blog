@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://viewit.co.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>가이드</title>
+      <link>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>드리미</title>
+      <link>https://viewit.co.kr/tags/%EB%93%9C%EB%A6%AC%EB%AF%B8/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%93%9C%EB%A6%AC%EB%AF%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>라인업</title>
+      <link>https://viewit.co.kr/tags/%EB%9D%BC%EC%9D%B8%EC%97%85/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%9D%BC%EC%9D%B8%EC%97%85/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>비교</title>
+      <link>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>비교분석</title>
+      <link>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>완벽</title>
+      <link>https://viewit.co.kr/tags/%EC%99%84%EB%B2%BD/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%99%84%EB%B2%BD/</guid>
+      <description></description>
+    </item>
     <item>
       <title>가격대</title>
       <link>https://viewit.co.kr/tags/%EA%B0%80%EA%B2%A9%EB%8C%80/</link>
@@ -32,13 +74,6 @@
       <link>https://viewit.co.kr/tags/%EA%B0%80%EC%84%B1%EB%B9%84/</link>
       <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%84%B1%EB%B9%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>가이드</title>
-      <link>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
       <description></description>
     </item>
     <item>
@@ -130,13 +165,6 @@
       <link>https://viewit.co.kr/tags/%EB%93%B1%ED%8C%90%EB%A0%A5/</link>
       <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EB%93%B1%ED%8C%90%EB%A0%A5/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>라인업</title>
-      <link>https://viewit.co.kr/tags/%EB%9D%BC%EC%9D%B8%EC%97%85/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%9D%BC%EC%9D%B8%EC%97%85/</guid>
       <description></description>
     </item>
     <item>
@@ -252,20 +280,6 @@
       <description></description>
     </item>
     <item>
-      <title>비교</title>
-      <link>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>비교분석</title>
-      <link>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>설치형</title>
       <link>https://viewit.co.kr/tags/%EC%84%A4%EC%B9%98%ED%98%95/</link>
       <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
@@ -319,13 +333,6 @@
       <link>https://viewit.co.kr/tags/%EC%97%89%ED%82%B4/</link>
       <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%97%89%ED%82%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>완벽</title>
-      <link>https://viewit.co.kr/tags/%EC%99%84%EB%B2%BD/</link>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%99%84%EB%B2%BD/</guid>
       <description></description>
     </item>
     <item>
