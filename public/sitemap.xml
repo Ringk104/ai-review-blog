@@ -217,6 +217,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/posts/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%ED%9D%A1%EC%9E%85%EB%A0%A5-pa-%EC%88%98%EC%B9%98-%EC%99%84%EB%B2%BD-%EB%B6%84%EC%84%9D-2000pa-vs-5000pa-%EC%B0%A8%EC%9D%B4%EC%A0%90/</loc>
+    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EB%A6%AC%ED%94%84%ED%8C%85/</loc>
     <lastmod>2026-07-07T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -378,6 +383,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</loc>
+    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%88%98%EC%B9%98/</loc>
     <lastmod>2026-07-07T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -632,6 +642,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%ED%9D%A1%EC%9E%85%EB%A0%A5/</loc>
+    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EA%B8%B0%EC%88%A0/</loc>
     <lastmod>2026-07-05T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -849,21 +864,6 @@
   </url><url>
     <loc>https://viewit.co.kr/tags/%ED%8F%89%EC%88%98%EB%B3%84/</loc>
     <lastmod>2026-04-20T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/posts/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%ED%9D%A1%EC%9E%85%EB%A0%A5-pa-%EC%88%98%EC%B9%98-%EC%99%84%EB%B2%BD-%EB%B6%84%EC%84%9D-2000pa-vs-5000pa-%EC%B0%A8%EC%9D%B4%EC%A0%90/</loc>
-    <lastmod>2026-04-17T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%88%98%EC%B9%98/</loc>
-    <lastmod>2026-04-17T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%ED%9D%A1%EC%9E%85%EB%A0%A5/</loc>
-    <lastmod>2026-04-17T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
