@@ -71,12 +71,35 @@
 <meta name="naver-site-verification" content="4d81387aedd3839dbc8d285f6becca36e635a18f" />
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3B1TS6JL55"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3B1TS6JL55');
+  
+  
+  (function () {
+    try {
+      var qs = window.location.search;
+      if (qs.indexOf("noanalytics=1") !== -1) {
+        localStorage.setItem("viewit_no_ga", "1");
+      } else if (qs.indexOf("analytics=on") !== -1) {
+        localStorage.removeItem("viewit_no_ga");
+      }
+    } catch (e) {}
+  })();
+</script>
+<script>
+  (function () {
+    var skip = false;
+    try { skip = localStorage.getItem("viewit_no_ga") === "1"; } catch (e) {}
+    if (skip) { return; }
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=G-3B1TS6JL55";
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-3B1TS6JL55');
+  })();
 </script>
 
 
@@ -205,7 +228,7 @@
 
 <ul class="terms-tags">
     <li>
-        <a href="https://viewit.co.kr/categories/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/">로봇청소기 <sup><strong><sup>58</sup></strong></sup> </a>
+        <a href="https://viewit.co.kr/categories/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/">로봇청소기 <sup><strong><sup>59</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/categories/%EC%95%88%EB%82%B4/">안내 <sup><strong><sup>2</sup></strong></sup> </a>
