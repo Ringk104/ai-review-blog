@@ -34,6 +34,25 @@
     gtag('config', 'G-3B1TS6JL55');
   })();
 </script>
+<!-- 쿠팡 링크 클릭 추적 — 수익 선행지표 (affiliate_click 이벤트) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a") : null;
+      if (!a || !a.href) return;
+      if (a.href.indexOf("coupang.com") === -1) return;
+      if (typeof window.gtag !== "function") return;
+      // 어떤 글의 어떤 제품 링크인지 함께 기록
+      var label = (a.textContent || "").trim().slice(0, 80);
+      window.gtag("event", "affiliate_click", {
+        link_url: a.href,
+        link_text: label,
+        page_path: window.location.pathname,
+        page_title: document.title,
+      });
+    }, true);
+  });
+</script>
 
 <!-- Pretendard 웹폰트 (한글 가독성) -->
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
