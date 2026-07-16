@@ -101,6 +101,25 @@
   })();
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a") : null;
+      if (!a || !a.href) return;
+      if (a.href.indexOf("coupang.com") === -1) return;
+      if (typeof window.gtag !== "function") return;
+      
+      var label = (a.textContent || "").trim().slice(0, 80);
+      window.gtag("event", "affiliate_click", {
+        link_url: a.href,
+        link_text: label,
+        page_path: window.location.pathname,
+        page_title: document.title,
+      });
+    }, true);
+  });
+</script>
+
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link

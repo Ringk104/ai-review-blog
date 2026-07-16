@@ -102,6 +102,25 @@
   })();
 </script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.body.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a") : null;
+      if (!a || !a.href) return;
+      if (a.href.indexOf("coupang.com") === -1) return;
+      if (typeof window.gtag !== "function") return;
+      
+      var label = (a.textContent || "").trim().slice(0, 80);
+      window.gtag("event", "affiliate_click", {
+        link_url: a.href,
+        link_text: label,
+        page_path: window.location.pathname,
+        page_title: document.title,
+      });
+    }, true);
+  });
+</script>
+
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link
@@ -240,7 +259,7 @@
         <a href="https://viewit.co.kr/tags/%EA%B0%80%EC%84%B1%EB%B9%84/">가성비 <sup><strong><sup>2</sup></strong></sup> </a>
     </li>
     <li>
-        <a href="https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/">가이드 <sup><strong><sup>14</sup></strong></sup> </a>
+        <a href="https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/">가이드 <sup><strong><sup>15</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%EA%B0%80%EC%A0%95/">가정 <sup><strong><sup>1</sup></strong></sup> </a>
@@ -267,7 +286,7 @@
         <a href="https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4/">구매 <sup><strong><sup>1</sup></strong></sup> </a>
     </li>
     <li>
-        <a href="https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/">구매가이드 <sup><strong><sup>16</sup></strong></sup> </a>
+        <a href="https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/">구매가이드 <sup><strong><sup>17</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%EA%B7%A0%ED%98%95/">균형 <sup><strong><sup>1</sup></strong></sup> </a>
@@ -318,7 +337,7 @@
         <a href="https://viewit.co.kr/tags/%EB%A1%9C%EB%B3%B4%EB%9D%BD/">로보락 <sup><strong><sup>7</sup></strong></sup> </a>
     </li>
     <li>
-        <a href="https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/">로봇청소기 <sup><strong><sup>52</sup></strong></sup> </a>
+        <a href="https://viewit.co.kr/tags/%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/">로봇청소기 <sup><strong><sup>53</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%EB%A6%AC%EB%B7%B0/">리뷰 <sup><strong><sup>8</sup></strong></sup> </a>
@@ -507,13 +526,16 @@
         <a href="https://viewit.co.kr/tags/%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4/">에코백스 <sup><strong><sup>2</sup></strong></sup> </a>
     </li>
     <li>
-        <a href="https://viewit.co.kr/tags/%EC%97%B0%EA%B2%B0/">연결 <sup><strong><sup>1</sup></strong></sup> </a>
+        <a href="https://viewit.co.kr/tags/%EC%97%B0%EA%B2%B0/">연결 <sup><strong><sup>2</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%EC%97%B0%EB%8F%99/">연동 <sup><strong><sup>2</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%EC%98%81%EC%9C%A0%EC%95%84/">영유아 <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="https://viewit.co.kr/tags/%EC%98%A4%EB%A5%98/">오류 <sup><strong><sup>1</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%EC%98%B4%EB%8B%88/">옴니 <sup><strong><sup>1</sup></strong></sup> </a>
@@ -666,7 +688,7 @@
         <a href="https://viewit.co.kr/tags/%ED%95%84%ED%84%B0/">필터 <sup><strong><sup>1</sup></strong></sup> </a>
     </li>
     <li>
-        <a href="https://viewit.co.kr/tags/%ED%95%B4%EA%B2%B0/">해결 <sup><strong><sup>4</sup></strong></sup> </a>
+        <a href="https://viewit.co.kr/tags/%ED%95%B4%EA%B2%B0/">해결 <sup><strong><sup>5</sup></strong></sup> </a>
     </li>
     <li>
         <a href="https://viewit.co.kr/tags/%ED%95%B4%EA%B2%B0%EB%B2%95/">해결법 <sup><strong><sup>2</sup></strong></sup> </a>
