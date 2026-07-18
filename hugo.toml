@@ -21,6 +21,9 @@ enableRobotsTXT = true
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowToc = true
+  # 목차를 펼친 상태로 노출 — 스크롤 없이 원하는 섹션으로 점프 유도
+  # (세션당 페이지뷰·체류시간 개선 목적, 2026-07)
+  TocOpen = true
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
   images = ["cover.png"]
