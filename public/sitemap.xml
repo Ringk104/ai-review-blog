@@ -57,6 +57,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EA%B0%80%EA%B2%A9%EB%8C%80/</loc>
+    <lastmod>2026-07-18T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EA%B0%80%EB%8A%A5/</loc>
     <lastmod>2026-07-18T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -108,6 +113,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EA%B5%90%EC%B2%B4/</loc>
+    <lastmod>2026-07-18T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4/</loc>
     <lastmod>2026-07-18T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -617,6 +627,16 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%9E%85%EB%AC%B8/</loc>
+    <lastmod>2026-07-18T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/posts/%EC%9E%85%EB%AC%B8-%EA%B0%80%EA%B2%A9%EB%8C%80-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EC%B2%AB-%EA%B5%AC%EB%A7%A4-%EC%B6%94%EC%B2%9C-2026/</loc>
+    <lastmod>2026-07-18T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EC%9E%90%EB%8F%99/</loc>
     <lastmod>2026-07-18T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -927,16 +947,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://viewit.co.kr/tags/%EA%B0%80%EA%B2%A9%EB%8C%80/</loc>
-    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EA%B5%AC%EB%A7%A4/</loc>
-    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://viewit.co.kr/tags/%EB%93%9C%EB%A6%AC%EB%AF%B8/</loc>
     <lastmod>2026-07-07T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1083,16 +1093,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%98%B4%EB%8B%88/</loc>
-    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%9E%85%EB%AC%B8/</loc>
-    <lastmod>2026-07-07T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/posts/%EC%9E%85%EB%AC%B8-%EA%B0%80%EA%B2%A9%EB%8C%80-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EC%B2%AB-%EA%B5%AC%EB%A7%A4-%EC%B6%94%EC%B2%9C-2026/</loc>
     <lastmod>2026-07-07T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
