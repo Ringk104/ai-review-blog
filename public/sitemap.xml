@@ -387,6 +387,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/posts/%EC%82%BC%EC%84%B1-%EC%A0%9C%ED%8A%B8%EB%B4%87-ai-9700-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0---%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B4%9D%EC%A0%95%EB%A6%AC/</loc>
+    <lastmod>2026-07-19T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EC%83%A4%ED%81%AC/</loc>
     <lastmod>2026-07-19T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -588,6 +593,11 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%A0%9C%EA%B1%B0/</loc>
+    <lastmod>2026-07-19T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%A0%9C%ED%8A%B8%EB%B4%87/</loc>
     <lastmod>2026-07-19T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -972,11 +982,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://viewit.co.kr/posts/%EC%82%BC%EC%84%B1-%EC%A0%9C%ED%8A%B8%EB%B4%87-ai-9700-%EC%86%94%EC%A7%81-%ED%9B%84%EA%B8%B0---%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B4%9D%EC%A0%95%EB%A6%AC/</loc>
-    <lastmod>2026-07-18T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://viewit.co.kr/tags/%EC%83%A4%EC%98%A4%EB%AF%B8/</loc>
     <lastmod>2026-07-18T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1153,11 +1158,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%A0%95%EB%A6%AC/</loc>
-    <lastmod>2026-07-18T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%EC%A0%9C%ED%8A%B8%EB%B4%87/</loc>
     <lastmod>2026-07-18T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
