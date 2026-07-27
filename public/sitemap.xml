@@ -37,12 +37,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EB%A7%8E%EC%9D%80/</loc>
+    <lastmod>2026-07-27T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%EB%B9%84%EA%B5%90%EB%B6%84%EC%84%9D/</loc>
     <lastmod>2026-07-27T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%EC%84%B8%EC%A0%9C/</loc>
+    <lastmod>2026-07-27T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%95%84%EC%9D%B4/</loc>
+    <lastmod>2026-07-27T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/posts/%EC%95%84%EC%9D%B4-%EC%9E%A5%EB%82%9C%EA%B0%90-%EB%A7%8E%EC%9D%80-%EC%A7%91-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%ED%9A%8C%ED%94%BC-%EC%84%B1%EB%8A%A5-%EA%B2%80%EC%A6%9D-2026/</loc>
     <lastmod>2026-07-27T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -62,7 +77,17 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://viewit.co.kr/tags/%EC%9E%A5%EB%82%9C%EA%B0%90/</loc>
+    <lastmod>2026-07-27T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://viewit.co.kr/tags/%ED%88%AC%EC%9E%85/</loc>
+    <lastmod>2026-07-27T00:00:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://viewit.co.kr/tags/%ED%9A%8C%ED%94%BC/</loc>
     <lastmod>2026-07-27T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -983,11 +1008,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://viewit.co.kr/tags/%ED%9A%8C%EC%A0%84%EC%8B%9D/</loc>
-    <lastmod>2026-07-19T00:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://viewit.co.kr/tags/%ED%9A%8C%ED%94%BC/</loc>
     <lastmod>2026-07-19T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
