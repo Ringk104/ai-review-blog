@@ -74,6 +74,12 @@
 <script>
   
   
+  
+  
+  
+  
+  
+  
   (function () {
     try {
       var qs = window.location.search;
@@ -81,6 +87,20 @@
         localStorage.setItem("viewit_no_ga", "1");
       } else if (qs.indexOf("analytics=on") !== -1) {
         localStorage.removeItem("viewit_no_ga");
+      }
+
+      var CONSOLE_HOSTS = [
+        "searchadvisor.naver.com",
+        "search.google.com",          
+        "analytics.google.com",
+        "www.bing.com/webmasters",
+      ];
+      var ref = document.referrer || "";
+      for (var i = 0; i < CONSOLE_HOSTS.length; i++) {
+        if (ref.indexOf(CONSOLE_HOSTS[i]) !== -1) {
+          localStorage.setItem("viewit_no_ga", "1");
+          break;
+        }
       }
     } catch (e) {}
   })();
@@ -245,24 +265,6 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
-        <img loading="lazy" src="https://viewit.co.kr/images/diagram_cover_c89-L20Ultra.svg" alt="드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>드리미 L20 Ultra 로봇청소기 실사용 리뷰 물걸레 청소까지 완전 자동화를 원하는 사용자들이 주목하는 프리미엄 로봇청소기다. 특히 직배수 시스템으로 물통 관리 부담까지 줄일 수 있다는 점에서, 편의성을 최우선으로 고려하는 사용자들이 관심을 보인다. 실제 구매자 60건의 리뷰를 바탕으로 성능과 만족도를 분석했다.
-⚡ 바쁘시면 이것부터
-이 글이 다루는 드리미 L20 Ultra 로봇청소기 입니다. (약 1,190,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
-👉 드리미 L20 Ultra 로봇청소기 쿠팡 최저가 확인하기 ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2026-07-28 00:00:00 +0900 KST'>2026년 7월 28일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
-  <a class="entry-link" aria-label="post link to 드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석" href="https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-l20-ultra-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%86%94%EC%A7%81-%EB%A6%AC%EB%B7%B0---60%EA%B1%B4-%EC%8B%A4%EC%82%AC%EC%9A%A9-%EB%B6%84%EC%84%9D/"></a>
-</article>
-
-<article class="post-entry tag-entry"> 
-<figure class="entry-cover">
         <img loading="lazy" src="https://viewit.co.kr/images/diagram_cover_c122-X60Ultra.svg" alt="드리미 X60 Ultra 실사용 리뷰 - 60건 분석, 가성비 10점의 비밀">
 </figure>
   <header class="entry-header">
@@ -281,6 +283,24 @@
 
 <article class="post-entry tag-entry"> 
 <figure class="entry-cover">
+        <img loading="lazy" src="https://viewit.co.kr/images/diagram_cover_c89-L20Ultra.svg" alt="드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>드리미 L20 Ultra 로봇청소기 실사용 리뷰 물걸레 청소까지 완전 자동화를 원하는 사용자들이 주목하는 프리미엄 로봇청소기다. 특히 직배수 시스템으로 물통 관리 부담까지 줄일 수 있다는 점에서, 편의성을 최우선으로 고려하는 사용자들이 관심을 보인다. 실제 구매자 60건의 리뷰를 바탕으로 성능과 만족도를 분석했다.
+⚡ 바쁘시면 이것부터
+이 글이 다루는 드리미 L20 Ultra 로봇청소기 입니다. (약 1,190,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
+👉 드리미 L20 Ultra 로봇청소기 쿠팡 최저가 확인하기 ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-07-07 00:00:00 +0900 KST'>2026년 7월 7일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
+  <a class="entry-link" aria-label="post link to 드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석" href="https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-l20-ultra-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%86%94%EC%A7%81-%EB%A6%AC%EB%B7%B0---60%EA%B1%B4-%EC%8B%A4%EC%82%AC%EC%9A%A9-%EB%B6%84%EC%84%9D/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover">
         <img loading="lazy" src="https://viewit.co.kr/images/diagram_cover_c91-QRevoPro18500Pa.svg" alt="로보락 Q Revo Pro 실사용 리뷰 - 장단점 총정리">
 </figure>
   <header class="entry-header">
@@ -293,7 +313,7 @@
 이 글이 다루는 로보락 Q Revo Pro 입니다. (약 690,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-07-28 00:00:00 +0900 KST'>2026년 7월 28일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
+  <footer class="entry-footer"><span title='2026-07-07 00:00:00 +0900 KST'>2026년 7월 7일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
   <a class="entry-link" aria-label="post link to 로보락 Q Revo Pro 실사용 리뷰 - 장단점 총정리" href="https://viewit.co.kr/posts/%EB%A1%9C%EB%B3%B4%EB%9D%BD-q-revo-pro-%EC%8B%A4%EC%82%AC%EC%9A%A9-%EB%A6%AC%EB%B7%B0---%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B4%9D%EC%A0%95%EB%A6%AC/"></a>
 </article>
 
@@ -311,7 +331,7 @@
 이 글이 다루는 로보락 S10 MaxV Ultra 입니다. (약 1,571,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-07-28 00:00:00 +0900 KST'>2026년 7월 28일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
+  <footer class="entry-footer"><span title='2026-07-07 00:00:00 +0900 KST'>2026년 7월 7일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
   <a class="entry-link" aria-label="post link to 로보락 S10 MaxV Ultra 실사용 리뷰 - 장단점 총정리" href="https://viewit.co.kr/posts/%EB%A1%9C%EB%B3%B4%EB%9D%BD-s10-maxv-ultra-%EC%8B%A4%EC%82%AC%EC%9A%A9-%EB%A6%AC%EB%B7%B0---%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B4%9D%EC%A0%95%EB%A6%AC/"></a>
 </article>
 
@@ -329,7 +349,7 @@
 이 글이 다루는 로보락 S8 MaxV Ultra 로봇청소기 입니다. (약 1,290,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
 👉 로보락 S8 MaxV Ultra 로봇청소기 쿠팡 최저가 확인하기 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-07-28 00:00:00 +0900 KST'>2026년 7월 28일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
+  <footer class="entry-footer"><span title='2026-07-07 00:00:00 +0900 KST'>2026년 7월 7일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
   <a class="entry-link" aria-label="post link to 로보락 S8 MaxV Ultra 실사용 후기 - 60건 리뷰 분석 | 장단점 총정리" href="https://viewit.co.kr/posts/%EB%A1%9C%EB%B3%B4%EB%9D%BD-s8-maxv-ultra-%EC%8B%A4%EC%82%AC%EC%9A%A9-%ED%9B%84%EA%B8%B0---60%EA%B1%B4-%EB%A6%AC%EB%B7%B0-%EB%B6%84%EC%84%9D-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B4%9D%EC%A0%95%EB%A6%AC/"></a>
 </article>
 
@@ -347,7 +367,7 @@
 이 글이 다루는 샤오미 로봇청소기 X20 Plus 입니다. (약 420,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-07-28 00:00:00 +0900 KST'>2026년 7월 28일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
+  <footer class="entry-footer"><span title='2026-07-07 00:00:00 +0900 KST'>2026년 7월 7일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
   <a class="entry-link" aria-label="post link to 샤오미 X20 Plus 로봇청소기 실사용 리뷰 | 가성비 올인원 청소기 장단점 총정리" href="https://viewit.co.kr/posts/%EC%83%A4%EC%98%A4%EB%AF%B8-x20-plus-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%8B%A4%EC%82%AC%EC%9A%A9-%EB%A6%AC%EB%B7%B0-%EA%B0%80%EC%84%B1%EB%B9%84-%EC%98%AC%EC%9D%B8%EC%9B%90-%EC%B2%AD%EC%86%8C%EA%B8%B0-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EC%B4%9D%EC%A0%95%EB%A6%AC/"></a>
 </article>
     </main>

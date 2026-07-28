@@ -7,6 +7,12 @@
 <script>
   // ?noanalytics=1 로 한 번 접속하면 이 브라우저는 이후 GA 집계에서 제외.
   // 다시 켜려면 ?analytics=on 으로 접속.
+  //
+  // 웹마스터 콘솔 유입도 자동 제외 (2026-07-28):
+  //   서치어드바이저·GSC 콘솔에서 사이트를 클릭해 들어오면 위 장치를 우회해
+  //   방문자로 집계됐다. 90일 501세션 중 18세션(3.6%)이 이 경로였고
+  //   사용자는 1명 — 운영자 본인이었다. 전환율 측정을 왜곡하므로 차단한다.
+  //   이 콘솔들은 사이트 소유자만 쓰므로 일반 방문자가 걸릴 일은 없다.
   (function () {
     try {
       var qs = window.location.search;
@@ -14,6 +20,20 @@
         localStorage.setItem("viewit_no_ga", "1");
       } else if (qs.indexOf("analytics=on") !== -1) {
         localStorage.removeItem("viewit_no_ga");
+      }
+
+      var CONSOLE_HOSTS = [
+        "searchadvisor.naver.com",
+        "search.google.com",          // Search Console
+        "analytics.google.com",
+        "www.bing.com/webmasters",
+      ];
+      var ref = document.referrer || "";
+      for (var i = 0; i < CONSOLE_HOSTS.length; i++) {
+        if (ref.indexOf(CONSOLE_HOSTS[i]) !== -1) {
+          localStorage.setItem("viewit_no_ga", "1");
+          break;
+        }
       }
     } catch (e) {}
   })();

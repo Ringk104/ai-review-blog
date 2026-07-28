@@ -28,13 +28,6 @@
       <description></description>
     </item>
     <item>
-      <title>신제품소식</title>
-      <link>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</link>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>제품리뷰</title>
       <link>https://viewit.co.kr/categories/%EC%A0%9C%ED%92%88%EB%A6%AC%EB%B7%B0/</link>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
@@ -44,8 +37,15 @@
     <item>
       <title>추천비교</title>
       <link>https://viewit.co.kr/categories/%EC%B6%94%EC%B2%9C%EB%B9%84%EA%B5%90/</link>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/categories/%EC%B6%94%EC%B2%9C%EB%B9%84%EA%B5%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>신제품소식</title>
+      <link>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</guid>
       <description></description>
     </item>
     <item>

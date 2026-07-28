@@ -74,6 +74,12 @@
 <script>
   
   
+  
+  
+  
+  
+  
+  
   (function () {
     try {
       var qs = window.location.search;
@@ -81,6 +87,20 @@
         localStorage.setItem("viewit_no_ga", "1");
       } else if (qs.indexOf("analytics=on") !== -1) {
         localStorage.removeItem("viewit_no_ga");
+      }
+
+      var CONSOLE_HOSTS = [
+        "searchadvisor.naver.com",
+        "search.google.com",          
+        "analytics.google.com",
+        "www.bing.com/webmasters",
+      ];
+      var ref = document.referrer || "";
+      for (var i = 0; i < CONSOLE_HOSTS.length; i++) {
+        if (ref.indexOf(CONSOLE_HOSTS[i]) !== -1) {
+          localStorage.setItem("viewit_no_ga", "1");
+          break;
+        }
       }
     } catch (e) {}
   })();
@@ -257,7 +277,7 @@
 이 글이 다루는 드리미 L40s Pro Ultra 입니다. (약 749,000원) 선택 기준과 근거는 아래 본문에서 확인하실 수 있어요.
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-07-28 00:00:00 +0900 KST'>2026년 7월 28일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
+  <footer class="entry-footer"><span title='2026-07-07 00:00:00 +0900 KST'>2026년 7월 7일</span>&nbsp;·&nbsp;<span>ViewIt</span></footer>
   <a class="entry-link" aria-label="post link to 드리미 L40s Pro Ultra 리뷰 - 60건 분석으로 본 장단점" href="https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-l40s-pro-ultra-%EB%A6%AC%EB%B7%B0---60%EA%B1%B4-%EB%B6%84%EC%84%9D%EC%9C%BC%EB%A1%9C-%EB%B3%B8-%EC%9E%A5%EB%8B%A8%EC%A0%90/"></a>
 </article>
     </main>
