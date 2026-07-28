@@ -1,0 +1,32 @@
+{{- /*
+  링크 렌더 훅 — 제휴 링크 자동 표기 (2026-07-28)
+
+  배경:
+    본문 마크다운 링크 `[...](https://link.coupang.com/...)` 는 그대로 <a href>로만
+    렌더돼 rel 속성이 비어 있었다. 구글 검색 가이드라인은 제휴 링크에
+    rel="sponsored"(또는 nofollow) 표기를 요구하고, 미표기 시 링크 스팸으로
+    평가될 수 있다. 인라인 HTML 버튼(product_extractor)에는 이미 붙어 있었으나
+    마크다운 링크에는 누락된 상태였음.
+
+  동작:
+    - 외부 제휴 도메인(link.coupang.com / coupang.com / partners.coupang.com)
+      → rel="nofollow sponsored noopener" + target="_blank"
+    - 그 외 외부 링크 → rel="noopener" + target="_blank"
+    - 내부 링크 → 기본 렌더 (속성 추가 없음)
+
+  주의: 이 훅은 모든 마크다운 링크 렌더링을 가로챈다. 수정 시 내부 링크가
+        깨지지 않는지 확인할 것.
+*/ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $host := $u.Host | lower -}}
+{{- $isExternal := ne $host "" -}}
+{{- $isAffiliate := false -}}
+{{- range slice "link.coupang.com" "coupang.com" "www.coupang.com" "partners.coupang.com" -}}
+  {{- if eq $host . -}}{{- $isAffiliate = true -}}{{- end -}}
+{{- end -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end }}
+  {{- if $isAffiliate }} target="_blank" rel="nofollow sponsored noopener"
+  {{- else if $isExternal }} target="_blank" rel="noopener"
+  {{- end -}}
+>{{ .Text | safeHTML }}</a>
