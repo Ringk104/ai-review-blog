@@ -14,6 +14,13 @@
     <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://viewit.co.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>가이드</title>
+      <link>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>강아지털</title>
       <link>https://viewit.co.kr/tags/%EA%B0%95%EC%95%84%EC%A7%80%ED%84%B8/</link>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
@@ -98,6 +105,13 @@
       <description></description>
     </item>
     <item>
+      <title>배터리</title>
+      <link>https://viewit.co.kr/tags/%EB%B0%B0%ED%84%B0%EB%A6%AC/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EB%B0%B0%ED%84%B0%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>분석</title>
       <link>https://viewit.co.kr/tags/%EB%B6%84%EC%84%9D/</link>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
@@ -144,6 +158,13 @@
       <link>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</link>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%86%8C%EC%9D%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>수명</title>
+      <link>https://viewit.co.kr/tags/%EC%88%98%EB%AA%85/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%EC%88%98%EB%AA%85/</guid>
       <description></description>
     </item>
     <item>
@@ -256,6 +277,13 @@
       <link>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</link>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%B6%94%EC%B2%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>평수별</title>
+      <link>https://viewit.co.kr/tags/%ED%8F%89%EC%88%98%EB%B3%84/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0900</pubDate>
+      <guid>https://viewit.co.kr/tags/%ED%8F%89%EC%88%98%EB%B3%84/</guid>
       <description></description>
     </item>
     <item>
@@ -480,13 +508,6 @@
       <link>https://viewit.co.kr/tags/%EA%B0%80%EC%84%B1%EB%B9%84/</link>
       <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%84%B1%EB%B9%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>가이드</title>
-      <link>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</link>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EA%B0%80%EC%9D%B4%EB%93%9C/</guid>
       <description></description>
     </item>
     <item>
@@ -1232,13 +1253,6 @@
       <description></description>
     </item>
     <item>
-      <title>배터리</title>
-      <link>https://viewit.co.kr/tags/%EB%B0%B0%ED%84%B0%EB%A6%AC/</link>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EB%B0%B0%ED%84%B0%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>사용팁</title>
       <link>https://viewit.co.kr/tags/%EC%82%AC%EC%9A%A9%ED%8C%81/</link>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
@@ -1271,13 +1285,6 @@
       <link>https://viewit.co.kr/tags/%EC%86%8C%EB%AA%A8%ED%92%88/</link>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%86%8C%EB%AA%A8%ED%92%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>수명</title>
-      <link>https://viewit.co.kr/tags/%EC%88%98%EB%AA%85/</link>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%EC%88%98%EB%AA%85/</guid>
       <description></description>
     </item>
     <item>
@@ -1376,13 +1383,6 @@
       <link>https://viewit.co.kr/tags/%EC%B6%A9%EC%A0%84/</link>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/tags/%EC%B6%A9%EC%A0%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>평수별</title>
-      <link>https://viewit.co.kr/tags/%ED%8F%89%EC%88%98%EB%B3%84/</link>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/tags/%ED%8F%89%EC%88%98%EB%B3%84/</guid>
       <description></description>
     </item>
     <item>
