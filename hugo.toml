@@ -38,16 +38,16 @@ enableRobotsTXT = true
     imageHeight = 140
 
     [[params.profileMode.buttons]]
-      name = "최신 리뷰 분석"
-      url = "/posts/"
+      name = "추천·비교"
+      url = "/categories/추천비교/"
 
     [[params.profileMode.buttons]]
       name = "구매 가이드"
-      url = "/tags/구매가이드/"
+      url = "/categories/구매가이드/"
 
     [[params.profileMode.buttons]]
-      name = "로봇청소기"
-      url = "/categories/로봇청소기/"
+      name = "문제해결"
+      url = "/categories/문제해결/"
 
   # 소셜 아이콘 (현재 비활성)
   # RSS는 사용자가 클릭하면 XML이 노출되어 혼란스러우므로 제거
@@ -122,52 +122,41 @@ enableRobotsTXT = true
     url = "/posts/"
     weight = 2
 
+  # 5개 유형별 카테고리 (2026-07 재편) — 독자가 목적별로 찾도록
   [[menu.main]]
-    identifier = "robot-vacuum"
-    name = "로봇청소기"
-    url = "/categories/로봇청소기/"
+    identifier = "roundup"
+    name = "추천·비교"
+    url = "/categories/추천비교/"
     weight = 3
-
-  [[menu.main]]
-    identifier = "review"
-    name = "제품리뷰"
-    url = "/tags/제품리뷰/"
-    weight = 4
 
   [[menu.main]]
     identifier = "guide"
     name = "구매가이드"
-    url = "/tags/구매가이드/"
-    weight = 5
-
-  [[menu.main]]
-    identifier = "comparison"
-    name = "비교분석"
-    url = "/tags/비교분석/"
-    weight = 6
-
-  [[menu.main]]
-    identifier = "roundup"
-    name = "추천TOP"
-    url = "/tags/라운드업/"
-    weight = 7
+    url = "/categories/구매가이드/"
+    weight = 4
 
   [[menu.main]]
     identifier = "troubleshoot"
     name = "문제해결"
-    url = "/tags/문제해결/"
-    weight = 8
+    url = "/categories/문제해결/"
+    weight = 5
 
   [[menu.main]]
-    identifier = "about"
-    name = "소개"
-    url = "/posts/about/"
-    weight = 9
+    identifier = "review"
+    name = "제품리뷰"
+    url = "/categories/제품리뷰/"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "new"
+    name = "신제품"
+    url = "/categories/신제품소식/"
+    weight = 7
 
   [[menu.main]]
     identifier = "search"
     name = "검색"
     url = "/search/"
-    weight = 10
+    weight = 8
 
 
