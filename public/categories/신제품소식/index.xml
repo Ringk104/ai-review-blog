@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>신상 on ViewIt - AI 리뷰 분석</title>
-    <link>https://viewit.co.kr/tags/%EC%8B%A0%EC%83%81/</link>
-    <description>Recent content in 신상 on ViewIt - AI 리뷰 분석</description>
+    <title>신제품소식 on ViewIt - AI 리뷰 분석</title>
+    <link>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</link>
+    <description>Recent content in 신제품소식 on ViewIt - AI 리뷰 분석</description>
     <image>
       <title>ViewIt - AI 리뷰 분석</title>
       <url>https://viewit.co.kr/cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://viewit.co.kr/tags/%EC%8B%A0%EC%83%81/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2026 신상 로봇청소기 TOP 5 | 최신 출시 모델 비교 (2026)</title>
       <link>https://viewit.co.kr/posts/2026-%EC%8B%A0%EC%83%81-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EC%B5%9C%EC%8B%A0-%EC%B6%9C%EC%8B%9C-%EB%AA%A8%EB%8D%B8-%EB%B9%84%EA%B5%90-2026/</link>
