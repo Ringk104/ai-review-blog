@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>완전 on ViewIt - AI 리뷰 분석</title>
-    <link>https://viewit.co.kr/tags/%EC%99%84%EC%A0%84/</link>
-    <description>Recent content in 완전 on ViewIt - AI 리뷰 분석</description>
+    <title>양대산맥 on ViewIt - AI 리뷰 분석</title>
+    <link>https://viewit.co.kr/tags/%EC%96%91%EB%8C%80%EC%82%B0%EB%A7%A5/</link>
+    <description>Recent content in 양대산맥 on ViewIt - AI 리뷰 분석</description>
     <image>
       <title>ViewIt - AI 리뷰 분석</title>
       <url>https://viewit.co.kr/cover.png</url>
@@ -12,20 +12,13 @@
     <generator>Hugo</generator>
     <language>ko</language>
     <lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0900</lastBuildDate>
-    <atom:link href="https://viewit.co.kr/tags/%EC%99%84%EC%A0%84/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://viewit.co.kr/tags/%EC%96%91%EB%8C%80%EC%82%B0%EB%A7%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>로보락 vs 드리미 완전 비교 | 2026 양대산맥 정면 대결</title>
       <link>https://viewit.co.kr/posts/%EB%A1%9C%EB%B3%B4%EB%9D%BD-vs-%EB%93%9C%EB%A6%AC%EB%AF%B8-%EC%99%84%EC%A0%84-%EB%B9%84%EA%B5%90-2026-%EC%96%91%EB%8C%80%EC%82%B0%EB%A7%A5-%EC%A0%95%EB%A9%B4-%EB%8C%80%EA%B2%B0/</link>
       <pubDate>Wed, 29 Jul 2026 00:00:00 +0900</pubDate>
       <guid>https://viewit.co.kr/posts/%EB%A1%9C%EB%B3%B4%EB%9D%BD-vs-%EB%93%9C%EB%A6%AC%EB%AF%B8-%EC%99%84%EC%A0%84-%EB%B9%84%EA%B5%90-2026-%EC%96%91%EB%8C%80%EC%82%B0%EB%A7%A5-%EC%A0%95%EB%A9%B4-%EB%8C%80%EA%B2%B0/</guid>
       <description>로보락과 드리미, 어떤 브랜드를 선택해야 할까요? 실구매자 리뷰 125건을 AI 분석해 가격, 성능, A/S까지 객관적으로 비교했습니다.</description>
-    </item>
-    <item>
-      <title>자동 세제 투입 로봇청소기 TOP 5 | 완전 자동화 모델 (2026)</title>
-      <link>https://viewit.co.kr/posts/%EC%9E%90%EB%8F%99-%EC%84%B8%EC%A0%9C-%ED%88%AC%EC%9E%85-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EC%99%84%EC%A0%84-%EC%9E%90%EB%8F%99%ED%99%94-%EB%AA%A8%EB%8D%B8-2026/</link>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0900</pubDate>
-      <guid>https://viewit.co.kr/posts/%EC%9E%90%EB%8F%99-%EC%84%B8%EC%A0%9C-%ED%88%AC%EC%9E%85-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0-top-5-%EC%99%84%EC%A0%84-%EC%9E%90%EB%8F%99%ED%99%94-%EB%AA%A8%EB%8D%B8-2026/</guid>
-      <description>물걸레까지 자동으로! 세제 투입 기능 탑재 로봇청소기 5종 비교 분석. 실구매자 리뷰 기반 객관적 추천으로 스마트한 선택하세요.</description>
     </item>
   </channel>
 </rss>
