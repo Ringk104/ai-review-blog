@@ -1,0 +1,26 @@
+{{- /*
+  사이트맵 — 태그 페이지 제외 (2026-08-03)
+
+  배경:
+    기본 사이트맵 322개 중 태그가 216개(67%)였고 실제 글은 96개뿐이었다.
+    태그는 대부분 제목에서 기계적으로 잘려 나온 것("완벽", "방법", "필요할까")
+    이라 글 한두 편만 걸린 껍데기다. 구글 크롤링 예산이 여기로 새면서
+    새 글이 '발견됨 - 색인 안 됨' 상태로 몇 주씩 대기했다.
+
+  카테고리(7개)는 메뉴에 노출되는 실제 탐색 경로이므로 남긴다.
+  태그 페이지 자체는 내부 링크용으로 유지하되 noindex 를 준다
+  (layouts/partials/extend_head.html 참고).
+*/ -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{{- range .Pages }}
+{{- if not (hasPrefix .RelPermalink "/tags/") }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+    {{- end }}
+  </url>
+{{- end }}
+{{- end }}
+</urlset>

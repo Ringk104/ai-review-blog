@@ -1,3 +1,13 @@
+{{/* 태그 페이지는 색인 대상에서 제외 (2026-08-03)
+
+     태그 216개가 사이트맵의 67%를 차지하며 크롤링 예산을 잠식했다.
+     follow 는 남겨 내부 링크는 계속 타고 가게 한다.
+     robots.txt 로 막으면 이 태그 자체를 못 읽으므로 Disallow 는 주지 않는다.
+     카테고리는 메뉴에 있는 실제 탐색 경로라 그대로 색인시킨다. */}}
+{{- if hasPrefix .RelPermalink "/tags/" }}
+<meta name="robots" content="noindex, follow" />
+{{- end }}
+
 <!-- Google Search Console -->
 <meta name="google-site-verification" content="0qxPr_YnUG0PPzcc7LBdv-2mUkWGR6TlrqhSsR4YycE" />
 <!-- Naver Search Advisor -->
