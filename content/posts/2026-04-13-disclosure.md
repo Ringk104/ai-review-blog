@@ -5,7 +5,7 @@ date: 2026-04-13T00:00:01+09:00
 draft: false
 slug: "disclosure"
 categories: ["안내"]
-tags: ["제휴공시", "쿠팡파트너스"]
+tags: []
 hidemeta: true
 ---
 
