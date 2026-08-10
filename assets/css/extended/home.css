@@ -1,0 +1,257 @@
+/* 홈 콘텐츠 허브 (2026-08-10)
+ *
+ * PaperMod 기본 색·폰트를 그대로 쓴다. 테마 변수(--theme, --entry,
+ * --primary, --secondary, --tertiary, --border)만 참조하므로 라이트·다크가
+ * 자동으로 따라온다. 새 색을 도입하지 않는다 — 톤 유지가 요청사항이었다.
+ */
+
+.vi-hero {
+  padding: 56px 0 40px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.vi-hero__title {
+  font-size: 2.1rem;
+  line-height: 1.35;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.vi-hero__title strong {
+  /* 링크색을 강조에 재사용 — 팔레트를 늘리지 않는다 */
+  color: var(--primary);
+  border-bottom: 3px solid var(--tertiary);
+  padding-bottom: 1px;
+}
+
+.vi-hero__lead {
+  font-size: 1.05rem;
+  color: var(--secondary);
+  margin: 0 0 18px;
+  line-height: 1.7;
+}
+
+.vi-hero__meta {
+  display: flex;
+  gap: 18px;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 26px;
+}
+
+.vi-hero__meta b {
+  color: var(--primary);
+  font-size: 1.05rem;
+}
+
+.vi-hero__cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.vi-btn {
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vi-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vi-btn--primary {
+  background: var(--primary);
+  color: var(--theme);
+  border-color: var(--primary);
+}
+
+/* ── 섹션 ─────────────────────────────── */
+
+.vi-section {
+  margin-bottom: 46px;
+}
+
+.vi-section__title {
+  font-size: 1.25rem;
+  margin: 0 0 6px;
+}
+
+.vi-section__sub {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 0 0 18px;
+}
+
+/* ── 카드 그리드 ──────────────────────── */
+
+.vi-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.vi-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  border-radius: 10px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.vi-card__cat {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--secondary);
+  letter-spacing: 0.02em;
+}
+
+.vi-card--buy .vi-card__cat {
+  color: var(--primary);
+}
+
+.vi-card__title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--primary);
+  /* 제목이 길어도 카드 높이를 맞춘다 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.vi-card__meta {
+  font-size: 0.78rem;
+  color: var(--secondary);
+  margin-top: auto;
+}
+
+/* ── 최신 글 목록 ─────────────────────── */
+
+.vi-latest {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.vi-latest li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 2px;
+  border-bottom: 1px solid var(--border);
+}
+
+.vi-latest li a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.vi-latest__cat {
+  flex: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--secondary);
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--code-bg);
+}
+
+.vi-latest__title {
+  color: var(--primary);
+  font-size: 0.95rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vi-latest time {
+  flex: none;
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+.vi-more {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ── 카테고리 칩 ──────────────────────── */
+
+.vi-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.vi-chip {
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+
+.vi-chip:hover {
+  transform: translateY(-1px);
+}
+
+.vi-chip--ghost {
+  background: transparent;
+}
+
+/* ── 모바일 ───────────────────────────── */
+
+@media (max-width: 640px) {
+  .vi-hero {
+    padding: 34px 0 30px;
+    margin-bottom: 30px;
+  }
+
+  .vi-hero__title {
+    font-size: 1.6rem;
+  }
+
+  .vi-hero__lead {
+    font-size: 0.98rem;
+  }
+
+  .vi-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .vi-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .vi-latest__title {
+    font-size: 0.9rem;
+  }
+}

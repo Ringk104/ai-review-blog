@@ -1,0 +1,107 @@
+{{- /*
+  홈 — 콘텐츠 허브 (2026-08-10)
+
+  이전에는 PaperMod profileMode 였다. 로고·소개문·버튼 3개가 전부라
+  글이 하나도 안 보였다. 로봇청소기를 찾아 들어온 사람이 첫 화면에서
+  제품도 순위도 못 보고 버튼을 눌러야 목록이 나오는 구조였다.
+  107편을 쌓아두고 첫 화면에 아무것도 안 내보이고 있었다.
+
+  구성은 GSC 실측을 따랐다.
+    클릭 상위 15개가 **전부 문제해결 글**이다(맵핑 42 · 삼성 맵 39 · 물
+    안나옴 26 · Wi-Fi 24 …). 실제 유입은 "고장 났다" 검색이고 구매형은
+    순위가 낮다. 그래서 두 갈래로 나눈다.
+
+      지금 많이 찾는 글 — data/home.yaml (GSC 클릭 상위, 실수요)
+      구매 전 필독      — 추천비교 카테고리 최신 (수익 의도)
+
+    실수요를 앞에 두되 구매 동선을 바로 옆에 붙인다. 문제해결로 들어온
+    사람이 그 자리에서 구매 글로 넘어갈 수 있어야 한다.
+
+  data/home.yaml 갱신: python -m cli.update_home_popular (viewit 저장소)
+*/ -}}
+{{ define "main" }}
+
+{{- $posts := where site.RegularPages "Section" "posts" -}}
+{{- $buyGuides := where $posts "Params.categories" "intersect" (slice "추천비교") -}}
+
+<section class="vi-hero">
+  <h1 class="vi-hero__title">
+    로봇청소기, 광고 말고 <strong>진짜 후기</strong>로 고르세요
+  </h1>
+  <p class="vi-hero__lead">
+    수백 개 실구매 리뷰를 AI가 분석해 장점과 단점을 그대로 정리합니다.
+  </p>
+  <div class="vi-hero__meta">
+    <span><b>{{ len $posts }}</b>편의 분석</span>
+    <span><b>{{ len $buyGuides }}</b>편의 추천·비교</span>
+  </div>
+  <div class="vi-hero__cta">
+    <a class="vi-btn vi-btn--primary" href="{{ "categories/추천비교/" | relURL }}">추천·비교 보기</a>
+    <a class="vi-btn" href="{{ "categories/문제해결/" | relURL }}">고장·오류 해결</a>
+  </div>
+</section>
+
+{{- with site.Data.home.popular }}
+<section class="vi-section">
+  <h2 class="vi-section__title">🔥 지금 많이 찾는 글</h2>
+  <p class="vi-section__sub">최근 4주간 검색으로 가장 많이 들어온 글입니다.</p>
+  <div class="vi-cards">
+    {{- range . }}
+    {{- $p := index (where $posts "Params.slug" .slug) 0 }}
+    {{- with $p }}
+    <a class="vi-card" href="{{ .RelPermalink }}">
+      <span class="vi-card__cat">{{ index .Params.categories 0 }}</span>
+      <span class="vi-card__title">{{ .Title }}</span>
+      <span class="vi-card__meta">{{ .Date.Format "2006.01.02" }}</span>
+    </a>
+    {{- end }}
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with first 4 $buyGuides }}
+<section class="vi-section">
+  <h2 class="vi-section__title">🛒 구매 전 필독</h2>
+  <p class="vi-section__sub">모델을 고르기 전에 이것부터 확인하세요.</p>
+  <div class="vi-cards">
+    {{- range . }}
+    <a class="vi-card vi-card--buy" href="{{ .RelPermalink }}">
+      <span class="vi-card__cat">추천·비교</span>
+      <span class="vi-card__title">{{ .Title }}</span>
+      <span class="vi-card__meta">{{ .Date.Format "2006.01.02" }}</span>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+<section class="vi-section">
+  <h2 class="vi-section__title">📰 최신 글</h2>
+  <ul class="vi-latest">
+    {{- range first 6 $posts }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <span class="vi-latest__cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+        <span class="vi-latest__title">{{ .Title }}</span>
+      </a>
+      <time>{{ .Date.Format "01.02" }}</time>
+    </li>
+    {{- end }}
+  </ul>
+  <a class="vi-more" href="{{ "posts/" | relURL }}">전체 글 보기 →</a>
+</section>
+
+<section class="vi-section">
+  <h2 class="vi-section__title">무엇을 찾으세요?</h2>
+  <div class="vi-chips">
+    {{- range site.Menus.main }}
+    {{- if not (in (slice "home" "posts" "search") .Identifier) }}
+    <a class="vi-chip" href="{{ .URL }}">{{ .Name }}</a>
+    {{- end }}
+    {{- end }}
+    <a class="vi-chip vi-chip--ghost" href="{{ "search/" | relURL }}">🔍 검색</a>
+  </div>
+</section>
+
+{{ end }}
