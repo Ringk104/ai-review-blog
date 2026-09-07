@@ -10,11 +10,18 @@
   카테고리(7개)는 메뉴에 노출되는 실제 탐색 경로이므로 남긴다.
   태그 페이지 자체는 내부 링크용으로 유지하되 noindex 를 준다
   (layouts/partials/extend_head.html 참고).
+
+    /search/ 도 뺀다 (2026-09-07).
+      robots.txt 가 Disallow: /search/ 로 막는데 사이트맵에는 실려 있었다.
+      색인하지 말라면서 색인하라고 제출한 셈이라 GSC 가 '사이트맵에 포함된
+      페이지가 robots.txt 에 의해 차단됨' 으로 경고를 보냈다(8/17 알림).
+      프런트매터의 sitemap.disable 은 이 커스텀 템플릿에서 무시되므로
+      여기서 직접 걸러야 한다.
 */ -}}
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {{- range .Pages }}
-{{- if not (hasPrefix .RelPermalink "/tags/") }}
+{{- if and (not (hasPrefix .RelPermalink "/tags/")) (not (hasPrefix .RelPermalink "/search/")) }}
   <url>
     <loc>{{ .Permalink }}</loc>
     {{- if not .Lastmod.IsZero }}
