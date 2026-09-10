@@ -61,7 +61,7 @@ Matrix10 Ultra는 **올인원 스테이션 탑재 물걸레 겸용 로봇청소�
 > 📌 **함께 보면 좋은 글**
 >
 > - [드리미 L30s 출시 스펙 가격 정보 – 20,000Pa 흡입력 로봇청소기](/posts/드리미-l30s-출시-스펙-가격-정보-20000pa-흡입력-로봇청소기/)
-> - [드리미 Matrix10 Ultra 출시 - 스펙·가격·특징 총정리 | ViewIt](/posts/드리미-matrix10-ultra-출시---스펙가격특징-총정리-viewit/)
+> - [드리미 L20 Ultra 로봇청소기 솔직 리뷰 - 60건 실사용 분석](/posts/드리미-l20-ultra-로봇청소기-솔직-리뷰---60건-실사용-분석/)
 
 <!-- INLINE_RELATED_END -->
 
@@ -122,6 +122,28 @@ H12 헤파 필터는 0.3μm 이상 입자를 99.5% 이상 차단하는 등급입
 *업데이트: 2026-09-10*
 
 <!-- REVISIT_REVIEW_END -->
+
+<!-- VIEWIT_RECOMMENDED_PRODUCTS_START -->
+
+## 🛒 이 글과 관련된 제품
+
+> 가격은 변동될 수 있으니 쿠팡에서 최신 가격을 확인해주세요.
+
+### 드리미 Matrix10
+👉 [쿠팡에서 최저가 확인하기](https://link.coupang.com/a/gzPcbLARyK)
+
+### 드리미 L20 Ultra 로봇청소기
+가격대: **프리미엄**
+
+👉 [쿠팡에서 최저가 확인하기](https://link.coupang.com/a/epB8YQ)
+
+### 드리미 L10s Ultra Gen2
+가격대: **프리미엄**
+
+👉 [쿠팡에서 최저가 확인하기](https://link.coupang.com/a/e7dnAoldGS)
+
+
+<!-- VIEWIT_RECOMMENDED_PRODUCTS_END -->
 
 ---
 
