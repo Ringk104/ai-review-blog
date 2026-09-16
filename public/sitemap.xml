@@ -2,31 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://viewit.co.kr/categories/</loc>
-    <lastmod>2026-09-16T10:03:50+09:00</lastmod>
+    <lastmod>2026-09-14T00:00:00+09:00</lastmod>
   </url>
   <url>
     <loc>https://viewit.co.kr/posts/</loc>
-    <lastmod>2026-09-16T10:03:50+09:00</lastmod>
+    <lastmod>2026-09-14T00:00:00+09:00</lastmod>
   </url>
   <url>
     <loc>https://viewit.co.kr/</loc>
-    <lastmod>2026-09-16T10:03:50+09:00</lastmod>
-  </url>
-  <url>
-    <loc>https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-pm10-%EC%B6%9C%EC%8B%9C-%EC%8A%A4%ED%8E%99-%EA%B0%80%EA%B2%A9-%EC%A0%95%EB%B3%B4---%EC%9D%B4%EB%8F%99-%EC%B6%94%EC%A0%81-%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0-%EB%B6%84%EC%84%9D/</loc>
-    <lastmod>2026-09-16T10:03:50+09:00</lastmod>
-  </url>
-  <url>
-    <loc>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</loc>
-    <lastmod>2026-09-16T10:03:50+09:00</lastmod>
-  </url>
-  <url>
-    <loc>https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-d9-%EC%8A%A4%ED%8E%99%EA%B0%80%EA%B2%A9-%EC%B4%9D%EC%A0%95%EB%A6%AC---lds-%EC%84%BC%EC%84%9C-%ED%83%91%EC%9E%AC-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</loc>
-    <lastmod>2026-09-16T10:02:34+09:00</lastmod>
-  </url>
-  <url>
-    <loc>https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-d10-%EC%82%AC%EC%96%91%EA%B0%80%EA%B2%A9-%EC%B4%9D%EC%A0%95%EB%A6%AC---%EA%B5%AC%EB%A7%A4-%EC%A0%84-%EC%B2%B4%ED%81%AC%ED%8F%AC%EC%9D%B8%ED%8A%B8/</loc>
-    <lastmod>2026-09-16T10:00:32+09:00</lastmod>
+    <lastmod>2026-09-14T00:00:00+09:00</lastmod>
   </url>
   <url>
     <loc>https://viewit.co.kr/categories/%EA%B5%AC%EB%A7%A4%EA%B0%80%EC%9D%B4%EB%93%9C/</loc>
@@ -102,6 +86,10 @@
   </url>
   <url>
     <loc>https://viewit.co.kr/posts/%EB%93%9C%EB%A6%AC%EB%AF%B8-d9-%EC%B6%9C%EC%8B%9C-%EC%8A%A4%ED%8E%99-%EA%B0%80%EA%B2%A9-%EC%B4%9D%EC%A0%95%EB%A6%AC---lds-%EC%84%BC%EC%84%9C-%ED%83%91%EC%9E%AC-%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0/</loc>
+    <lastmod>2026-08-17T00:00:00+09:00</lastmod>
+  </url>
+  <url>
+    <loc>https://viewit.co.kr/categories/%EC%8B%A0%EC%A0%9C%ED%92%88%EC%86%8C%EC%8B%9D/</loc>
     <lastmod>2026-08-17T00:00:00+09:00</lastmod>
   </url>
   <url>
