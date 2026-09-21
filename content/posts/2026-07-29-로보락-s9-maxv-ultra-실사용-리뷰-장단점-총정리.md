@@ -68,7 +68,7 @@ cover:
 
 > 📌 **함께 보면 좋은 글**
 >
-> - [로보락 S8 MaxV Ultra 실사용 후기 - 60건 리뷰 분석 | 장단점 총정리](/posts/로보락-s8-maxv-ultra-실사용-후기---60건-리뷰-분석-장단점-총정리/)
+> - [로보락 S10 MaxV Ultra 실사용 리뷰 | 장단점 총정리 (2026)](/posts/로보락-s10-maxv-ultra-실사용-리뷰---장단점-총정리/)
 > - [로보락 S10 MaxV Ultra 실사용 리뷰 | 장단점 총정리 (2026)](/posts/로보락-s10-maxv-ultra-실사용-리뷰---장단점-총정리/)
 
 <!-- INLINE_RELATED_END -->
