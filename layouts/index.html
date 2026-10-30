@@ -23,17 +23,19 @@
 
 {{- $posts := where site.RegularPages "Section" "posts" -}}
 {{- $buyGuides := where $posts "Params.categories" "intersect" (slice "추천비교") -}}
+{{- $fixes := where $posts "Params.categories" "intersect" (slice "문제해결") -}}
 
 <section class="vi-hero">
+  {{- /* 2026-10-30 운영자 결정: 로봇청소기 전문 — 고르기(리뷰·비교)와 쓰기(고장·관리) 두 갈래 */}}
   <h1 class="vi-hero__title">
-    로봇청소기, 광고 말고 <strong>진짜 후기</strong>로 고르세요
+    로봇청소기, <strong>고를 때도</strong> 고장 날 때도
   </h1>
   <p class="vi-hero__lead">
-    수백 개 실구매 리뷰를 AI가 분석해 장점과 단점을 그대로 정리합니다.
+    고를 때는 실구매 리뷰와 공식 사양으로, 고장 날 때는 제조사 설명서와 고객지원 안내로 정리합니다.
   </p>
   <div class="vi-hero__meta">
-    <span><b>{{ len $posts }}</b>편의 분석</span>
     <span><b>{{ len $buyGuides }}</b>편의 추천·비교</span>
+    <span><b>{{ len $fixes }}</b>편의 고장·오류 해결</span>
   </div>
   <div class="vi-hero__cta">
     <a class="vi-btn vi-btn--primary" href="{{ "categories/추천비교/" | relURL }}">추천·비교 보기</a>

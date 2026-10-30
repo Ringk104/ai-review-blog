@@ -2,11 +2,12 @@
  * 뷰잇 소개 모션 — 렌더러 (세로 1080×1920, 28초)
  *
  * 시간 t(초)를 받아 한 프레임을 그린다(결정적). 미리보기와 MP4 인코딩이 같이 쓴다.
- * 흐름은 소개 페이지(/posts/about/, 2026-10-30)의 고장 해결 방향 그대로.
+ * 흐름은 소개 페이지(/posts/about/, 2026-10-30 «로봇청소기 전문»)와 같다:
+ * 고를 때 막막 → 고장 날 때 막막 → 뷰잇은 고를 때(실구매 리뷰·공식 사양)도
+ * 고장 날 때(제조사 설명서·고객지원, 순서대로)도.
  * 점검 순서(메인 브러시 → 사이드브러시 → 앞바퀴 → 구동 바퀴는 고객지원)는
  * «로보락에서 끼익 소리가 날 때» 글(로보락 고객지원 안내)과 같다.
- * 2장의 엇갈리는 조언 카드는 특정 글이 아닌 흔한 검색 결과를 흉내 낸 것이다.
- * 로봇청소기 그림은 특정 브랜드가 아닌 일반형.
+ * 리뷰 카드는 «정리 예시»라 수치를 넣지 않는다. 로봇청소기 그림은 특정 브랜드가 아닌 일반형.
  */
 ;(function (root) {
   'use strict'
@@ -34,11 +35,11 @@
   const KR = "'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif"
 
   const CHAPTERS = [
-    { t: 0, label: '갑자기 이상할 때' },
-    { t: 5.4, label: '방법이 제각각' },
-    { t: 10.6, label: '설명서대로, 순서대로' },
-    { t: 17.0, label: '다시 돈다' },
-    { t: 21.6, label: '뷰잇' },
+    { t: 0, label: '고를 때' },
+    { t: 5.3, label: '고장 날 때' },
+    { t: 10.6, label: '리뷰와 사양으로' },
+    { t: 16.2, label: '설명서대로, 순서대로' },
+    { t: 22.6, label: '뷰잇' },
   ]
 
   const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v))
@@ -121,7 +122,7 @@
   }
 
   function watermark(ctx, t) {
-    const a = eo3(p(t, 0.1, 0.6)) * (1 - eo3(p(t, 21.2, 21.7)))
+    const a = eo3(p(t, 0.1, 0.6)) * (1 - eo3(p(t, 22.1, 22.6)))
     if (a <= 0) return
     wordmark(ctx, 72, 150, 52, a, 'left')
   }
@@ -240,10 +241,42 @@
     ctx.restore()
   }
 
-  // ── 1장: 갑자기 이상할 때 ──
+  // ── 1장: 고를 때 — 모델이 너무 많다 ──
+  const SPECS = ['흡입력?', '물걸레?', '자동 비움?', '장애물 회피?', '가격?', '소음?']
+
+  function sceneChoose(ctx, t) {
+    if (t > 5.6) return
+    const a = 1 - eo3(p(t, 4.8, 5.3))
+    if (a <= 0) return
+    ctx.save()
+    ctx.globalAlpha = a
+    for (let i = 0; i < 6; i++) {
+      const at = 0.3 + i * 0.22
+      const k = p(t, at, at + 0.45)
+      if (k <= 0) continue
+      const x = i % 2 ? 760 : 320
+      const y = 400 + Math.floor(i / 2) * 290
+      ctx.save()
+      ctx.globalAlpha *= eo3(k)
+      const sc = lerp(0.5, 1, eoBack(k))
+      robot(ctx, x, y + Math.sin(t * 2 + i) * 6, 100 * sc, Math.PI / 2 + i * 0.7, t * 3 + i, { led: [C.blue, C.green, C.amber][i % 3] })
+      bubble(ctx, '모델 ' + 'ABCDEF'[i], x, y + 145, k, { size: 34, bg: 'rgba(255,255,255,0.92)' })
+      ctx.restore()
+    }
+    SPECS.forEach((sp, i) => {
+      const at = 2.3 + i * 0.25
+      const k = p(t, at, at + 0.4)
+      const x = [540, 160, 920, 540, 170, 910][i]
+      const y = [560, 820, 840, 1110, 300, 300][i]
+      bubble(ctx, sp, x + Math.sin(t * 2.4 + i) * 6, y, k, { size: 38, bg: C.amber, rot: (i % 2 ? 1 : -1) * 0.06 })
+    })
+    ctx.restore()
+  }
+
+  // ── 2장: 고장 날 때 (로컬 시간 0~5.5) ──
   function sceneTrouble(ctx, t) {
     if (t > 5.8) return
-    const a = 1 - eo3(p(t, 5.0, 5.5))
+    const a = eo3(p(t, 0, 0.3)) * (1 - eo3(p(t, 5.0, 5.5)))
     if (a <= 0) return
     ctx.save()
     ctx.globalAlpha = a
@@ -262,59 +295,74 @@
     ctx.restore()
   }
 
-  // ── 2장: 검색해 보면 방법이 제각각 ──
-  const ADVICE = (() => {
-    const r = rng(1029)
-    const list = [
-      ['기름칠 하세요', true],
-      ['기름은 절대 금지', false],
-      ['그냥 분해하세요', true],
-      ['바로 A/S 맡기세요', false],
-      ['초기화하면 돼요', true],
-      ['새로 사는 게 낫다', false],
-      ['바퀴만 바꾸세요', true],
-      ['브러시 문제예요', false],
-    ]
-    return list.map(([s, left], i) => ({
-      s,
-      x: left ? 300 + (r() - 0.5) * 80 : 780 + (r() - 0.5) * 80,
-      y: 330 + Math.floor(i / 2) * 210 + (left ? 0 : 90),
-      at: 5.7 + i * 0.22,
-      rot: (r() - 0.5) * 0.14,
-      ph: r() * 6.28,
-    }))
-  })()
+  // ── 3장: 고를 때는 실구매 리뷰와 공식 사양으로 ──
+  const PROS = ['흡입력', '앱 사용']
+  const CONS = ['소음', '문턱 넘기']
 
-  function sceneSearch(ctx, t) {
-    if (t < 5.4 || t > 11) return
-    const a = eo3(p(t, 5.5, 5.9)) * (1 - eo3(p(t, 10.2, 10.7)))
+  function sceneReview(ctx, t) {
+    if (t < 10.4 || t > 16.6) return
+    const a = eo3(p(t, 10.7, 11.1)) * (1 - eo3(p(t, 15.8, 16.2)))
     if (a <= 0) return
     ctx.save()
     ctx.globalAlpha = a
-    ADVICE.forEach((c) => {
-      const k = p(t, c.at, c.at + 0.4)
+    ;[['실구매 리뷰', 340], ['공식 사양', 740]].forEach(([s, x], i) => {
+      const k = p(t, 10.8 + i * 0.2, 11.3 + i * 0.2)
       if (k <= 0) return
-      const jx = Math.sin(t * 2.6 + c.ph) * 5
-      bubble(ctx, c.s, c.x + jx, c.y, k, { rot: c.rot, size: 42, bg: 'rgba(255,255,255,0.95)' })
-    })
-    // 서로 반대라는 표시: 가운데 «?» 와 엇갈린 화살표
-    const q = eo3(p(t, 8.0, 8.4))
-    if (q > 0) {
+      const tw = measure(ctx, s, 40, 800) + 70
       ctx.save()
-      ctx.globalAlpha *= q
-      ctx.translate(W / 2, 1110)
-      ctx.rotate(Math.sin(t * 3) * 0.06)
-      ctx.beginPath()
-      ctx.arc(0, 0, 70, 0, Math.PI * 2)
+      ctx.translate(x, 290)
+      const sc = lerp(0.6, 1, eoBack(k))
+      ctx.scale(sc, sc)
+      ctx.globalAlpha *= eo3(k)
+      rrect(ctx, -tw / 2, -38, tw, 76, 38)
       ctx.fillStyle = C.amber
       ctx.fill()
-      text(ctx, '?', 0, 34, { weight: 900, size: 100, color: C.ink })
+      text(ctx, s, 0, 14, { weight: 800, size: 40, color: C.ink })
       ctx.restore()
-    }
+    })
+    const ck = eo3(p(t, 11.3, 11.8))
+    ctx.save()
+    ctx.globalAlpha *= ck
+    ctx.translate(0, (1 - ck) * 50)
+    rrect(ctx, 120, 380, 840, 730, 32)
+    ctx.fillStyle = 'rgba(255,255,255,0.97)'
+    ctx.fill()
+    text(ctx, '리뷰 정리 예시', 180, 465, { weight: 900, size: 46, align: 'left', color: C.ink })
+    robot(ctx, 860, 450, 46, Math.PI / 2, 0, { led: C.blue })
+    const rows = [
+      ['장점', PROS, '#059669', 'rgba(52,211,153,0.16)', 11.9, [0.86, 0.7]],
+      ['단점', CONS, '#DC2626', 'rgba(248,113,113,0.16)', 13.4, [0.62, 0.48]],
+    ]
+    rows.forEach(([h, items, ink, bg, at, lens], r) => {
+      const y0 = 550 + r * 290
+      const hk = eo3(p(t, at, at + 0.35))
+      ctx.save()
+      ctx.globalAlpha *= hk
+      rrect(ctx, 180, y0, 120, 58, 29)
+      ctx.fillStyle = bg
+      ctx.fill()
+      text(ctx, h, 240, y0 + 41, { weight: 900, size: 34, color: ink })
+      ctx.restore()
+      items.forEach((it, i) => {
+        const k = eo3(p(t, at + 0.2 + i * 0.3, at + 0.8 + i * 0.3))
+        const y = y0 + 120 + i * 90
+        text(ctx, it, 180, y + 12, { weight: 700, size: 38, align: 'left', color: C.ink, alpha: k })
+        ctx.save()
+        ctx.globalAlpha *= k
+        rrect(ctx, 400, y - 16, 500, 30, 15)
+        ctx.fillStyle = '#E2E8F0'
+        ctx.fill()
+        rrect(ctx, 400, y - 16, Math.max(1, 500 * lens[i] * k), 30, 15)
+        ctx.fillStyle = ink
+        ctx.fill()
+        ctx.restore()
+      })
+    })
+    ctx.restore()
     ctx.restore()
   }
 
-  // ── 3장: 설명서대로, 순서대로 ──
+  // ── 4장: 고장 날 때는 설명서대로, 순서대로 (로컬 시간 = 절대 시간 − 5.6) ──
   const STEPS = [
     ['메인 브러시', '빼고 잠깐 돌려 보기'],
     ['사이드브러시', '축에 감긴 머리카락'],
@@ -398,66 +446,33 @@
     ctx.restore()
   }
 
-  // ── 4장: 다시 돈다 ──
-  function sceneFixed(ctx, t) {
-    if (t < 16.8 || t > 22) return
-    const a = eo3(p(t, 17.0, 17.4)) * (1 - eo3(p(t, 21.1, 21.6)))
-    if (a <= 0) return
-    ctx.save()
-    ctx.globalAlpha = a
-    // 부드럽게 원을 그리며 돈다. 지나간 자리에 옅은 길
-    const u = (t - 17.0) * 0.9
-    const cx = W / 2
-    const cy = 680
-    const rx = 260
-    const ry = 250
-    const path = (s) => [cx + Math.cos(s) * rx, cy + Math.sin(s) * ry]
-    ctx.save()
-    ctx.lineWidth = 150
-    ctx.lineCap = 'round'
-    ctx.strokeStyle = 'rgba(255,255,255,0.07)'
-    ctx.beginPath()
-    for (let s = 0; s <= u; s += 0.05) {
-      const [x, y] = path(s - Math.PI / 2)
-      if (s === 0) ctx.moveTo(x, y)
-      else ctx.lineTo(x, y)
-    }
-    ctx.stroke()
-    ctx.restore()
-    const [x, y] = path(u - Math.PI / 2)
-    const [x2, y2] = path(u - Math.PI / 2 + 0.01)
-    const ang = Math.atan2(y2 - y, x2 - x) + Math.PI / 2
-    robot(ctx, x, y, 170, ang, t * 14, { led: C.green })
-    const k = p(t, 17.8, 18.3)
-    bubble(ctx, '다시 정상', W / 2, 1200, k, { icon: '✓', iconBg: '#059669', size: 46 })
-    ctx.restore()
-  }
-
   // ── 5장: 뷰잇 ──
   function sceneBrand(ctx, t) {
-    if (t < 21.5) return
-    const n = p(t, 21.9, 22.6)
+    if (t < 22.4) return
+    const k0 = eo3(p(t, 22.7, 23.2))
+    text(ctx, '로봇청소기 전문', W / 2, 560 + (1 - k0) * 20, { weight: 800, size: 52, color: C.amberHi, alpha: k0 })
+    const n = p(t, 22.9, 23.6)
     if (n > 0) {
       ctx.save()
-      ctx.translate(W / 2, 760)
+      ctx.translate(W / 2, 780)
       const sc = lerp(0.8, 1, eoBack(n))
       ctx.scale(sc, sc)
       wordmark(ctx, 0, 0, 220, eo3(n))
       ctx.restore()
     }
-    const ul = eo3(p(t, 22.5, 23.1))
+    const ul = eo3(p(t, 23.5, 24.1))
     if (ul > 0) {
       ctx.fillStyle = C.amber
-      rrect(ctx, W / 2 - 260 * ul, 815, 520 * ul, 10, 5)
+      rrect(ctx, W / 2 - 260 * ul, 835, 520 * ul, 10, 5)
       ctx.fill()
     }
-    const s1 = eo3(p(t, 22.9, 23.4))
-    text(ctx, '가전 고장, 순서대로 해결', W / 2, 930 + (1 - s1) * 20, { weight: 800, size: 60, alpha: s1 })
-    const u = p(t, 23.4, 23.9)
+    const s1 = eo3(p(t, 23.9, 24.4))
+    text(ctx, '고를 때도, 고장 날 때도', W / 2, 950 + (1 - s1) * 20, { weight: 800, size: 62, alpha: s1 })
+    const u = p(t, 24.3, 24.8)
     if (u > 0) {
       const tw = measure(ctx, 'viewit.co.kr', 50, 700) + 96
       ctx.save()
-      ctx.translate(W / 2, 1050)
+      ctx.translate(W / 2, 1075)
       const sc = lerp(0.8, 1, eoBack(u))
       ctx.scale(sc, sc)
       ctx.globalAlpha = eo3(u)
@@ -474,20 +489,21 @@
     ctx.save()
     background(ctx)
     watermark(ctx, t)
-    sceneTrouble(ctx, t)
-    sceneSearch(ctx, t)
-    sceneSteps(ctx, t)
-    sceneFixed(ctx, t)
+    sceneChoose(ctx, t)
+    if (t >= 5.3 && t < 11) sceneTrouble(ctx, t - 5.3)
+    sceneReview(ctx, t)
+    if (t >= 15.8 && t < 23) sceneSteps(ctx, t - 5.6)
     sceneBrand(ctx, t)
 
-    caption(ctx, t, 0.4, 2.6, ['멀쩡하던 로봇청소기가'])
-    caption(ctx, t, 2.8, 5.1, ['[갑자기 이상할 때]'])
-    caption(ctx, t, 5.6, 7.9, ['검색해 보면'])
-    caption(ctx, t, 8.1, 10.3, ['[방법이 제각각]입니다'])
-    caption(ctx, t, 10.9, 13.6, ['뷰잇은', '[제조사 설명서·고객지원] 안내대로'])
-    caption(ctx, t, 13.8, 16.7, ['무엇부터 볼지', '[순서대로] 정리합니다'])
-    caption(ctx, t, 17.2, 21.2, ['집에서 해 볼 것부터', '[A/S 맡길 때]까지'])
-    caption(ctx, t, 24.1, 27.3, ['일주일에 한 편씩', '[새 고장 해결 글]을 올립니다'], { size: 56 })
+    caption(ctx, t, 0.4, 2.55, ['로봇청소기는 고를 때 한 번'])
+    caption(ctx, t, 2.75, 5.0, ['[모델이 너무 많아] 막막하고'])
+    caption(ctx, t, 5.6, 7.9, ['쓰다가 고장 날 때 또 한 번'])
+    caption(ctx, t, 8.1, 10.3, ['검색하면 [방법이 제각각]입니다'])
+    caption(ctx, t, 10.9, 13.4, ['뷰잇은 고를 때', '[실구매 리뷰와 공식 사양]으로'])
+    caption(ctx, t, 13.6, 16.0, ['장점도 [단점도]', '그대로 적습니다'])
+    caption(ctx, t, 16.5, 19.2, ['고장 날 때는', '[제조사 설명서·고객지원] 안내대로'])
+    caption(ctx, t, 19.4, 22.2, ['무엇부터 볼지', '[순서대로] 정리합니다'])
+    caption(ctx, t, 25.0, 27.3, ['일주일에 한 편씩', '[새 글]을 올립니다'], { size: 56 })
 
     const fade = Math.max(1 - eo3(p(t, 0, 0.35)), eo3(p(t, 27.4, 28)))
     if (fade > 0) {
@@ -498,13 +514,14 @@
   }
 
   const TEXTS = [
-    'ViewIt 멀쩡하던 로봇청소기가 갑자기 이상할 때 검색해 보면 방법이 제각각입니다',
-    '뷰잇은 제조사 설명서·고객지원 안내대로 무엇부터 볼지 순서대로 정리합니다',
-    '집에서 해 볼 것부터 A/S 맡길 때까지 일주일에 한 편씩 새 고장 해결 글을 올립니다',
-    '끼익… 사이드브러시 멈춤 도크로 안 돌아감 다시 정상 가전 고장, 순서대로 해결 viewit.co.kr',
-    ADVICE.map((c) => c.s).join(' '),
+    'ViewIt 로봇청소기는 고를 때 한 번 모델이 너무 많아 막막하고 쓰다가 고장 날 때 또 한 번',
+    '검색하면 방법이 제각각입니다 뷰잇은 고를 때 실구매 리뷰와 공식 사양으로 장점도 단점도 그대로 적습니다',
+    '고장 날 때는 제조사 설명서·고객지원 안내대로 무엇부터 볼지 순서대로 정리합니다',
+    '일주일에 한 편씩 새 글을 올립니다 로봇청소기 전문 고를 때도, 고장 날 때도 viewit.co.kr',
+    '끼익… 사이드브러시 멈춤 도크로 안 돌아감 리뷰 정리 예시 장점 단점 모델 ABCDEF',
+    SPECS.join(' ') + ' ' + PROS.join(' ') + ' ' + CONS.join(' '),
     STEPS.map((s) => s.join(' ')).join(' '),
-    '!?✓1234',
+    '!?✓1234 고객지원 안내 제조사 설명서 A/S',
   ].join(' ')
 
   function loadFonts(doc, timeoutMs = 8000) {

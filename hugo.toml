@@ -14,7 +14,7 @@ enableRobotsTXT = true
 
 [params]
   env = "production"
-  description = "AI가 분석한 실구매자 리뷰, 한눈에 보는 제품 비교"
+  description = "로봇청소기 전문 블로그 — 고를 때는 실구매 리뷰와 공식 사양으로, 고장 날 때는 제조사 설명서와 고객지원 안내로 정리합니다"
   author = "ViewIt"
   ShowReadingTime = false
   ShowShareButtons = true

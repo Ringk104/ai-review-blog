@@ -5,4 +5,4 @@
 - `export.html?w=720&h=1280&vb=2500000&name=viewit-intro.mp4` — 브라우저(WebCodecs + mp4-muxer)로 MP4 와 포스터 JPG 를 만들어 `/save` 로 이 폴더에 저장
 
 순서: `python scripts/promo/serve.py 8771` → 브라우저로 `http://127.0.0.1:8771/export.html?...` 열기 → 생긴 파일을 `static/videos/` 로 복사.
-사이트용은 720×1280(약 6.8MB), 쇼츠용은 `w=1080&h=1920&vb=5000000`.
+사이트용은 720×1280(약 5.2MB), 쇼츠용은 `w=1080&h=1920&vb=5000000`.
