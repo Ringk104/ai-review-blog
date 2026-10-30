@@ -1,6 +1,6 @@
 baseURL = "https://viewit.co.kr/"
 languageCode = "ko"
-title = "ViewIt - AI 리뷰 분석"
+title = "ViewIt"
 theme = "PaperMod"
 defaultContentLanguage = "ko"
 paginate = 10
@@ -14,6 +14,8 @@ enableRobotsTXT = true
 
 [params]
   env = "production"
+  # 2026-10-30: 글 제목 끝에는 «ViewIt» 만 붙이고(«로봇청소기» 반복 방지), 홈 <title> 만 설명을 붙인다
+  homeTitle = "ViewIt | 로봇청소기 전문 블로그"
   description = "로봇청소기 전문 블로그 — 고를 때는 실구매 리뷰와 공식 사양으로, 고장 날 때는 제조사 설명서와 고객지원 안내로 정리합니다"
   author = "ViewIt"
   ShowReadingTime = false
