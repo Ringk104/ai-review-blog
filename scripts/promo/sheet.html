@@ -1,0 +1,9 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>sheet</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700;800;900&display=swap">
+<style>body{margin:0;padding:10px;background:#888;display:flex;flex-wrap:wrap;gap:8px}figure{margin:0;color:#fff;font:12px sans-serif}canvas{width:216px;height:384px;display:block}</style></head>
+<body><script src="render.js"></script><script>
+(async()=>{const R=window.FVPromo;await R.loadFonts(document);
+const q=new URLSearchParams(location.search);
+const ts=(q.get('t')||'1,2.5,4,5.6,7,9.5,12.5,14.8,17.5,20.5,23,26').split(',').map(Number);
+for(const t of ts){const f=document.createElement('figure');const c=document.createElement('canvas');c.width=R.W/2;c.height=R.H/2;const x=c.getContext('2d');x.setTransform(.5,0,0,.5,0,0);R.render(x,t);f.append(c,'t='+t);document.body.append(f)}
+document.title='ready'})()</script></body></html>
