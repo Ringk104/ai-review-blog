@@ -9,9 +9,30 @@
   padding: 56px 0 40px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 40px;
+  /* 글 | 소개 영상(세로 9:16). 좁은 화면은 아래 @media 에서 위아래로 */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 32px;
+  align-items: center;
+}
+
+.vi-hero__video {
+  margin: 0;
+}
+
+.vi-hero__video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 14px;
+  background: #1e40af;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
 }
 
 .vi-hero__title {
+  word-break: keep-all;
   font-size: 2.1rem;
   line-height: 1.35;
   margin: 0 0 14px;
@@ -232,6 +253,13 @@
   .vi-hero {
     padding: 34px 0 30px;
     margin-bottom: 30px;
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .vi-hero__video {
+    width: min(62vw, 240px);
+    margin: 0 auto;
   }
 
   .vi-hero__title {

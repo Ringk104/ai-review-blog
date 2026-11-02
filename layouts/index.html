@@ -27,6 +27,7 @@
 
 <section class="vi-hero">
   {{- /* 2026-10-30 운영자 결정: 로봇청소기 전문 — 고르기(리뷰·비교)와 쓰기(고장·관리) 두 갈래 */}}
+  <div class="vi-hero__text">
   <h1 class="vi-hero__title">
     로봇청소기, <strong>고를 때도</strong> 고장 날 때도
   </h1>
@@ -41,6 +42,26 @@
     <a class="vi-btn vi-btn--primary" href="{{ "categories/추천비교/" | relURL }}">추천·비교 보기</a>
     <a class="vi-btn" href="{{ "categories/문제해결/" | relURL }}">고장·오류 해결</a>
   </div>
+  </div>
+  {{- /* 2026-11-02 운영자 요청: 첫 화면에 소개 영상이 바로 나오게(반응형). 넓은 화면은 글 옆, 좁은 화면은 글 아래.
+         JS 가 없으면 재생 버튼이 보이는 보통 영상, 있으면 소리 없이 반복 재생(화면 밖이면 멈춤).
+         움직임 줄이기·데이터 절약 설정이면 자동 재생하지 않는다 */}}
+  <figure class="vi-hero__video">
+    <video id="vi-intro" src="/videos/viewit-intro.mp4" poster="/videos/viewit-intro-poster.jpg" controls muted loop playsinline preload="none" width="720" height="1280" aria-label="뷰잇 소개 영상(28초, 소리 없음): 로봇청소기는 고를 때도 고장 날 때도 막막하다. 뷰잇은 고를 때는 실구매 리뷰와 공식 사양으로, 고장 날 때는 제조사 설명서와 고객지원 안내로 정리한다"></video>
+  </figure>
+  <script>
+  (function () {
+    var v = document.getElementById("vi-intro");
+    var mm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var save = navigator.connection && navigator.connection.saveData;
+    if (!v || mm || save || !("IntersectionObserver" in window)) return;
+    v.controls = false;
+    new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () { v.controls = true; }); } else v.pause(); });
+    }, { threshold: 0.25 }).observe(v);
+    v.addEventListener("click", function () { if (v.paused) v.play(); else v.pause(); });
+  })();
+  </script>
 </section>
 
 {{- with site.Data.home.popular }}
