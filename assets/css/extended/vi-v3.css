@@ -98,3 +98,20 @@
 .vi-check ol > li.done { text-decoration: line-through; text-decoration-color: var(--secondary); }
 .vi-check .ft { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--secondary); padding-top: 8px; border-top: 1px solid var(--border); }
 .vi-check .reset { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; color: var(--secondary); cursor: pointer; font-size: 12.5px; }
+
+/* 제품 카드 (product shortcode, data/products.yaml) */
+.vi-prods { margin: 1.4rem 0; display: grid; gap: 12px; }
+.vi-prods.multi { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.vi-prod { border: 1px solid var(--border); border-radius: 12px; background: var(--entry); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.vi-prod .st { align-self: flex-start; font-size: 11.5px; font-weight: 800; border-radius: 4px; padding: 1px 7px; }
+.vi-prod.s-rocket .st { background: var(--vi-soft); color: var(--vi-ink); }
+.vi-prod.s-market .st, .vi-prod.s-unknown .st { background: var(--code-bg); color: var(--secondary); }
+.vi-prod.s-gone .st { background: var(--vi-stop-soft); color: var(--vi-stop); }
+.vi-prod .nm { font-size: 17px; line-height: 1.35; }
+.vi-prod .pr { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 8px; }
+.vi-prod .pr b { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.vi-prod .pr small { font-size: 12.5px; color: var(--secondary); }
+.vi-prod .pr.gone { font-size: 13.5px; color: var(--secondary); }
+.vi-prod .why { margin: 0; font-size: 14px; color: var(--content); }
+.post-content .vi-prod a.btn { display: block; text-align: center; margin-top: 4px; padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+.post-content .vi-prod a.btn.alt { background: none !important; color: var(--vi-primary) !important; border: 1.5px solid var(--vi-primary); }

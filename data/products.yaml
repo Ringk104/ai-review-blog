@@ -1,0 +1,69 @@
+# ViewIt 제품 가격·판매 상태 — 한 곳에서 관리 (2026-11-10, 운영자 결정 «가격은 데이터 파일 한 곳»)
+#
+# 가격 확인 방법: 쿠팡 «일반 검색» 결과(제휴 링크는 열지 않는다 — 부정 클릭 위험)에서
+#   같은 모델 본체의 판매가를 읽는다. 할인 전 가격이 아니라 그날 표시된 판매가.
+# status:
+#   rocket  — 로켓배송으로 판매 중 (가격 표시)
+#   market  — 로켓 아님(판매자 배송·해외구매)만 보임 (가격은 참고용)
+#   gone    — 쿠팡 검색에 본체가 안 보임 → 판매 종료·품절 추정, 링크가 빈 페이지일 수 있음
+#   unknown — 아직 확인 안 함
+# 월 1회 갱신: checked 날짜와 price 만 바꾸면 전 글의 제품 카드가 같이 바뀐다.
+# reviews: 쿠팡 상품평 수(그날 기준). 별점은 적지 않는다.
+
+checked: "2026-11-10"
+
+items:
+  dreame-x60-ultra:        {name: "드리미 X60 Ultra",            link: "https://link.coupang.com/a/e69i3JaRwW", status: rocket, price: 989990,  reviews: 250}
+  dreame-x60-ultra-tank:   {name: "드리미 X60 Ultra 물통형",      link: "https://link.coupang.com/a/f4KZCondzU", status: rocket, price: 989990,  reviews: 250}
+  dreame-x60-master:       {name: "드리미 X60 Master 직배수",     link: "https://link.coupang.com/a/f4KQk6Quzs", status: rocket, price: 1089990, reviews: 71}
+  dreame-l40s-pro-ultra:   {name: "드리미 L40s Pro Ultra",        link: "https://link.coupang.com/a/e7akGARH4K", status: rocket, price: 629100,  reviews: 667}
+  dreame-x50s-pro:         {name: "드리미 X50s Pro",              link: "https://link.coupang.com/a/e69S4kNPZA", status: rocket, note: "검색에 X50s Pro Master 만 보여 가격 미기재"}
+  dreame-x50-ultra:        {name: "드리미 X50 Ultra",             link: "https://link.coupang.com/a/e7afmvn8IS", status: gone, note: "해외구매만 보임", successor: dreame-x60-ultra}
+  dreame-x40s:             {name: "드리미 X40s",                  link: "https://link.coupang.com/a/gzPdUIennM", status: gone, successor: dreame-x60-ultra}
+  dreame-x40-pro-ultra:    {name: "드리미 X40 Pro Ultra",         link: "https://link.coupang.com/a/e7ahI5MWQ0", status: gone, successor: dreame-x60-ultra}
+  dreame-l20-ultra:        {name: "드리미 L20 Ultra",             link: "https://link.coupang.com/a/epB8YQ",     status: gone, successor: dreame-l40s-pro-ultra}
+  dreame-l10s-heat:        {name: "드리미 L10s Heat",             link: "https://link.coupang.com/a/e7dpPCAwkS", status: market, price: 779000, reviews: 104}
+  dreame-l30s:             {name: "드리미 L30s Pro Ultra Heat",   link: "https://link.coupang.com/a/gzPgsxEq3U", status: rocket, price: 689000, reviews: 71}
+  dreame-matrix10:         {name: "드리미 매트릭스10 울트라",     link: "https://link.coupang.com/a/fKMxO6ASlw", status: rocket, price: 799000, reviews: 32}
+  dreame-d10:              {name: "드리미 D10",                   link: "https://link.coupang.com/a/gzPkiFYaFE", status: gone, note: "해외구매만 보임"}
+  dreame-d9:               {name: "드리미 D9",                    link: "https://link.coupang.com/a/gzPmMkDwaW", status: gone}
+
+  roborock-s10-maxv-ultra:      {name: "로보락 S10 MaxV Ultra",        link: "https://link.coupang.com/a/e7bC8DBiXk", status: rocket, price: 1440000, reviews: 1051}
+  roborock-s10-maxv-ultra-tank: {name: "로보락 S10 MaxV Ultra 물통형", link: "https://link.coupang.com/a/f4KxqNf2Ye", status: rocket, price: 1440000, reviews: 1051}
+  roborock-s9-maxv-ultra:       {name: "로보락 S9 MaxV Ultra",         link: "https://link.coupang.com/a/e7bF6yAwXA", status: rocket, price: 1090000, reviews: 1827}
+  roborock-s8-maxv-ultra:       {name: "로보락 S8 MaxV Ultra",         link: "https://link.coupang.com/a/epAd0N",     status: rocket, price: 1350170, reviews: 1483}
+  roborock-s8-pro-plus:         {name: "로보락 S8 Pro Plus",           link: "https://link.coupang.com/a/e7bAQoUSzs", status: rocket, price: 468990,  reviews: 358}
+  roborock-qrevo-edge-2:        {name: "로보락 Qrevo Edge 2",          link: "https://link.coupang.com/a/e7cB0l6mtw", status: rocket, price: 910800,  reviews: 128}
+  roborock-qrevo-c-pro:         {name: "로보락 Qrevo C Pro",           link: "https://link.coupang.com/a/e7czTaAoPk", status: gone, successor: roborock-qrevo-edge-2}
+  roborock-q-revo-pro:          {name: "로보락 Q Revo Pro",            link: "https://link.coupang.com/a/ep7nOj",     status: gone, successor: roborock-qrevo-edge-2}
+  roborock-q8-max-plus:         {name: "로보락 Q8 Max Plus",           link: "https://link.coupang.com/a/e79JrEBAI0", status: gone}
+  roborock-q7-max-plus:         {name: "로보락 Q7 Max Plus",           link: "https://link.coupang.com/a/epBzQ6",     status: gone}
+
+  samsung-ai-steam-plus:   {name: "삼성 비스포크 AI 스팀 플러스",   link: "https://link.coupang.com/a/e7c3TUApcy", status: rocket, price: 1440000, reviews: 143}
+  samsung-ai-steam-ultra:  {name: "삼성 비스포크 AI 스팀 울트라",   link: "https://link.coupang.com/a/fRVtRmSUuW", status: rocket, price: 1668990, reviews: 12, note: "로켓은 자동 급배수형"}
+  samsung-ai-steam-9700:   {name: "삼성 비스포크 AI 스팀 (VR7MD97716G)", link: "https://link.coupang.com/a/f4Kr0DkW5Y", status: market, price: 1907600}
+  samsung-jetbot-9700:     {name: "삼성 비스포크 제트봇 AI 9700",   link: "https://link.coupang.com/a/ep7dLG",     status: gone, successor: samsung-ai-steam-plus}
+  samsung-jetbot-vr50t:    {name: "삼성 비스포크 제트봇 AI (VR50T95935W)", link: "https://link.coupang.com/a/ep72Ir", status: gone, successor: samsung-ai-steam-plus}
+
+  ecovacs-t50-pro-omni:    {name: "에코백스 T50 프로 옴니",         link: "https://link.coupang.com/a/e66hO3LeKW", status: rocket, price: 799000, reviews: 908}
+  ecovacs-t50-pro-omni-2:  {name: "에코백스 디봇 T50 프로 옴니",    link: "https://link.coupang.com/a/e69fFTjVW8", status: rocket, price: 799000, reviews: 908}
+  ecovacs-t50-pro-omni-dd: {name: "에코백스 T50 프로 옴니 직배수",  link: "https://link.coupang.com/a/e66lgVpaNw", status: rocket, price: 899000, reviews: 50}
+  ecovacs-t90-pro-omni:    {name: "에코백스 T90 프로 옴니",         link: "https://link.coupang.com/a/fv23molS32", status: market, price: 849000, reviews: 77}
+  ecovacs-x2-omni:         {name: "에코백스 디봇 X2 옴니",          link: "https://link.coupang.com/a/epAFZt",     status: market, price: 488000, reviews: 129}
+  ecovacs-t30s-combo:      {name: "에코백스 T30S 콤보",             link: "https://link.coupang.com/a/e7c0i1KSDA", status: rocket, price: 729270, reviews: 23}
+  ecovacs-t30-pro-omni:    {name: "에코백스 T30 프로 옴니",         link: "https://link.coupang.com/a/e7cXBqwHEi", status: unknown}
+
+  xiaomi-x20-plus:         {name: "샤오미 로봇청소기 X20 Plus",     link: "https://link.coupang.com/a/epBB3m",     status: gone, note: "해외구매만 보임"}
+  xiaomi-x10-plus:         {name: "샤오미 X10 Plus",                link: "https://link.coupang.com/a/e79SXw4HVA", status: unknown}
+  narwal-freo:             {name: "나르왈 프레오",                  link: "https://link.coupang.com/a/epBQHb",     status: unknown, note: "지금은 프레오 20·프레오 프로 등 후속만 보여 원래 모델 확인 필요"}
+  lg-b95awbth:             {name: "LG 코드제로 로보킹 AI 올인원 B95AWBTH", link: "https://link.coupang.com/a/f4LRD0TYho", status: rocket, price: 1440250, reviews: 164}
+  lg-freestanding:         {name: "LG 코드제로 AI 오브제컬렉션 프리스탠딩", link: "https://link.coupang.com/a/f4LTDs7w60", status: rocket, price: 936990, reviews: 23}
+  lg-r5:                   {name: "LG 코드제로 오브제컬렉션 R5",    link: "https://link.coupang.com/a/e7dg1TUhm8", status: rocket, price: 517550, reviews: 112}
+  irobot-j7-plus:          {name: "아이로봇 룸바 j7+",              link: "https://link.coupang.com/a/ep7u1G",     status: gone, note: "판매자 배송 1건만 보임"}
+  everybot-q9:             {name: "에브리봇 Q9",                    link: "https://link.coupang.com/a/e7dL1xZ46C", status: rocket, price: 1380000, reviews: 302}
+  everybot-q11:            {name: "에브리봇 Q11",                   link: "https://link.coupang.com/a/f4K5Zs9QnA", status: rocket, price: 1680000, reviews: 110}
+  everybot-ts402m:         {name: "에브리봇 쓰리스핀 EVO TS402M",   link: "https://link.coupang.com/a/e7dS1kJY9k", status: rocket, price: 419000, reviews: 118}
+  everybot-ts401w:         {name: "에브리봇 쓰리스핀 EVO TS401W",   link: "https://link.coupang.com/a/f4LBsIVyii", status: rocket, price: 379000, reviews: 1506}
+  everybot-ts450:          {name: "에브리봇 쓰리스핀 슬림 TS450",   link: "https://link.coupang.com/a/e7dQDHoupo", status: rocket, price: 448000, reviews: 295}
+  everybot-rs350:          {name: "에브리봇 엣지2 RS350",           link: "https://link.coupang.com/a/e7duAQybW8", status: rocket, price: 298000, reviews: 1801}
+  tama-allinone-ai:        {name: "TAMA 올인원 AI",                 link: "https://link.coupang.com/a/e7dJEr7Cua", status: rocket, price: 610630, reviews: 82}

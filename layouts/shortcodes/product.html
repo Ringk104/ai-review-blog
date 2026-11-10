@@ -1,0 +1,34 @@
+{{/* 제품 카드 (2026-11-10) — 가격·판매 상태는 data/products.yaml 한 곳에서.
+     {{< product id="dreame-x60-ultra" >}}            한 장
+     {{< product ids="a,b,c" >}}                      여러 장(카드 묶음)
+     선택: note="이 글에서 고른 이유 한 줄" (한 장일 때) */}}
+{{- $db := hugo.Data.products -}}
+{{- $ids := slice -}}
+{{- with .Get "ids" }}{{ range split . "," }}{{ $ids = $ids | append (trim . " ") }}{{ end }}{{ else }}{{ $ids = slice (.Get "id") }}{{ end -}}
+{{- $note := .Get "note" -}}
+<div class="vi-prods{{ if gt (len $ids) 1 }} multi{{ end }}">
+{{- range $ids }}
+  {{- $p := index $db.items . -}}
+  {{- if not $p }}{{ errorf "product: data/products.yaml 에 %q 가 없다 (%s)" . $.Position }}{{ end -}}
+  {{- $label := dict "rocket" "로켓배송 판매 중" "market" "판매자 배송" "gone" "판매 종료 추정" "unknown" "확인 전" -}}
+  <section class="vi-prod s-{{ $p.status }}">
+    <span class="st">{{ index $label $p.status }}</span>
+    <b class="nm">{{ $p.name }}</b>
+    {{- if and $p.price (ne $p.status "gone") }}
+    <div class="pr"><b>{{ lang.FormatNumber 0 $p.price }}원</b><small>쿠팡 {{ (time.AsTime $db.checked).Format "1/2" }} 확인{{ with $p.reviews }} · 상품평 {{ lang.FormatNumber 0 . }}개{{ end }}</small></div>
+    {{- else if eq $p.status "gone" }}
+    <div class="pr gone">쿠팡에서 이 모델 본체가 보이지 않습니다 ({{ (time.AsTime $db.checked).Format "1/2" }} 확인)</div>
+    {{- else }}
+    <div class="pr"><small>가격은 쿠팡에서 확인하세요</small></div>
+    {{- end }}
+    {{- with $note }}<p class="why">{{ . }}</p>{{ end }}
+    {{- if eq $p.status "gone" }}
+      {{- with $p.successor }}{{ $s := index $db.items . }}
+    <a class="btn alt" href="{{ $s.link }}" target="_blank" rel="nofollow sponsored noopener">후속·대안 {{ $s.name }} 보기</a>
+      {{- end }}
+    {{- else }}
+    <a class="btn" href="{{ $p.link }}" target="_blank" rel="nofollow sponsored noopener">쿠팡에서 현재가 보기</a>
+    {{- end }}
+  </section>
+{{- end }}
+</div>
