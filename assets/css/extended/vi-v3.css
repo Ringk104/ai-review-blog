@@ -1,0 +1,100 @@
+/* ──────────────────────────────────────────────────────
+   ViewIt v3 — 읽기 좋은 화면 (2026-11-10)
+   운영자 결정 «화면 틀부터 단계적 고도화». 글 파일은 그대로, 보이는 틀만.
+   - 휴대폰: 표 → 행마다 카드 (vi-table.js 가 data-label 을 붙인다)
+   - 안내 한 줄(.vi-note), 함께 보면 좋은 글 카드
+   - 새 글 부품: action(바로 할 일) · check(점검 체크리스트) · callout(강조)
+   ────────────────────────────────────────────────────── */
+:root {
+  --vi-soft: #eef4ff;
+  --vi-ink: #1e3a8a;
+  --vi-ok: #15803d;
+  --vi-ok-soft: #e8f6ee;
+  --vi-stop: #b91c1c;
+  --vi-stop-soft: #fdecec;
+  --vi-warn-soft: #fff7e6;
+  --vi-warn-ink: #92400e;
+}
+.dark {
+  --vi-soft: rgba(37, 99, 235, 0.14);
+  --vi-ink: #bfd3ff;
+  --vi-ok: #4ade80;
+  --vi-ok-soft: rgba(34, 197, 94, 0.12);
+  --vi-stop: #f87171;
+  --vi-stop-soft: rgba(239, 68, 68, 0.12);
+  --vi-warn-soft: rgba(245, 158, 11, 0.12);
+  --vi-warn-ink: #fcd34d;
+}
+
+/* 제목·소제목 */
+.post-title { font-weight: 800; letter-spacing: -0.025em; word-break: keep-all; }
+.post-content h2 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em; margin-top: 2.6rem; }
+.post-content h3 { font-size: 1.1rem; font-weight: 700; }
+
+/* 첫머리 안내 한 줄 (옛 고지 인용문 2개를 줄인 것) */
+.post-content .vi-note { font-size: 13px; color: var(--secondary); border-left: 3px solid var(--vi-primary); padding: 2px 0 2px 10px; margin: 0 0 1.4rem; }
+
+/* «함께 보면 좋은 글» 인용문 → 카드 */
+.post-content blockquote:has(> p:first-child > strong:first-child) { background: var(--entry); border: 1px solid var(--border); border-left: 4px solid var(--vi-primary); }
+
+/* 목차 */
+.toc { border: 1px solid var(--border); border-radius: 10px; background: var(--entry); }
+.toc summary { font-weight: 700; }
+
+/* 표: 넓은 화면은 가로 스크롤 상자 안에 */
+.post-content .vi-scroll { overflow-x: auto; margin: 1.2rem 0; border-radius: 8px; }
+.post-content .vi-scroll > table { margin: 0; }
+.post-content table td { vertical-align: top; }
+.post-content.md-content table a[href*="link.coupang"] { padding: 6px 12px; font-size: 13.5px; margin-top: 4px; white-space: nowrap; }
+
+/* 휴대폰: 표 → 행마다 카드 */
+@media (max-width: 640px) {
+  .post-content .vi-scroll { overflow: visible; }
+  .post-content.md-content .vi-scroll table.vi-cards, .post-content.md-content .vi-scroll table.vi-cards tbody, .post-content.md-content .vi-scroll table.vi-cards tr, .post-content.md-content .vi-scroll table.vi-cards td { display: block; width: 100%; }
+  .post-content.md-content .vi-scroll table.vi-cards { border-radius: 0; overflow: visible; }
+  .post-content.md-content .vi-scroll table.vi-cards thead { display: none; }
+  .post-content.md-content .vi-scroll table.vi-cards tr { border: 1px solid var(--border); border-radius: 10px; margin: 0 0 12px; padding: 6px 12px 8px; background: var(--entry); }
+  .post-content.md-content .vi-scroll table.vi-cards tr:hover { background: var(--entry); }
+  .post-content.md-content .vi-scroll table.vi-cards td { border: 0; padding: 5px 0 5px 7.2em; position: relative; min-height: 1.6em; }
+  .post-content.md-content .vi-scroll table.vi-cards td::before { content: attr(data-label); position: absolute; left: 0; top: 7px; width: 6.6em; font-size: 12.5px; font-weight: 700; line-height: 1.4; color: var(--secondary); }
+  .post-content.md-content .vi-scroll table.vi-cards td a[href*="link.coupang"] { display: table; padding: 7px 14px; margin-top: 6px; }
+  .post-content.md-content .vi-scroll table.vi-cards td:first-child { padding-left: 0; font-size: 16px; font-weight: 700; padding-top: 6px; border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 4px; }
+  .post-content.md-content .vi-scroll table.vi-cards td:first-child::before { content: none; }
+}
+
+/* 쿠팡 버튼 (본문 «👉 [..](link.coupang)» 줄) — 손가락으로 누르기 쉽게 */
+@media (max-width: 640px) {
+  .post-content p > a[href*="link.coupang"] { display: block; text-align: center; padding: 12px 16px; }
+}
+
+/* ── 새 글 부품 ── */
+.vi-action, .vi-co, .vi-check { border-radius: 12px; margin: 1.4rem 0; padding: 14px 18px; }
+.vi-action .hd, .vi-co .hd { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; margin-bottom: 6px; }
+.vi-action .lb, .vi-co .lb { font-size: 12px; font-weight: 800; border-radius: 4px; padding: 1px 8px; }
+.vi-action .hd b, .vi-co .hd b { font-size: 16.5px; }
+.vi-action .bd > :first-child, .vi-co .bd > :first-child { margin-top: 0; }
+.vi-action .bd > :last-child, .vi-co .bd > :last-child { margin-bottom: 0; }
+
+.vi-action { background: var(--vi-soft); border: 1px solid rgba(37, 99, 235, 0.25); }
+.vi-action .lb { background: var(--vi-primary); color: #fff; }
+.vi-action ol { counter-reset: va; list-style: none; padding: 0; margin: 6px 0 0; }
+.vi-action ol > li { counter-increment: va; position: relative; padding: 6px 0 6px 38px; font-weight: 600; }
+.vi-action ol > li::before { content: counter(va); position: absolute; left: 0; top: 4px; width: 26px; height: 26px; border-radius: 50%; background: var(--vi-primary); color: #fff; font-size: 13.5px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+
+.vi-co { border: 1px solid var(--border); background: var(--entry); }
+.vi-co.k-key { border-left: 5px solid var(--vi-primary); } .vi-co.k-key .lb { background: var(--vi-soft); color: var(--vi-ink); }
+.vi-co.k-warn { border-left: 5px solid var(--vi-warn-border); background: var(--vi-warn-soft); } .vi-co.k-warn .lb { background: var(--vi-warn-border); color: #fff; }
+.vi-co.k-note { border-left: 5px solid var(--secondary); } .vi-co.k-note .lb { background: var(--code-bg); color: var(--secondary); }
+.vi-co.k-stop { border-left: 5px solid var(--vi-stop); background: var(--vi-stop-soft); } .vi-co.k-stop .lb { background: var(--vi-stop); color: #fff; }
+
+.vi-check { border: 1px solid var(--border); background: var(--entry); }
+.vi-check .hd { font-weight: 800; font-size: 16.5px; margin-bottom: 6px; }
+.vi-check ol { list-style: none; padding: 0; margin: 0; counter-reset: vc; }
+.vi-check ol > li { counter-increment: vc; position: relative; padding: 10px 0 10px 44px; border-top: 1px solid var(--border); cursor: pointer; user-select: none; }
+.vi-check ol > li:first-child { border-top: 0; }
+.vi-check ol > li::before { content: counter(vc); position: absolute; left: 0; top: 9px; width: 28px; height: 28px; border-radius: 8px; border: 2px solid var(--vi-primary); color: var(--vi-primary); font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+.vi-check ol > li.done { color: var(--secondary); }
+.vi-check ol > li.done::before { content: "✓"; background: var(--vi-ok); border-color: var(--vi-ok); color: #fff; }
+.vi-check ol > li.done { text-decoration: line-through; text-decoration-color: var(--secondary); }
+.vi-check .ft { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--secondary); padding-top: 8px; border-top: 1px solid var(--border); }
+.vi-check .reset { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; color: var(--secondary); cursor: pointer; font-size: 12.5px; }

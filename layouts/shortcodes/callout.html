@@ -1,0 +1,7 @@
+{{/* 강조 상자 (2026-11-10) — kind: key(핵심) | warn(주의) | note(참고) | stop(A/S 필요). title 선택, 안은 마크다운 */}}
+{{- $kind := .Get "kind" | default "key" }}
+{{- $label := dict "key" "핵심" "warn" "주의" "note" "참고" "stop" "A/S 필요" }}
+<aside class="vi-co k-{{ $kind }}">
+  <div class="hd"><span class="lb">{{ index $label $kind }}</span>{{ with .Get "title" }}<b>{{ . }}</b>{{ end }}</div>
+  <div class="bd">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</aside>

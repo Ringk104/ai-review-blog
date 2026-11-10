@@ -89,6 +89,10 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+    # 2026-11-10: 취소선 끔 — «3~6개월 … 6~12개월» 처럼 범위 표기가 한 문단에 둘이면
+    # 그 사이가 취소선으로 그어졌다(27편). 글에 ~~취소선~~ 을 쓴 곳은 없다.
+    [markup.goldmark.extensions]
+      strikethrough = false
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 4

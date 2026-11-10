@@ -1,0 +1,10 @@
+{{/* 바로 할 일 상자 (2026-11-10) — 글 첫머리에 «지금 이것부터» 를 번호로.
+     title 선택(기본 «바로 할 일»), 안에 마크다운 번호 목록. 예:
+     {{< action title="사이드브러시가 안 돌 때, 이 순서로" >}}
+     1. 전원 끄고 브러시 빼기
+     2. 축에 감긴 머리카락 제거
+     {{< /action >}} */}}
+<aside class="vi-action">
+  <div class="hd"><span class="lb">바로 할 일</span>{{ with .Get "title" }}<b>{{ . }}</b>{{ end }}</div>
+  <div class="bd">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</aside>

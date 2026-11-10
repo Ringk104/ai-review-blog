@@ -1,0 +1,16 @@
+{{- /*
+  본문 손질 (2026-11-10, 운영자 결정 «화면 틀부터 단계적 고도화»)
+  글 파일(마크다운)은 그대로 두고, 렌더된 HTML 만 다듬는다.
+    1) 본문 첫머리의 제목 반복(<h1>) 제거 — 글 머리에 이미 같은 제목이 있다
+    2) 첫머리 고지 인용문 2개(«뷰잇이 분석한…» · «이 글은 … AI로 분석한 결과…») → 작은 안내 한 줄
+    3) 한글 조사 앞에서 풀리지 않은 **굵게** → <strong>
+    4) 표 안에 그대로 드러난 쿠팡 주소 → «쿠팡에서 보기» 버튼 글자
+  입력: .Content (HTML) / 출력: 손질된 HTML
+*/ -}}
+{{- $c := . -}}
+{{- $c = replaceRE `(?s)^(\s*(?:<blockquote>.*?</blockquote>\s*)*)<h1[^>]*>[^<]*</h1>` "$1" $c 1 -}}
+{{- $c = replaceRE `<blockquote>\s*<p>뷰잇이 분석한 실구매자 리뷰 데이터</p>\s*</blockquote>\s*` "" $c -}}
+{{- $c = replaceRE `<blockquote>\s*<p>(이 글은 실구매자 리뷰를 AI로 분석한 결과입니다\.[^<]*)</p>\s*</blockquote>` `<p class="vi-note">$1</p>` $c -}}
+{{- $c = replaceRE `\*\*([^*<>\n]{1,80}?)\*\*` "<strong>$1</strong>" $c -}}
+{{- $c = replaceRE `(<a href="https://link\.coupang\.com/a/\w+"[^>]*>)https://link\.coupang\.com/a/\w+</a>` "${1}쿠팡에서 보기</a>" $c -}}
+{{- return $c -}}

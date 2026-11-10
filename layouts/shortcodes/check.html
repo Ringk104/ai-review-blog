@@ -1,0 +1,11 @@
+{{/* 점검 순서 체크리스트 (2026-11-10) — 안에 마크다운 번호 목록. 항목을 누르면 체크(이 브라우저에 기억).
+     title 선택. 예:
+     {{< check title="점검 순서" >}}
+     1. 메인 브러시와 덮개를 빼고 돌려 보기
+     2. 사이드브러시를 빼고 돌려 보기
+     {{< /check >}} */}}
+<section class="vi-check" data-key="{{ .Page.RelPermalink }}#{{ .Ordinal }}">
+  {{ with .Get "title" }}<div class="hd">{{ . }}</div>{{ end }}
+  {{ .Inner | .Page.RenderString (dict "display" "block") }}
+  <div class="ft"><span class="cnt"></span><button type="button" class="reset">처음부터</button></div>
+</section>

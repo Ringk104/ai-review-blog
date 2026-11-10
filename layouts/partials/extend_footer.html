@@ -2,6 +2,65 @@
   PaperMod 푸터 확장
   스타일은 custom.css의 .footer-links 에서 관리.
 -->
+<script>
+/* ViewIt v3 화면 손질 (2026-11-10) — 글 파일은 그대로 두고 보이는 틀만
+   1) 표: 머리글을 칸마다 data-label 로 붙여 휴대폰에서 카드로(CSS vi-v3.css), 넓은 화면은 가로 스크롤 상자
+   2) 목차: 휴대폰에서는 접어서 시작(본문이 첫 화면에 보이게)
+   3) 점검 체크리스트(check): 누르면 체크, 이 브라우저에 기억 */
+(function () {
+  var pc = document.querySelector(".post-content");
+  if (pc) {
+    pc.querySelectorAll("table").forEach(function (t) {
+      if (t.closest(".highlight")) return;
+      var heads = [].map.call(t.querySelectorAll("thead th"), function (th) { return th.textContent.trim(); });
+      if (heads.length >= 2) {
+        t.querySelectorAll("tbody tr").forEach(function (tr) {
+          [].forEach.call(tr.children, function (td, i) { if (heads[i]) td.setAttribute("data-label", heads[i]); });
+        });
+        t.classList.add("vi-cards");
+      }
+      if (!t.parentElement.classList.contains("vi-scroll")) {
+        var w = document.createElement("div"); w.className = "vi-scroll";
+        t.parentNode.insertBefore(w, t); w.appendChild(t);
+      }
+    });
+  }
+  var toc = document.querySelector("details.toc, .toc details");
+  if (toc) {
+    // 본문에서 뺀 제목(h1)을 가리키는 목차 줄은 풀어서 그 아래 항목만 남긴다
+    toc.querySelectorAll(".inner a[href^='#']").forEach(function (a) {
+      var id = decodeURIComponent(a.getAttribute("href").slice(1));
+      if (document.getElementById(id)) return;
+      var li = a.closest("li"); if (!li) return;
+      var sub = li.querySelector(":scope > ul");
+      if (sub) { while (sub.firstElementChild) li.parentNode.insertBefore(sub.firstElementChild, li); }
+      li.remove();
+    });
+    if (window.matchMedia("(max-width: 640px)").matches) toc.removeAttribute("open");
+  }
+
+  document.querySelectorAll(".vi-check").forEach(function (box) {
+    var key = "vi-check:" + box.getAttribute("data-key");
+    var items = box.querySelectorAll(":scope > ol > li");
+    var cnt = box.querySelector(".cnt");
+    var saved = [];
+    try { saved = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
+    function sync() {
+      var d = [];
+      items.forEach(function (li, i) { if (li.classList.contains("done")) d.push(i); });
+      if (cnt) cnt.textContent = d.length + " / " + items.length + " 확인";
+      try { localStorage.setItem(key, JSON.stringify(d)); } catch (e) {}
+    }
+    items.forEach(function (li, i) {
+      if (saved.indexOf(i) !== -1) li.classList.add("done");
+      li.addEventListener("click", function (e) { if (e.target.closest("a")) return; li.classList.toggle("done"); sync(); });
+    });
+    var r = box.querySelector(".reset");
+    if (r) r.addEventListener("click", function () { items.forEach(function (li) { li.classList.remove("done"); }); sync(); });
+    sync();
+  });
+})();
+</script>
 <nav class="footer-links" aria-label="푸터 링크">
   <a href="/posts/about/">소개</a>
   ·
