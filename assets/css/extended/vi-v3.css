@@ -115,3 +115,9 @@
 .vi-prod .why { margin: 0; font-size: 14px; color: var(--content); }
 .post-content .vi-prod a.btn { display: block; text-align: center; margin-top: 4px; padding: 10px 14px; border-radius: 8px; font-weight: 700; }
 .post-content .vi-prod a.btn.alt { background: none !important; color: var(--vi-primary) !important; border: 1.5px solid var(--vi-primary); }
+
+/* 판매 종료 추정 링크 자리 · 옛 가격 표시 (vi-content.html 5·6) */
+.post-content .vi-gone { display: inline-block; font-size: 13px; font-weight: 700; color: var(--vi-stop); background: var(--vi-stop-soft); border-radius: 6px; padding: 4px 10px; margin: 2px 4px 2px 0; }
+.post-content a.vi-alt { white-space: normal !important; max-width: 100%; display: inline-block; padding: 6px 12px; font-size: 13.5px; background: none !important; color: var(--vi-primary) !important; border: 1.5px solid var(--vi-primary); border-radius: 8px; font-weight: 700; margin: 2px 0; }
+.post-content a.vi-alt:hover { transform: none; box-shadow: none; background: var(--vi-soft) !important; }
+.post-content .vi-old { color: var(--vi-warn-ink); font-weight: 600; }

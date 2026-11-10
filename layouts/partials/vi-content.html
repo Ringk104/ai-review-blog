@@ -13,4 +13,15 @@
 {{- $c = replaceRE `<blockquote>\s*<p>(이 글은 실구매자 리뷰를 AI로 분석한 결과입니다\.[^<]*)</p>\s*</blockquote>` `<p class="vi-note">$1</p>` $c -}}
 {{- $c = replaceRE `\*\*([^*<>\n]{1,80}?)\*\*` "<strong>$1</strong>" $c -}}
 {{- $c = replaceRE `(<a href="https://link\.coupang\.com/a/\w+"[^>]*>)https://link\.coupang\.com/a/\w+</a>` "${1}쿠팡에서 보기</a>" $c -}}
+{{- /* 5) 판매 종료 추정 모델(data/products.yaml status: gone)의 쿠팡 버튼 → «판매 종료 추정» + 후속·대안 링크 (11-10 운영자 결정) */ -}}
+{{- $db := hugo.Data.products -}}
+{{- range $id, $p := $db.items -}}
+  {{- if eq $p.status "gone" -}}
+    {{- $alt := "" -}}
+    {{- with $p.successor }}{{ with index $db.items . }}{{ $alt = printf ` <a href="%s" target="_blank" rel="nofollow sponsored noopener" class="vi-alt">후속·대안 %s 보기</a>` .link .name }}{{ end }}{{ end -}}
+    {{- $c = replaceRE (printf `<a href="%s"[^>]*>.*?</a>` (replaceRE `([.?+])` `\$1` $p.link)) (printf `<span class="vi-gone">%s · 판매 종료 추정</span>%s` $p.name $alt) $c -}}
+  {{- end -}}
+{{- end -}}
+{{- /* 6) 글에 적힌 옛 가격 «(…원, 2026-04-16 기준)» — 글마다 제품 카드로 바꾸기 전까지 날짜가 지났음을 표시 */ -}}
+{{- $c = replaceRE `(\d{4}-\d{2}-\d{2}) 기준\)` `$1 기준 · <span class="vi-old">지금 가격은 다를 수 있음</span>)` $c -}}
 {{- return $c -}}
