@@ -1,0 +1,46 @@
+# ViewIt 소모품 링크·가격 — 한 곳에서 관리 (2026-11-10, 운영자 결정 «소모품 링크 새로 만들기»)
+#
+# 고르는 기준: 쿠팡 파트너스 검색에서 «로켓배송» 배지가 붙은 상품만, 상품명에 모델명이 들어 있는 것만.
+#   링크는 파트너스 «링크 생성»으로 만들고, 생성 화면의 상품명(product[title])으로 다시 확인했다.
+#   생성한 링크는 열어 보지 않는다(본인 클릭 위험).
+# price: 링크를 만든 날 파트너스에 표시된 판매가. 월 1회 checked 와 price 만 갱신.
+# 호환품 여부는 상품명 그대로 적는다(«호환»이 붙은 것은 정품이 아님).
+
+checked: "2026-11-10"
+
+models:
+  roborock-s10-maxv-ultra:
+    name: "로보락 S10 MaxV Ultra"
+    parts:
+      - {part: "물걸레",     name: "멋진공간 로보락 S10 MaxV Ultra 호환 물걸레 4개",   price: 6900,  link: "https://link.coupang.com/a/iy9iZj9o96"}
+      - {part: "필터",       name: "멋진공간 로보락 S10 MaxV Ultra 호환 필터 2개",     price: 5500,  link: "https://link.coupang.com/a/iy9p8j9fgq"}
+      - {part: "사이드브러시", name: "멋진공간 로보락 S10 MaxV Ultra 사이드브러쉬 4개", price: 5900,  link: "https://link.coupang.com/a/iy9qFCke9A"}
+  roborock-s8-maxv-ultra:
+    name: "로보락 S8 MaxV Ultra"
+    parts:
+      - {part: "물걸레", name: "멋진공간 로보락 S8 MaxV Ultra 호환 물걸레 4개",        price: 8660,  link: "https://link.coupang.com/a/iy9rdQcH8e"}
+      - {part: "필터",   name: "멋진공간 호환 로보락 S8 MaxV Ultra 교체용 필터 4개",    price: 12750, link: "https://link.coupang.com/a/iy9rKenPIi"}
+  roborock-qrevo:
+    name: "로보락 Qrevo 계열 (Q Revo·Q Revo S·Edge C·Curv)"
+    parts:
+      - {part: "물걸레", name: "멋진공간 로보락 Q Revo·Q Revo S·Edge C·Curv 호환 물걸레 8개", price: 12600, link: "https://link.coupang.com/a/iy9tjrZSOi"}
+      - {part: "필터",   name: "멋진공간 호환 로보락 Q REVO 교체용 필터 2개",            price: 4280,  link: "https://link.coupang.com/a/iy9tPhKW9k"}
+  roborock-cleaner:
+    name: "로보락 세정제"
+    parts:
+      - {part: "세정제", name: "로보락 전용 세정제 480ml", price: 21600, link: "https://link.coupang.com/a/iy9ukDJv4K"}
+  samsung-ai-steam:
+    name: "삼성 비스포크 AI 스팀·제트봇"
+    parts:
+      - {part: "먼지봉투+물걸레", name: "멋진공간 삼성 비스포크 AI 스팀 제트봇 호환 먼지봉투 6p + 물걸레 6p 세트", price: 19900, link: "https://link.coupang.com/a/iy9uQdDab6"}
+  dreame-l40s-pro-ultra:
+    name: "드리미 L40s Pro Ultra"
+    parts:
+      - {part: "필터", name: "멋진공간 호환 드리미 L40S Pro Ultra 교체용 필터 4개", price: 9480, link: "https://link.coupang.com/a/iy9vnsNWMe"}
+  ecovacs-t50:
+    name: "에코백스 T50 (프로 옴니)"
+    parts:
+      - {part: "물걸레",     name: "멋진공간 에코백스 T50 프로 물걸레 10개",       price: 13370, link: "https://link.coupang.com/a/iy9wMtSkWO"}
+      - {part: "필터",       name: "멋진공간 호환 에코백스 T50 교체용 필터 4개",   price: 9480,  link: "https://link.coupang.com/a/iy9xiH64k0"}
+      - {part: "사이드브러시", name: "멋진공간 호환 에코백스 T50 사이드브러쉬 4개", price: 6030,  link: "https://link.coupang.com/a/iy9xPbLs4G"}
+      - {part: "메인브러시",  name: "멋진공간 호환 에코백스 T50 메인브러쉬 1개",   price: 7790,  link: "https://link.coupang.com/a/iy9ymIHBJc"}

@@ -1,0 +1,30 @@
+{{/* 소모품 카드 (2026-11-10) — 링크·가격은 data/consumables.yaml 한 곳에서.
+     {{< parts models="roborock-s10-maxv-ultra,roborock-qrevo" >}}           모델별 전부
+     {{< parts models="roborock-s10-maxv-ultra,ecovacs-t50" part="물걸레" >}} 그 부품만(이름에 part 가 들어간 것) */}}
+{{- $db := hugo.Data.consumables -}}
+{{- $part := .Get "part" -}}
+<div class="vi-parts">
+{{- range split (.Get "models") "," }}
+  {{- $id := trim . " " -}}
+  {{- $m := index $db.models $id -}}
+  {{- if not $m }}{{ errorf "parts: data/consumables.yaml 에 %q 가 없다 (%s)" $id $.Position }}{{ end -}}
+  {{- $rows := slice -}}
+  {{- range $m.parts }}{{ if or (not $part) (in .part $part) }}{{ $rows = $rows | append . }}{{ end }}{{ end -}}
+  {{- with $rows }}
+  <section class="vi-part">
+    <b class="md">{{ $m.name }}</b>
+    <ul>
+    {{- range . }}
+      <li>
+        <span class="pt">{{ .part }}</span>
+        <span class="nm">{{ .name }}</span>
+        <span class="pr">{{ lang.FormatNumber 0 .price }}원</span>
+        <a class="btn" href="{{ .link }}" target="_blank" rel="nofollow sponsored noopener">보기</a>
+      </li>
+    {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+{{- end }}
+  <p class="vi-parts-note">로켓배송 상품 · 가격은 쿠팡 {{ (time.AsTime $db.checked).Format "1/2" }} 기준이며 바뀔 수 있습니다 · «호환»은 정품이 아닙니다 — 내 모델명을 꼭 확인하세요</p>
+</div>
