@@ -17,7 +17,7 @@
         t.querySelectorAll("tbody tr").forEach(function (tr) {
           [].forEach.call(tr.children, function (td, i) { if (heads[i]) td.setAttribute("data-label", heads[i]); });
         });
-        t.classList.add("vi-cards");
+        t.classList.add("vi-tcards");
       }
       if (!t.parentElement.classList.contains("vi-scroll")) {
         var w = document.createElement("div"); w.className = "vi-scroll";
