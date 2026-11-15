@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">방 경계만 틀렸다면 — 지우기 전에 고쳐 보기</text>
+<g transform="translate(40,80)">
+<rect x="0" y="0" width="300" height="200" fill="#DBEAFE"/><rect x="190" y="0" width="110" height="200" fill="#FDE68A" fill-opacity="0.7"/>
+<path d="M190,0 v200" stroke="#B45309" stroke-width="4" stroke-dasharray="10 7"/>
+<rect x="0" y="0" width="300" height="200" fill="none" stroke="#1E293B" stroke-width="6"/>
+<path d="M140,0 v70 M140,130 v70" stroke="#1E293B" stroke-width="6"/>
+<text x="150" y="240" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">경계가 벽과 어긋남</text></g>
+<path d="M366,180 h56" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/><path d="M436,180 l-18,-12 v24 z" fill="#2563EB"/>
+<g transform="translate(460,80)">
+<rect x="0" y="0" width="140" height="200" fill="#DBEAFE"/><rect x="140" y="0" width="160" height="200" fill="#FDE68A" fill-opacity="0.7"/>
+<rect x="0" y="0" width="300" height="200" fill="none" stroke="#1E293B" stroke-width="6"/>
+<path d="M140,0 v70 M140,130 v70" stroke="#1E293B" stroke-width="6"/><path d="M140,70 v60" stroke="#2563EB" stroke-width="4" stroke-dasharray="8 6"/>
+<text x="150" y="240" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">방 나누기·합치기로 고침</text></g>
+<text x="400" y="358" text-anchor="middle" font-size="18" fill="#475569">지도를 지우면 방 이름·금지 구역·예약을 다시 해야 할 수 있다</text></svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="360" rx="20" fill="#EFF6FF"/>
+<text x="400" y="50" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">걸레가 청소 중 빠질 때</text>
+<text x="400" y="82" text-anchor="middle" font-size="20" fill="#475569">걸레 받침의 자석 확인 — 왼쪽·오른쪽 걸레를 바꿔 끼워 본다</text>
+<circle cx="250" cy="190" r="66" fill="#E0F2FE" stroke="#1E293B" stroke-width="4"/><circle cx="250" cy="190" r="22" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/>
+<path d="M238,180 v14 a12,12 0 0 0 24,0 v-14" fill="none" stroke="#2563EB" stroke-width="6"/><path d="M238,180 v6 M262,180 v6" stroke="#1E293B" stroke-width="6"/>
+<circle cx="550" cy="190" r="66" fill="#E0F2FE" stroke="#1E293B" stroke-width="4"/><circle cx="550" cy="190" r="22" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/>
+<path d="M538,180 v14 a12,12 0 0 0 24,0 v-14" fill="none" stroke="#2563EB" stroke-width="6"/><path d="M538,180 v6 M562,180 v6" stroke="#1E293B" stroke-width="6"/>
+<text x="250" y="284" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">왼쪽 걸레</text><text x="550" y="284" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">오른쪽 걸레</text>
+<path d="M300,128 Q400,84 500,128" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M512,136 l-22,-2 l12,-16 z" fill="#2563EB"/>
+<path d="M500,252 Q400,296 300,252" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M288,244 l22,2 l-12,16 z" fill="#2563EB"/>
+<text x="400" y="196" text-anchor="middle" font-size="22" font-weight="800" fill="#2563EB">바꿔 끼우기</text>
+<text x="400" y="330" text-anchor="middle" font-size="18" fill="#475569">먼저 새 걸레·정품 걸레로 바꿔 보고, 자석에 녹이 있거나 약하면 받침 교체</text></svg>

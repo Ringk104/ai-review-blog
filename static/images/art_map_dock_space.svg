@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="400" rx="20" fill="#EFF6FF"/>
+<text x="400" y="44" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">충전기는 벽에 붙이고, 주변은 비워 두기</text>
+<rect x="80" y="70" width="640" height="22" rx="4" fill="#CBD5E1"/><text x="100" y="88" font-size="16" font-weight="700" fill="#475569">벽</text>
+<rect x="280" y="92" width="240" height="220" rx="6" fill="#2563EB" fill-opacity="0.08" stroke="#2563EB" stroke-width="3" stroke-dasharray="10 7"/>
+<rect x="370" y="92" width="60" height="44" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><circle cx="400" cy="120" r="5" fill="#DC2626"/>
+<path d="M288,114 h74 M362,114 l-10,-6 v12 z M288,114 l10,-6 v12 z" fill="#2563EB" stroke="#2563EB" stroke-width="3" stroke-linejoin="round"/>
+<path d="M438,114 h74 M512,114 l-10,-6 v12 z M438,114 l10,-6 v12 z" fill="#2563EB" stroke="#2563EB" stroke-width="3" stroke-linejoin="round"/>
+<path d="M400,144 v160 M400,304 l-6,-10 h12 z M400,144 l-6,10 h12 z" fill="#2563EB" stroke="#2563EB" stroke-width="3" stroke-linejoin="round"/>
+<text x="270" y="121" text-anchor="end" font-size="22" font-weight="800" fill="#1E293B">좌 0.5m</text>
+<text x="530" y="121" font-size="22" font-weight="800" fill="#1E293B">우 0.5m</text>
+<text x="440" y="162" font-size="18" font-weight="700" fill="#475569">충전기</text>
+<text x="414" y="232" font-size="22" font-weight="800" fill="#1E293B">앞 1m</text>
+<circle cx="640" cy="250" r="36" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><circle cx="640" cy="242" r="10" fill="#F1F5F9" stroke="#1E293B" stroke-width="3"/><circle cx="640" cy="242" r="3" fill="#2563EB"/>
+<path d="M600,250 h-62" stroke="#94A3B8" stroke-width="4" stroke-dasharray="8 6"/><path d="M528,250 l14,-9 v18 z" fill="#94A3B8"/>
+<text x="400" y="354" text-anchor="middle" font-size="22" font-weight="700" fill="#1E293B">이 안에는 아무것도 두지 않는다</text>
+<text x="400" y="384" text-anchor="middle" font-size="18" fill="#475569">좁은 통로·방문 근처는 피한다</text></svg>

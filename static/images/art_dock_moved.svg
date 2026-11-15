@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">충전대를 이만큼 움직였다면 → 지도를 다시</text>
+<g transform="translate(40,76)"><rect width="340" height="230" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="3"/>
+<rect x="30" y="20" width="280" height="14" rx="3" fill="#CBD5E1"/>
+<rect x="140" y="34" width="60" height="50" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3" stroke-dasharray="7 5"/>
+<rect x="140" y="64" width="60" height="50" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="4" transform="rotate(45 170 89)"/>
+<path d="M232,70 a62,62 0 0 1 -6,60" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M220,142 l-2,-16 l14,6 z" fill="#2563EB"/>
+<text x="170" y="196" text-anchor="middle" font-size="24" font-weight="800" fill="#1E293B">45도 이상 돌림</text></g>
+<g transform="translate(420,76)"><rect width="340" height="230" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="3"/>
+<rect x="30" y="20" width="280" height="14" rx="3" fill="#CBD5E1"/>
+<rect x="44" y="34" width="60" height="50" rx="8" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3" stroke-dasharray="7 5"/>
+<rect x="236" y="34" width="60" height="50" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<path d="M112,120 h112" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M232,120 l-14,-9 v18 z" fill="#2563EB"/>
+<text x="170" y="196" text-anchor="middle" font-size="24" font-weight="800" fill="#1E293B">1m 이상 옮김</text></g>
+<text x="400" y="344" text-anchor="middle" font-size="18" fill="#475569">삼성 청정스테이션 기준 — 그대로 쓰면 청소되지 않는 곳이 생길 수 있다</text></svg>

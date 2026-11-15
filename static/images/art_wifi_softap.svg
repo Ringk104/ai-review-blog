@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">제트봇 등록 — 휴대폰이 로봇 네트워크에 잠깐 연결</text>
+<rect x="70" y="110" width="90" height="160" rx="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><rect x="82" y="126" width="66" height="122" rx="5" fill="#E0F2FE"/>
+<text x="115" y="300" text-anchor="middle" font-size="20" fill="#475569">휴대폰</text>
+<circle cx="400" cy="200" r="66" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><circle cx="400" cy="180" r="15" fill="#CBD5E1" stroke="#1E293B" stroke-width="3"/><path d="M352,224 h96" stroke="#1E293B" stroke-width="3"/>
+<text x="400" y="300" text-anchor="middle" font-size="20" fill="#475569">로봇청소기</text>
+<path d="M650,150 v-30" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/><path d="M710,150 v-30" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/><rect x="630" y="150" width="100" height="50" rx="10" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><circle cx="660" cy="175" r="5" fill="#2563EB"/><circle cx="680" cy="175" r="5" fill="#2563EB"/>
+<text x="680" y="230" text-anchor="middle" font-size="20" fill="#475569">공유기</text>
+<path d="M172,190 h150" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M334,190 l-16,-10 v20 z" fill="#2563EB"/>
+<rect x="168" y="128" width="160" height="40" rx="20" fill="#2563EB"/><text x="248" y="155" text-anchor="middle" font-size="18" font-weight="800" fill="#FFFFFF">[vacuum]_E3…</text>
+<text x="248" y="226" text-anchor="middle" font-size="18" fill="#475569">로봇이 내보내는</text><text x="248" y="250" text-anchor="middle" font-size="18" fill="#475569">네트워크에 연결</text>
+<path d="M478,190 h132" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M622,190 l-16,-10 v20 z" fill="#2563EB"/>
+<text x="545" y="160" text-anchor="middle" font-size="18" font-weight="800" fill="#1E293B">공유기 비밀번호</text><text x="545" y="226" text-anchor="middle" font-size="18" fill="#475569">앱에서 입력</text>
+<text x="400" y="344" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">이때 휴대폰 와이파이 감도를 확인한다 — 가까운 거리에서</text></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="400" rx="20" fill="#EFF6FF"/>
+<text x="400" y="50" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">스테이션으로 못 돌아갈 때</text>
+<text x="400" y="82" text-anchor="middle" font-size="20" fill="#475569">위에서 본 모습 — 양옆과 앞에 공간, 앞 바닥은 말라 있게</text>
+<rect x="190" y="104" width="420" height="276" rx="14" fill="none" stroke="#2563EB" stroke-width="3" stroke-dasharray="10 8"/>
+<rect x="330" y="108" width="140" height="80" rx="12" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><text x="400" y="156" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">스테이션</text>
+<path d="M322,148 h-90" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M220,148 l18,-10 v20 z" fill="#2563EB"/>
+<path d="M478,148 h90" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M580,148 l-18,-10 v20 z" fill="#2563EB"/>
+<text x="250" y="188" text-anchor="middle" font-size="22" font-weight="800" fill="#2563EB">옆 공간</text><text x="550" y="188" text-anchor="middle" font-size="22" font-weight="800" fill="#2563EB">옆 공간</text>
+<ellipse cx="400" cy="232" rx="90" ry="22" fill="#38BDF8" opacity="0.6"/><path d="M370,226 l60,12 M430,226 l-60,12" stroke="#DC2626" stroke-width="5" stroke-linecap="round"/>
+<text x="626" y="230" font-size="19" fill="#475569">젖은 바닥 →</text><text x="626" y="256" font-size="19" fill="#475569">물기 닦기</text>
+<circle cx="400" cy="320" r="40" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><rect x="384" y="290" width="32" height="10" rx="4" fill="#2563EB"/>
+<path d="M400,276 v-10" stroke="#1E293B" stroke-width="3"/>
+<text x="230" y="330" text-anchor="middle" font-size="22" font-weight="800" fill="#2563EB">앞 공간</text>
+<text x="626" y="320" font-size="19" fill="#475569">닫힌 문도</text><text x="626" y="346" font-size="19" fill="#475569">열어 두기</text></svg>

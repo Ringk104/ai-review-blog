@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="360" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">물통에는 물만 — 찬물이나 실온의 물</text>
+<path d="M70,90 h70 v24 h-20 v14 h-30 v-14 h-20 z" fill="#CBD5E1" stroke="#1E293B" stroke-width="3" stroke-linejoin="round"/>
+<path d="M105,138 C113,150 111,160 105,160 C99,160 97,150 105,138Z" fill="#38BDF8"/><path d="M105,170 C113,182 111,192 105,192 C99,192 97,182 105,170Z" fill="#38BDF8"/>
+<rect x="55" y="200" width="100" height="86" rx="12" fill="#E0F2FE" stroke="#1E293B" stroke-width="4"/><rect x="61" y="234" width="88" height="46" rx="7" fill="#38BDF8"/>
+<text x="105" y="318" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">물통 채우기</text>
+<path d="M180,240 h60" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M252,240 l-14,-9 v18 z" fill="#2563EB"/>
+<rect x="270" y="200" width="160" height="62" rx="28" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<rect x="424" y="206" width="56" height="50" rx="8" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/><rect x="428" y="226" width="48" height="26" rx="5" fill="#38BDF8"/>
+<circle cx="300" cy="268" r="10" fill="#1E293B"/><circle cx="400" cy="268" r="10" fill="#1E293B"/>
+<path d="M520,231 h-26" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/><path d="M488,231 l14,-9 v18 z" fill="#2563EB"/>
+<g transform="translate(460,140)"><path d="M0,-40 L10,-13 L38,-17 L17,4 L29,32 L0,17 L-29,32 L-17,4 L-38,-17 L-10,-13 Z" fill="#FDE68A" stroke="#B45309" stroke-width="3"/><text x="0" y="8" text-anchor="middle" font-size="20" font-weight="800" fill="#92400E">딸깍</text></g>
+<text x="375" y="318" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">끝까지 다시 끼우기</text>
+<g transform="translate(560,100)"><rect width="210" height="76" rx="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/><text x="105" y="47" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">세제·소독제</text><path d="M18,14 L192,62" stroke="#DC2626" stroke-width="5" stroke-linecap="round"/></g>
+<g transform="translate(560,196)"><rect width="210" height="76" rx="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/><text x="105" y="47" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">뜨거운 물</text><path d="M18,14 L192,62" stroke="#DC2626" stroke-width="5" stroke-linecap="round"/></g>
+<text x="665" y="318" text-anchor="middle" font-size="18" fill="#475569">물통 부식·변형</text></svg>

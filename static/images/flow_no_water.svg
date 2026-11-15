@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="470" rx="20" fill="#EFF6FF"/>
+<text x="400" y="44" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">물이 안 나올 때 — 내 제품은 어느 형?</text>
+<g transform="translate(20,70)"><rect width="240" height="380" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="3"/>
+<rect x="20" y="160" width="200" height="6" rx="3" fill="#CBD5E1"/>
+<rect x="34" y="92" width="130" height="54" rx="24" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<rect x="160" y="96" width="50" height="46" rx="8" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/><rect x="164" y="114" width="42" height="24" rx="5" fill="#38BDF8"/>
+<circle cx="62" cy="150" r="9" fill="#1E293B"/><circle cx="140" cy="150" r="9" fill="#1E293B"/>
+<path d="M185,84 v-30" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/><path d="M185,46 l-8,12 h16 z" fill="#2563EB"/><text x="150" y="44" text-anchor="end" font-size="18" font-weight="800" fill="#2563EB">물통</text>
+<text x="120" y="218" text-anchor="middle" font-size="24" font-weight="800" fill="#1E293B">본체 물통형</text>
+<text x="120" y="262" text-anchor="middle" font-size="19" fill="#475569">물통에 물</text><text x="120" y="296" text-anchor="middle" font-size="19" fill="#475569">앱 물 양 설정</text><text x="120" y="330" text-anchor="middle" font-size="19" fill="#475569">걸레·받침 장착</text></g>
+<g transform="translate(280,70)"><rect width="240" height="380" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="3"/>
+<rect x="66" y="24" width="108" height="136" rx="16" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<rect x="78" y="40" width="38" height="56" rx="8" fill="#BAE6FD" stroke="#1E293B" stroke-width="3"/><rect x="124" y="40" width="38" height="56" rx="8" fill="#E2E8F0" stroke="#1E293B" stroke-width="3"/>
+<rect x="56" y="156" width="128" height="12" rx="6" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/>
+<circle cx="120" cy="124" r="8" fill="#2563EB"/>
+<text x="120" y="218" text-anchor="middle" font-size="24" font-weight="800" fill="#1E293B">스테이션형</text>
+<text x="120" y="262" text-anchor="middle" font-size="19" fill="#475569">앱에서 물 양 올리기</text><text x="120" y="296" text-anchor="middle" font-size="19" fill="#475569">표시등이 빨간색?</text><text x="120" y="330" text-anchor="middle" font-size="19" fill="#475569">물통·오수통</text></g>
+<g transform="translate(540,70)"><rect width="240" height="380" rx="16" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="3"/>
+<circle cx="120" cy="96" r="70" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<circle cx="92" cy="110" r="30" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/><circle cx="148" cy="110" r="30" fill="#E0F2FE" stroke="#1E293B" stroke-width="3"/>
+<circle cx="92" cy="110" r="6" fill="#2563EB"/><circle cx="148" cy="110" r="6" fill="#2563EB"/>
+<text x="120" y="218" text-anchor="middle" font-size="24" font-weight="800" fill="#1E293B">삼성 AI 스팀</text>
+<text x="120" y="262" text-anchor="middle" font-size="19" fill="#475569">걸레 2개 모두</text><text x="120" y="296" text-anchor="middle" font-size="19" fill="#475569">정수통 물</text><text x="120" y="330" text-anchor="middle" font-size="19" fill="#475569">오수통·세척판</text></g></svg>
