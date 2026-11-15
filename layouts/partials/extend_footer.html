@@ -39,16 +39,36 @@
     if (window.matchMedia("(max-width: 640px)").matches) toc.removeAttribute("open");
   }
 
-  document.querySelectorAll(".vi-check").forEach(function (box) {
+  /* 쿠팡 링크가 2개 이상 든 문단(«○○ 모아보기 — [A] · [B] …»)은 작은 칩 묶음으로 */
+  if (pc) pc.querySelectorAll("p").forEach(function (p) {
+    if (p.querySelectorAll(':scope > a[href*="link.coupang"]').length >= 2) p.classList.add("vi-links");
+  });
+
+  /* 증상 고르기: 누르면 그 절로 부드럽게 이동하고 제목을 잠깐 강조 */
+  document.querySelectorAll(".vi-sym a[href^='#']").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var el = document.getElementById(decodeURIComponent(a.getAttribute("href").slice(1)));
+      if (!el) return;
+      e.preventDefault();
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", a.getAttribute("href"));
+      el.classList.remove("vi-flash"); void el.offsetWidth; el.classList.add("vi-flash");
+    });
+  });
+
+  document.querySelectorAll(".vi-check, .vi-action[data-key]").forEach(function (box) {
     var key = "vi-check:" + box.getAttribute("data-key");
-    var items = box.querySelectorAll(":scope > ol > li");
+    var isAct = box.classList.contains("vi-action");
+    var items = box.querySelectorAll(isAct ? ".bd > ol > li" : ":scope > ol > li");
     var cnt = box.querySelector(".cnt");
+    var bar = box.querySelector(".pg i");
     var saved = [];
     try { saved = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
     function sync() {
       var d = [];
       items.forEach(function (li, i) { if (li.classList.contains("done")) d.push(i); });
-      if (cnt) cnt.textContent = d.length + " / " + items.length + " 확인";
+      if (cnt) cnt.textContent = isAct ? (d.length === items.length && items.length ? "모두 해 봤어요 — 그래도 안 되면 아래 본문으로" : d.length + " / " + items.length + " 해 봤음 · 누르면 체크") : d.length + " / " + items.length + " 확인";
+      if (bar) bar.style.width = (items.length ? d.length / items.length * 100 : 0) + "%";
       try { localStorage.setItem(key, JSON.stringify(d)); } catch (e) {}
     }
     items.forEach(function (li, i) {

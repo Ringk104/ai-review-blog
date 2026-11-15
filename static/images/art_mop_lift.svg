@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="340" rx="20" fill="#EFF6FF"/>
+<text x="400" y="50" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">카펫·흡입만 청소 → 걸레를 들어 올린다</text>
+<text x="400" y="82" text-anchor="middle" font-size="20" fill="#475569">이때 걸레가 바닥에 안 닿거나 안 도는 것은 정상</text>
+<rect x="40" y="250" width="300" height="24" fill="#CBD5E1"/><text x="190" y="305" text-anchor="middle" font-size="20" fill="#475569">마루</text>
+<rect x="340" y="236" width="420" height="38" rx="6" fill="#FDE68A" stroke="#B45309" stroke-width="3"/>
+<path d="M350,236 v-10 M370,236 v-12 M390,236 v-10 M410,236 v-12 M430,236 v-10 M450,236 v-12 M470,236 v-10 M490,236 v-12 M510,236 v-10 M530,236 v-12 M550,236 v-10 M570,236 v-12 M590,236 v-10 M610,236 v-12 M630,236 v-10 M650,236 v-12 M670,236 v-10 M690,236 v-12 M710,236 v-10 M730,236 v-12 M750,236 v-10" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+<text x="550" y="305" text-anchor="middle" font-size="20" fill="#92400E">카펫</text>
+<rect x="80" y="170" width="200" height="66" rx="30" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3" stroke-dasharray="8 6"/>
+<rect x="120" y="236" width="120" height="12" rx="6" fill="#38BDF8" opacity="0.6"/>
+<path d="M295,200 h70" stroke="#94A3B8" stroke-width="4" stroke-dasharray="8 6"/><path d="M380,200 l-14,-9 v18 z" fill="#94A3B8"/>
+<rect x="420" y="130" width="250" height="76" rx="34" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<rect x="505" y="110" width="80" height="24" rx="12" fill="#CBD5E1" stroke="#1E293B" stroke-width="3"/>
+<circle cx="450" cy="218" r="12" fill="#1E293B"/><circle cx="640" cy="218" r="12" fill="#1E293B"/>
+<rect x="475" y="196" width="140" height="14" rx="7" fill="#38BDF8" stroke="#1E293B" stroke-width="3"/>
+<path d="M715,206 v-60" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/><path d="M715,130 l-14,22 h28 z" fill="#2563EB"/></svg>

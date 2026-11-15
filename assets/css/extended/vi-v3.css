@@ -80,6 +80,38 @@
 .vi-action ol { counter-reset: va; list-style: none; padding: 0; margin: 6px 0 0; }
 .vi-action ol > li { counter-increment: va; position: relative; padding: 6px 0 6px 38px; font-weight: 600; }
 .vi-action ol > li::before { content: counter(va); position: absolute; left: 0; top: 4px; width: 26px; height: 26px; border-radius: 50%; background: var(--vi-primary); color: #fff; font-size: 13.5px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+/* 11-15 키움: 단계마다 흰 카드, 큰 번호, 누르면 «해 봤음» + 진행 막대 */
+.vi-action { padding: 18px 18px 14px; border-width: 2px; box-shadow: 0 6px 18px rgba(37, 99, 235, 0.10); }
+.vi-action .hd b { font-size: 19px; line-height: 1.4; }
+.vi-action ol > li { background: var(--theme); border: 1px solid rgba(37, 99, 235, 0.18); border-radius: 10px; margin: 8px 0 0; padding: 12px 14px 12px 58px; font-size: 16.5px; line-height: 1.55; cursor: pointer; user-select: none; transition: background .15s, border-color .15s; }
+.vi-action ol > li:hover { border-color: var(--vi-primary); }
+.vi-action ol > li::before { left: 12px; top: 11px; width: 34px; height: 34px; font-size: 17px; }
+.vi-action ol > li.done { color: var(--secondary); background: var(--vi-ok-soft); border-color: transparent; }
+.vi-action ol > li.done::before { content: "✓"; background: var(--vi-ok); }
+.vi-action .ft { display: flex; align-items: center; gap: 10px; margin-top: 12px; font-size: 13px; color: var(--secondary); }
+.vi-action .pg { flex: 1; height: 8px; border-radius: 4px; background: rgba(37, 99, 235, 0.15); overflow: hidden; }
+.vi-action .pg i { display: block; height: 100%; width: 0; background: var(--vi-ok); border-radius: 4px; transition: width .25s; }
+
+/* 증상 고르기 버튼 (11-15) */
+.vi-sym { margin: 1.2rem 0; }
+.vi-sym .hd { font-size: 14px; font-weight: 800; color: var(--secondary); margin-bottom: 8px; }
+.vi-sym ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.vi-sym li { margin: 0; padding: 0; }
+.vi-sym li a { display: inline-flex; align-items: center; gap: 6px; padding: 9px 14px; border: 1.5px solid var(--vi-primary); border-radius: 999px; color: var(--vi-ink); background: var(--theme); font-weight: 700; font-size: 15px; text-decoration: none; box-shadow: none; line-height: 1.3; }
+.vi-sym li a::after { content: "↓"; color: var(--vi-primary); }
+.vi-sym li a:hover { background: var(--vi-soft); }
+.post-content h2.vi-flash { animation: vi-flash 1.6s ease-out; border-radius: 6px; }
+@keyframes vi-flash { 0%, 30% { background: var(--vi-warn-soft); box-shadow: 0 0 0 8px var(--vi-warn-soft); } 100% { background: transparent; box-shadow: 0 0 0 8px transparent; } }
+@media (max-width: 640px) { .vi-sym li { flex: 1 1 100%; } .vi-sym li a { display: flex; justify-content: space-between; } }
+/* 쿠팡 링크 묶음 문단 (11-15) — 큰 버튼 대신 작은 칩, «·» 구분점은 숨김 */
+.post-content p.vi-links { font-size: 0; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--entry); }
+.post-content p.vi-links > strong { flex-basis: 100%; font-size: 15px; margin-bottom: 2px; }
+.post-content p.vi-links > a[href*="link.coupang"] { display: inline-flex; align-items: center; font-size: 14px; font-weight: 700; padding: 7px 14px; background: var(--theme); color: var(--vi-ink) !important; border: 1.5px solid var(--vi-primary); border-radius: 999px; box-shadow: none; transform: none; line-height: 1.3; }
+.post-content p.vi-links > a[href*="link.coupang"]::after { content: "→"; margin-left: 6px; color: var(--vi-primary); }
+.post-content p.vi-links > a[href*="link.coupang"]:hover { background: var(--vi-soft); transform: none; box-shadow: none; }
+@media (max-width: 640px) { .post-content p.vi-links > a[href*="link.coupang"] { display: inline-flex; text-align: left; padding: 8px 14px; } }
+/* 본문 그림 */
+.post-content p > img[src^="/images/art_"], .post-content p > img[src^="/images/flow_"] { display: block; width: 100%; height: auto; border-radius: 14px; margin: 1.2rem auto; }
 
 .vi-co { border: 1px solid var(--border); background: var(--entry); }
 .vi-co.k-key { border-left: 5px solid var(--vi-primary); } .vi-co.k-key .lb { background: var(--vi-soft); color: var(--vi-ink); }
