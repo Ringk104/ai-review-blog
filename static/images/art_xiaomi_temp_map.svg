@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="400" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">손으로 옮기면 «임시 지도»만 생긴다</text>
+<g transform="translate(40,80)"><rect width="340" height="240" rx="16" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+<rect x="30" y="24" width="130" height="130" fill="#DBEAFE" stroke="#1E293B" stroke-width="3"/><rect x="160" y="24" width="140" height="70" fill="#BFDBFE" stroke="#1E293B" stroke-width="3"/><rect x="160" y="94" width="140" height="60" fill="#93C5FD" stroke="#1E293B" stroke-width="3"/>
+<path d="M240,190 l14,14 l26,-28" fill="none" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+<text x="30" y="190" font-size="22" font-weight="800" fill="#2563EB">스스로 복귀</text><text x="30" y="220" font-size="18" fill="#475569">지도가 완성된다</text></g>
+<g transform="translate(420,80)"><rect width="340" height="240" rx="16" fill="#FFFFFF" stroke="#94A3B8" stroke-width="3"/>
+<rect x="30" y="24" width="270" height="130" fill="#F1F5F9" stroke="#94A3B8" stroke-width="3" stroke-dasharray="10 8"/>
+<path d="M150,52 c-12,0 -20,10 -20,22 v22 h44 v-22 c0,-12 -10,-22 -24,-22 z" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/><path d="M152,96 v22" stroke="#1E293B" stroke-width="3"/><circle cx="152" cy="130" r="14" fill="#CBD5E1" stroke="#1E293B" stroke-width="3"/>
+<path d="M254,178 l26,26 M280,178 l-26,26" stroke="#94A3B8" stroke-width="6" stroke-linecap="round"/>
+<text x="30" y="190" font-size="22" font-weight="800" fill="#475569">손으로 옮김</text><text x="30" y="220" font-size="18" fill="#475569">방 나누기·구역 선택 불가</text></g>
+<text x="400" y="362" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">문을 모두 열고, 스테이션에서 시작해 끝까지 두기</text></svg>
