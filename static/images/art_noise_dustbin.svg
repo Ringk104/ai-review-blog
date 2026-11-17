@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="360" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">먼지통을 비우고, 필터 먼지를 털기</text>
+<path d="M96,124 L236,82 L242,98 L102,140 z" fill="#CBD5E1" stroke="#1E293B" stroke-width="3" stroke-linejoin="round"/>
+<rect x="100" y="142" width="160" height="124" rx="16" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/>
+<path d="M112,250 q30,-24 68,-14 q40,10 68,-10 v28 h-136 z" fill="#CBD5E1"/>
+<circle cx="140" cy="214" r="6" fill="#94A3B8"/><circle cx="170" cy="200" r="5" fill="#94A3B8"/><circle cx="206" cy="210" r="7" fill="#94A3B8"/><circle cx="232" cy="196" r="5" fill="#94A3B8"/><circle cx="186" cy="176" r="4" fill="#94A3B8"/>
+<path d="M276,180 h44 m-14,-12 l14,12 l-14,12" stroke="#2563EB" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="180" y="306" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">① 전원 끄고 먼지통 빼서 비우기</text>
+<text x="180" y="334" text-anchor="middle" font-size="17" fill="#475569">사이클론 유닛의 먼지까지</text>
+<path d="M370,90 v220" stroke="#BFDBFE" stroke-width="3" stroke-dasharray="8 6"/>
+<rect x="510" y="110" width="150" height="120" rx="10" fill="#DBEAFE" stroke="#1E293B" stroke-width="4"/>
+<path d="M530,118 v104 M550,118 v104 M570,118 v104 M590,118 v104 M610,118 v104 M630,118 v104 M650,118 v104" stroke="#2563EB" stroke-width="2"/>
+<path d="M484,140 q-12,30 0,60 M464,128 q-18,42 0,84" stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round"/>
+<circle cx="690" cy="160" r="7" fill="#94A3B8"/><circle cx="712" cy="182" r="5" fill="#94A3B8"/><circle cx="694" cy="204" r="6" fill="#94A3B8"/><circle cx="720" cy="148" r="4" fill="#94A3B8"/><circle cx="724" cy="214" r="4" fill="#94A3B8"/>
+<text x="590" y="296" text-anchor="middle" font-size="20" font-weight="800" fill="#1E293B">② 필터 먼지 털기</text>
+<text x="590" y="326" text-anchor="middle" font-size="17" fill="#475569">물세척 되는 부품만, 완전히 말린 뒤 조립</text></svg>

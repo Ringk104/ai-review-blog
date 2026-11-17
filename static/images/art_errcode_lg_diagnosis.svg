@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="24" font-weight="800" fill="#1E293B">LG 코드제로 R9 스마트진단 — 충전대 위에서 시작</text>
+<circle cx="200" cy="196" r="112" fill="none" stroke="#2563EB" stroke-width="3" stroke-dasharray="9 7"/>
+<rect x="160" y="104" width="80" height="34" rx="8" fill="#CBD5E1" stroke="#1E293B" stroke-width="3"/>
+<circle cx="200" cy="190" r="48" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><circle cx="200" cy="190" r="14" fill="#CBD5E1" stroke="#1E293B" stroke-width="3"/>
+<path d="M200,242 v36" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/><path d="M190,270 l10,12 l10,-12" fill="none" stroke="#1E293B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="200" y="336" text-anchor="middle" font-size="18" font-weight="800" fill="#1E293B">주변 1m 비우기</text>
+<text x="200" y="362" text-anchor="middle" font-size="16" fill="#475569">약 50cm 움직이며 점검</text>
+<path d="M400,90 v260" stroke="#BFDBFE" stroke-width="3" stroke-dasharray="8 6"/>
+<rect x="452" y="96" width="76" height="132" rx="18" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/><rect x="466" y="114" width="48" height="30" rx="6" fill="#2563EB"/><text x="490" y="134" text-anchor="middle" font-size="13" font-weight="800" fill="#FFFFFF">진단</text>
+<circle cx="476" cy="170" r="7" fill="#CBD5E1" stroke="#1E293B" stroke-width="2"/><circle cx="504" cy="170" r="7" fill="#CBD5E1" stroke="#1E293B" stroke-width="2"/><circle cx="476" cy="198" r="7" fill="#CBD5E1" stroke="#1E293B" stroke-width="2"/><circle cx="504" cy="198" r="7" fill="#CBD5E1" stroke="#1E293B" stroke-width="2"/>
+<path d="M566,104 h184 a14,14 0 0 1 14,14 v70 a14,14 0 0 1 -14,14 h-150 l-22,22 v-22 h-12 a14,14 0 0 1 -14,-14 v-70 a14,14 0 0 1 14,-14 z" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+<text x="664" y="146" text-anchor="middle" font-size="19" font-weight="800" fill="#1E293B">결과를 음성으로</text><text x="664" y="176" text-anchor="middle" font-size="16" fill="#475569">볼 곳을 문장으로 안내</text>
+<text x="596" y="290" text-anchor="middle" font-size="18" font-weight="800" fill="#1E293B">리모컨 [스마트진단] 버튼</text>
+<text x="596" y="320" text-anchor="middle" font-size="16" fill="#475569">충전 버튼으로 다시 듣기</text></svg>
