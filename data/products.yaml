@@ -22,6 +22,7 @@ items:
   dreame-x40s:             {name: "드리미 X40s",                  link: "https://link.coupang.com/a/gzPdUIennM", status: gone, successor: dreame-x60-ultra}
   dreame-x40-pro-ultra:    {name: "드리미 X40 Pro Ultra",         link: "https://link.coupang.com/a/e7ahI5MWQ0", status: gone, successor: dreame-x60-ultra}
   dreame-l20-ultra:        {name: "드리미 L20 Ultra",             link: "https://link.coupang.com/a/epB8YQ",     status: gone, successor: dreame-l40s-pro-ultra}
+  dreame-l10s-ultra-gen2:  {name: "드리미 L10s Ultra Gen2",        link: "https://link.coupang.com/a/e7dnAoldGS", status: market, note: "2026-11-19 쿠팡 검색에 로켓배송 없음, 판매자 배송·해외 판매만"}
   dreame-l10s-heat:        {name: "드리미 L10s Heat",             link: "https://link.coupang.com/a/e7dpPCAwkS", status: market, price: 779000, reviews: 104}
   dreame-l30s:             {name: "드리미 L30s Pro Ultra Heat",   link: "https://link.coupang.com/a/gzPgsxEq3U", status: rocket, price: 689000, reviews: 71}
   dreame-matrix10:         {name: "드리미 매트릭스10 울트라",     link: "https://link.coupang.com/a/fKMxO6ASlw", status: rocket, price: 799000, reviews: 32}
