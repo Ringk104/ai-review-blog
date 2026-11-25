@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">범퍼의 센서 창을 부드러운 천으로</text>
+<text x="400" y="82" text-anchor="middle" font-size="20" fill="#475569">얼룩·이물질이 있으면 앞을 제대로 보지 못한다 → 닦은 뒤 맵을 다시 만든다</text>
+<rect x="0" y="300" width="800" height="80" fill="#DBEAFE"/>
+<path d="M200,300 v-60 a200,120 0 0 1 400,0 v60 z" fill="#FFFFFF" stroke="#1E293B" stroke-width="5"/>
+<rect x="190" y="276" width="420" height="24" rx="6" fill="#E2E8F0" stroke="#1E293B" stroke-width="4"/>
+<rect x="340" y="200" width="120" height="34" rx="10" fill="#1E293B"/>
+<circle cx="372" cy="217" r="5" fill="#94A3B8"/><circle cx="428" cy="217" r="5" fill="#94A3B8"/>
+<path d="M330,190 l-20,-26 M470,190 l20,-26" stroke="#2563EB" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="400" y="160" text-anchor="middle" font-size="20" font-weight="800" fill="#2563EB">센서 창</text>
+<path d="M478,170 q60,-10 96,40 q10,16 -6,28 q-50,24 -90,-14 z" fill="#93C5FD" stroke="#1E293B" stroke-width="4" stroke-linejoin="round"/>
+<path d="M506,196 q24,-4 40,16" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+<path d="M610,168 q12,-8 22,0 M618,186 q12,-8 22,0" fill="none" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+<text x="400" y="352" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">안경 닦는 천처럼 부드러운 천으로 닦기</text></svg>
