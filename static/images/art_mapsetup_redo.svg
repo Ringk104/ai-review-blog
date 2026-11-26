@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">이럴 때는 지도를 다시 만든다</text>
+<text x="400" y="82" text-anchor="middle" font-size="19" fill="#475569">충전대를 45도 이상 돌리거나 1m 이상 옮겼을 때(삼성) · 층이 다르면 지도 따로</text>
+<path d="M400,100 v270" stroke="#BFDBFE" stroke-width="3" stroke-dasharray="8 6"/>
+<rect x="60" y="200" width="56" height="74" rx="8" fill="none" stroke="#94A3B8" stroke-width="4" stroke-dasharray="6 5"/>
+<path d="M124,236 h110" stroke="#EF4444" stroke-width="4" stroke-dasharray="7 5"/><path d="M242,236 l-12,-7 v14 z" fill="#EF4444"/><text x="180" y="224" text-anchor="middle" font-size="18" font-weight="800" fill="#EF4444">1m 이상</text>
+<g transform="rotate(45 300 236)"><rect x="272" y="199" width="56" height="74" rx="8" fill="#CBD5E1" stroke="#1E293B" stroke-width="4"/></g><text x="300" y="168" text-anchor="middle" font-size="18" font-weight="800" fill="#EF4444">45도 이상</text>
+<text x="200" y="350" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">충전대 옮김 → 지도 다시</text>
+<rect x="480" y="120" width="240" height="90" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><text x="600" y="174" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">2층 지도</text>
+<rect x="480" y="226" width="240" height="90" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><text x="600" y="280" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">1층 지도</text>
+<text x="600" y="350" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">층마다 지도 따로 저장</text></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">배터리는 쓸수록 짧아지는 소모품</text>
+<text x="400" y="82" text-anchor="middle" font-size="19" fill="#475569">삼성 내부 시험: 완전 충전·방전 약 500회 → 성능 약 20~30% 감소 (주 3회면 약 2년)</text>
+<rect x="70" y="140" width="260" height="110" rx="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="5"/><rect x="330" y="175" width="16" height="40" rx="3" fill="#1E293B"/><rect x="82" y="152" width="236" height="86" rx="8" fill="#22C55E"/>
+<text x="200" y="208" text-anchor="middle" font-size="30" font-weight="800" fill="#FFFFFF">약 60분</text><text x="208" y="290" text-anchor="middle" font-size="21" font-weight="800" fill="#1E293B">새 배터리 (일반 모드)</text>
+<path d="M368,195 h50" stroke="#2563EB" stroke-width="5"/><path d="M430,195 l-14,-9 v18 z" fill="#2563EB"/>
+<rect x="455" y="140" width="260" height="110" rx="14" fill="#FFFFFF" stroke="#1E293B" stroke-width="5"/><rect x="715" y="175" width="16" height="40" rx="3" fill="#1E293B"/><rect x="467" y="152" width="157" height="86" rx="8" fill="#F59E0B"/>
+<text x="585" y="208" text-anchor="middle" font-size="30" font-weight="800" fill="#1E293B">약 40분</text><text x="593" y="290" text-anchor="middle" font-size="21" font-weight="800" fill="#1E293B">오래 쓴 배터리</text>
+<text x="400" y="346" text-anchor="middle" font-size="19" font-weight="800" fill="#1E293B">«반드시 2년마다 바꿀 필요는 없다» — 사용 시간을 보고 판단 (삼성)</text></svg>

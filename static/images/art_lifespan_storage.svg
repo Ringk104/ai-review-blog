@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">오래 쓰지 않을 때 — 브랜드마다 다르다</text>
+<text x="400" y="82" text-anchor="middle" font-size="19" fill="#475569">내 모델 설명서의 «장기 보관» 항목을 먼저 본다</text>
+<path d="M400,100 v270" stroke="#BFDBFE" stroke-width="3" stroke-dasharray="8 6"/>
+<circle cx="190" cy="170" r="44" fill="#CBD5E1" stroke="#1E293B" stroke-width="4"/><circle cx="190" cy="150" r="12" fill="#1E293B"/><rect x="252" y="155" width="56" height="30" rx="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="3"/><rect x="256" y="159" width="44" height="22" rx="3" fill="#22C55E"/><rect x="308" y="164" width="5" height="12" fill="#1E293B"/>
+<text x="200" y="256" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">로보락 Qrevo 2 Pro</text>
+<text x="200" y="290" text-anchor="middle" font-size="18" fill="#1E293B">완충 → 플러그 빼고 전원 끄기</text><text x="200" y="320" text-anchor="middle" font-size="18" font-weight="800" fill="#2563EB">최소 3개월마다 다시 충전</text>
+<circle cx="590" cy="170" r="44" fill="#CBD5E1" stroke="#1E293B" stroke-width="4"/><circle cx="590" cy="150" r="12" fill="#1E293B"/><rect x="650" y="152" width="70" height="36" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/><text x="685" y="177" text-anchor="middle" font-size="16" font-weight="800" fill="#2563EB">배송</text>
+<text x="600" y="256" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">아이로봇 룸바</text>
+<text x="600" y="290" text-anchor="middle" font-size="18" fill="#1E293B">몇 주 넘으면 배송 모드·배터리 분리</text><text x="600" y="320" text-anchor="middle" font-size="18" font-weight="800" fill="#2563EB">최소 6개월마다 완충</text></svg>

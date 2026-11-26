@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">예약은 낮에, 밤에는 방해 금지</text>
+<text x="400" y="82" text-anchor="middle" font-size="19" fill="#475569">층간소음 규칙 주간 06~22시·야간 22~06시 / 방해 금지 기본 22~08시(로보락·드리미)</text>
+<rect x="60" y="150" width="680" height="60" rx="10" fill="#DBEAFE" stroke="#1E293B" stroke-width="3"/>
+<path d="M70,150 h160 v60 h-160 a10,10 0 0 1 -10,-10 v-40 a10,10 0 0 1 10,-10 z" fill="#1E293B"/>
+<path d="M683,150 h47 a10,10 0 0 1 10,10 v40 a10,10 0 0 1 -10,10 h-47 z" fill="#1E293B"/>
+<text x="145" y="188" text-anchor="middle" font-size="20" font-weight="800" fill="#FFFFFF">야간</text><text x="456" y="188" text-anchor="middle" font-size="22" font-weight="800" fill="#1E40AF">주간 — 예약 청소는 여기에</text>
+<text x="60" y="236" text-anchor="middle" font-size="16" fill="#475569">0시</text><text x="230" y="236" text-anchor="middle" font-size="16" font-weight="800" fill="#1E293B">6시</text><text x="400" y="236" text-anchor="middle" font-size="16" fill="#475569">12시</text><text x="683" y="236" text-anchor="middle" font-size="16" font-weight="800" fill="#1E293B">22시</text><text x="740" y="236" text-anchor="middle" font-size="16" fill="#475569">24시</text>
+<rect x="60" y="256" width="227" height="14" rx="7" fill="#94A3B8"/><rect x="683" y="256" width="57" height="14" rx="7" fill="#94A3B8"/><text x="300" y="269" font-size="15" font-weight="800" fill="#475569">← 방해 금지 기본 22~08시 (로보락·드리미)</text>
+<text x="400" y="320" text-anchor="middle" font-size="19" font-weight="800" fill="#1E293B">방해 금지 중: 청소 재개 ✕ · 먼지 비움 ✕ · 음성·표시등 줄임 (모델마다 다름)</text>
+<text x="400" y="352" text-anchor="middle" font-size="17" font-weight="800" fill="#B91C1C">드리미는 방해 금지 중에도 예약 청소를 한다 — 밤 예약은 지운다</text></svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="380" rx="20" fill="#EFF6FF"/>
+<text x="400" y="48" text-anchor="middle" font-size="26" font-weight="800" fill="#1E293B">청소할 방은 열고, 떨어질 곳은 닫는다</text>
+<text x="400" y="82" text-anchor="middle" font-size="19" fill="#475569">첫 지도 전에 — 문 열고 불 켜기, 현관·턱 높은 곳은 닫거나 막기</text>
+<path d="M400,100 v270" stroke="#BFDBFE" stroke-width="3" stroke-dasharray="8 6"/>
+<rect x="60" y="120" width="120" height="180" rx="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><path d="M180,120 l80,30 v180 l-80,-30 z" fill="#DBEAFE" stroke="#1E293B" stroke-width="4"/>
+<circle cx="310" cy="150" r="22" fill="#FACC15"/><path d="M310,116 v-10 M344,150 h10 M334,126 l8,-8" stroke="#FACC15" stroke-width="4" stroke-linecap="round"/>
+<circle cx="120" cy="268" r="22" fill="#CBD5E1" stroke="#1E293B" stroke-width="3"/><circle cx="120" cy="257" r="6" fill="#1E293B"/><path d="M146,268 h34" stroke="#2563EB" stroke-width="4" stroke-dasharray="7 5"/><path d="M190,268 l-12,-7 v14 z" fill="#2563EB"/>
+<text x="200" y="352" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">청소할 방 — 문 열고 불 켜기 ○</text>
+<rect x="450" y="120" width="140" height="180" rx="6" fill="#E2E8F0" stroke="#1E293B" stroke-width="4"/><circle cx="576" cy="214" r="6" fill="#1E293B"/>
+<text x="520" y="190" text-anchor="middle" font-size="20" font-weight="800" fill="#475569">현관</text>
+<rect x="620" y="200" width="120" height="100" rx="6" fill="#FFFFFF" stroke="#1E293B" stroke-width="4"/><text x="680" y="246" text-anchor="middle" font-size="17" font-weight="800" fill="#475569">턱 높은</text><text x="680" y="270" text-anchor="middle" font-size="17" font-weight="800" fill="#475569">화장실</text>
+<rect x="440" y="300" width="310" height="10" fill="#94A3B8"/>
+<rect x="470" y="232" width="100" height="34" rx="8" fill="#EF4444"/><text x="520" y="256" text-anchor="middle" font-size="17" font-weight="800" fill="#FFFFFF">문 닫기</text>
+<text x="600" y="352" text-anchor="middle" font-size="22" font-weight="800" fill="#1E293B">떨어질 곳 — 닫거나 막기 ○</text></svg>
