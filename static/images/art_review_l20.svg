@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="400" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="25" font-weight="800" fill="#1E293B">드리미 L20 Ultra — 공식 사양으로 보기</text>
+<text x="400" y="80" text-anchor="middle" font-size="18" fill="#475569">2026-11-26 쿠팡 본체 판매 없음 · 전용 직배수 키트·소모품만</text>
+<rect x="30" y="100" width="360" height="280" rx="16" fill="#F0FDF4" stroke="#15803D" stroke-width="2"/>
+<text x="50" y="138" font-size="21" font-weight="800" fill="#15803D">강점</text>
+<circle cx="58" cy="175" r="5" fill="#15803D"/><text x="74" y="182" font-size="18" font-weight="700" fill="#1E293B">7,000Pa · 회전 물걸레 2개</text>
+<circle cx="58" cy="221" r="5" fill="#15803D"/><text x="74" y="228" font-size="18" font-weight="700" fill="#1E293B">MopExtend 가장자리 걸레</text>
+<circle cx="58" cy="267" r="5" fill="#15803D"/><text x="74" y="274" font-size="18" font-weight="700" fill="#1E293B">2시간 열풍 건조</text>
+<circle cx="58" cy="313" r="5" fill="#15803D"/><text x="74" y="320" font-size="18" font-weight="700" fill="#1E293B">6,400mAh · 최대 260분</text>
+<rect x="410" y="100" width="360" height="280" rx="16" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+<text x="430" y="138" font-size="21" font-weight="800" fill="#B91C1C">걸리는 점</text>
+<circle cx="438" cy="175" r="5" fill="#B91C1C"/><text x="454" y="182" font-size="18" font-weight="700" fill="#1E293B">높이 103.8mm</text>
+<circle cx="438" cy="221" r="5" fill="#B91C1C"/><text x="454" y="228" font-size="18" font-weight="700" fill="#1E293B">문턱 2cm</text>
+<circle cx="438" cy="267" r="5" fill="#B91C1C"/><text x="454" y="274" font-size="18" font-weight="700" fill="#1E293B">2023년 모델, 지금 판매 없음</text>
+<circle cx="438" cy="313" r="5" fill="#B91C1C"/><text x="454" y="320" font-size="18" font-weight="700" fill="#1E293B">부품 규격 꼭 확인</text>
+</svg>
