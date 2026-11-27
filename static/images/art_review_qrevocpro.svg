@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="400" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="25" font-weight="800" fill="#1E293B">로보락 Qrevo C Pro — 공식 사양으로 보기</text>
+<text x="400" y="80" text-anchor="middle" font-size="18" fill="#475569">2026-11-27 쿠팡 본체 없음 · 로보락 코리아 페이지에서 판매</text>
+<rect x="30" y="100" width="360" height="280" rx="16" fill="#F0FDF4" stroke="#15803D" stroke-width="2"/>
+<text x="50" y="138" font-size="21" font-weight="800" fill="#15803D">강점</text>
+<circle cx="58" cy="175" r="5" fill="#15803D"/><text x="74" y="182" font-size="18" font-weight="700" fill="#1E293B">18,500Pa · 듀얼 엉킴 방지</text>
+<circle cx="58" cy="221" r="5" fill="#15803D"/><text x="74" y="228" font-size="18" font-weight="700" fill="#1E293B">FlexiArm 가장자리 물걸레</text>
+<circle cx="58" cy="267" r="5" fill="#15803D"/><text x="74" y="274" font-size="18" font-weight="700" fill="#1E293B">카펫에서 걸레 10mm 리프팅</text>
+<circle cx="58" cy="313" r="5" fill="#15803D"/><text x="74" y="320" font-size="18" font-weight="700" fill="#1E293B">로봇 높이 96.5mm</text>
+<rect x="410" y="100" width="360" height="280" rx="16" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+<text x="430" y="138" font-size="21" font-weight="800" fill="#B91C1C">걸리는 점</text>
+<circle cx="438" cy="175" r="5" fill="#B91C1C"/><text x="454" y="182" font-size="18" font-weight="700" fill="#1E293B">75°C는 도크 배출구 수온</text>
+<circle cx="438" cy="221" r="5" fill="#B91C1C"/><text x="454" y="228" font-size="18" font-weight="700" fill="#1E293B">먼지 비움 7~9주·65일 표기</text>
+<circle cx="438" cy="267" r="5" fill="#B91C1C"/><text x="454" y="274" font-size="18" font-weight="700" fill="#1E293B">물통형 — 물 채우기는 사람</text>
+<circle cx="438" cy="313" r="5" fill="#B91C1C"/><text x="454" y="320" font-size="18" font-weight="700" fill="#1E293B">문턱 높이 공식 값 없음</text>
+</svg>

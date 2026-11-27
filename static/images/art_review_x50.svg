@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="Pretendard, -apple-system, sans-serif"><rect width="800" height="400" rx="20" fill="#EFF6FF"/>
+<text x="400" y="46" text-anchor="middle" font-size="25" font-weight="800" fill="#1E293B">드리미 X50 Ultra — 공식 자료로 보기</text>
+<text x="400" y="80" text-anchor="middle" font-size="18" fill="#475569">2026-11-27 쿠팡 국내 정식 본체 없음 · 해외 판매분 1건(상품평 0)</text>
+<rect x="30" y="100" width="360" height="280" rx="16" fill="#F0FDF4" stroke="#15803D" stroke-width="2"/>
+<text x="50" y="138" font-size="21" font-weight="800" fill="#15803D">강점</text>
+<circle cx="58" cy="175" r="5" fill="#15803D"/><text x="74" y="182" font-size="18" font-weight="700" fill="#1E293B">20,000Pa 흡입력</text>
+<circle cx="58" cy="221" r="5" fill="#15803D"/><text x="74" y="228" font-size="18" font-weight="700" fill="#1E293B">최대 6cm 등반(청소 다리)</text>
+<circle cx="58" cy="267" r="5" fill="#15803D"/><text x="74" y="274" font-size="18" font-weight="700" fill="#1E293B">80℃ 고온 물걸레 세척</text>
+<circle cx="58" cy="313" r="5" fill="#15803D"/><text x="74" y="320" font-size="18" font-weight="700" fill="#1E293B">AI 카메라 2종 + 3D 라인 레이저</text>
+<rect x="410" y="100" width="360" height="280" rx="16" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+<text x="430" y="138" font-size="21" font-weight="800" fill="#B91C1C">걸리는 점</text>
+<circle cx="438" cy="175" r="5" fill="#B91C1C"/><text x="454" y="182" font-size="18" font-weight="700" fill="#1E293B">6cm 조건은 직접 확인</text>
+<circle cx="438" cy="221" r="5" fill="#B91C1C"/><text x="454" y="228" font-size="18" font-weight="700" fill="#1E293B">직배수 키트 별도·일부 지역</text>
+<circle cx="438" cy="267" r="5" fill="#B91C1C"/><text x="454" y="274" font-size="18" font-weight="700" fill="#1E293B">캐스터 휠 월 1회 청소</text>
+<circle cx="438" cy="313" r="5" fill="#B91C1C"/><text x="454" y="320" font-size="18" font-weight="700" fill="#1E293B">먼지봉투 2~4개월 교체</text>
+</svg>
